@@ -1,0 +1,28 @@
+#Site Settings
+title: HaCkEr InDiA | A Ethical Hacking Page
+description: "A minimal webpage template build with HTML5 , CSS, Javascript & PHP"
+url: https://yogesh-hacker.github.io/hackerindia.in/
+author:
+    name: "Yogesh Kumar Jamre"
+    email: "yogeshkuamrjamre1@gmail.com"
+    url: "https://yogesh-hacker.github.io"
+
+#Build Settings
+baseurl: /hackerindia.in/
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 2
+paginate_path: /page:num/
+
+#Custom Variables
+version: "1.1.0"
+
+#Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+gems:
+    - jekyll-sitemap
