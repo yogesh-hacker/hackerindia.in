@@ -194,13 +194,16 @@ html{
 
 /* Contact Section */
 .submit{
-    background-color: #24a0ed;
+    background-color: green;
     padding: 14px 50px;
     color: white;
     width: auto;
     border: none;
     margin: 8px 0px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submit:hover{
