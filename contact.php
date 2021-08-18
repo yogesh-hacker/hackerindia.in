@@ -5,18 +5,18 @@
 $name = $_REQUEST['name'];
 $email = $_REQUEST['email'];
 $phone = $_REQUEST['phone'];
-$massage = $_REQUEST['massage'];
+$message = $_REQUEST['message'];
 
 // Check Fields
 
-if (empty($name) || empty($email) || empty($phone) || empty($massage)) 
+if (empty($name) || empty($email) || empty($phone) || empty($message)) 
 {
     echo "Please Fill Out All The Fields";
 }
 
 else 
 {
-    mail("yogeshkumarjamre1@gmail.com", "Hacker India Email", $massage, "From: $name <$email>");
+    mail("yogeshkumarjamre1@gmail.com", "Hacker India Email", $message, "From: $name <$email>");
     echo "<script>alert(your massage sent successfully!)</script>"
 }
 ?>
