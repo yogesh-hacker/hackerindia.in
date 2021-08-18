@@ -193,7 +193,7 @@ html{
 
 
 /* Contact Section */
-.btn-contact{
+#details .btn-contact btn{
     background-color: green;
     padding: 14px 50px;
     color: white;
