@@ -334,10 +334,17 @@ html{
 
         .contactForm .inputBox input,
         .contactForm .inputBox textarea {
-            width: 100%;
-            font-size: 16px;
-            margin: 10px 0;
-            border: 1px solid black;
+             width: 100%;
+
+             padding: 0.5rem;
+
+             border-radius: 9px;
+
+             font-size: 1.1rem;
+
+             border: 1px solid #000000;
+
+             display: block;
         }
 
         .contactForm .inputBox span[class=span] {
