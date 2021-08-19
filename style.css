@@ -335,13 +335,9 @@ html{
         .contactForm .inputBox input,
         .contactForm .inputBox textarea {
             width: 100%;
-            padding: 5px 0;
             font-size: 16px;
             margin: 10px 0;
-            border: none;
-            border-bottom: 2px solid #333;
-            outline: none;
-            resize: none;
+            border: 1px solid black;
         }
 
         .contactForm .inputBox span[class=span] {
@@ -353,16 +349,6 @@ html{
             pointer-events: none;
             transition: 0.5s;
             color: #666;
-        }
-
-        .contactForm .inputBox input:focus~span,
-        .contactForm .inputBox input:valid~span,
-        .contactForm .inputBox textarea:focus~span,
-        .contactForm .inputBox textarea:valid~span {
-
-            color: #000000;
-            font-size: 12px;
-            transform: translateY(-20px)
         }
 
         .contact p,
@@ -381,13 +367,6 @@ html{
             cursor: pointer;
             padding: 10px;
         }
-
-        .contactForm .inputBox button[type="submit"]:hover {
-            transition: 0.3s;
-            opacity: 1;
-        }
-
-
 
         @media (max-width: 800px) {
             .contact {
