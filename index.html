@@ -101,6 +101,7 @@
                     <textarea placeholder="What's in your mind ?" name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit" class="submit">Submit</button>
+                <span class="load"><span>
             </form>
         </div>
     </section>
@@ -136,6 +137,11 @@ function sendemail(){
     }).then(window.location.href="Thank You/thankyou.html")
 }
 </script>
+    <script>
+        document.getElementById("form").onsubmit = function () {
+            document.getElementById('load').style.display = "inline"
+        }
+    </script>
 <script>
 
     //Get the button:
