@@ -248,7 +248,9 @@ html{
    font-size: 1.3rem;
    font-family: 'Bree Serif', serif;
 
-}.submit:hover{
+}
+
+.submit:hover{
     border: 5px solid skyblue
     border-radius: 5px;
     transition-duration: 0.2s;
