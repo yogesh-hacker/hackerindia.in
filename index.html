@@ -101,7 +101,6 @@
                     <textarea placeholder="What's in your mind ?" name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit" class="submit">Submit</button>
-                <span class="load"><span>
             </form>
         </div>
     </section>
@@ -135,6 +134,8 @@ function sendemail(){
             Subject: "New message:",
             Body : Body
     }).then(window.location.href="Thank You/thankyou.html")
+      console.log("submit");
+setTimeout(() => {  console.log("hello"); }, 2000);
 }
 </script>
     <script>
