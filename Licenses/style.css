@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+    font-family: Verdana;
+    text-align: center;
+}
+/* Styling the Form (Color, Padding, Shadow) */
+
+h3{
+    font-family: 'Headland One';
+}
+
+form {
+
+    background-color: lightgrey;
+    max-width: 500px;
+    margin-top: 200px;
+    padding: 30px 20px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling form-control Class */
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Styling form-control Label */ 
+
+.form-control label{
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Share Tech Mono', Monospace;
+}
+
+.form-control input{
+border: 1px solid #777;
+border-radius: 2px;
+font-family: inherit;
+padding: 10px;
+display: block;
+width: 95%;
+}
+
+button {
+background-color: #24a0ed;
+border: 1px dotted black;
+border-radius: 2px;
+color: white;
+font-family: 'Share Tech Mono', Monospace;
+font-size: 15px;
+display: block;
+width: 70px;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 5px;
+}
+
+button:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: skyblue;
+}
