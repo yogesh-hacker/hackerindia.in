@@ -106,7 +106,8 @@ html{
     position: absolute;
     text-decoration: none;
     margin-left: 8px;
-    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 6px;
     letter-spacing: 0.6px;
     font-family: 'Oxygen', Sans-Serif;
 }
@@ -223,4 +224,9 @@ h2{
 
 .dot-1{
     color: #006621;
+}
+
+#second{
+    display: block;
+    margin-top: 50px;
 }
