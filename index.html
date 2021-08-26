@@ -32,18 +32,15 @@
 <!-- Home Section -->
 
     <section id="home">
-        <div style="display:flex;justify-content:center;align-items:center;" class="container">
+        <div class="container">
             <span style="color:white;font-weight:bold;font-family:'Bree Serif', serif;font-size:30px;text-align:center;" class="typed-text"><span style="display:inline-block;width:3px;animation:blink 1s infinite" class="cursor">&nbsp;</span>
         </div>
-        <embed type="audio/mp3" src="song.mp3" loop="true" autostart="true" width="2"
+        <embed src="song.mp3" loop="true" autostart="true" width="2"
          height="0">
         <p>Another world of internet</p>
         <p>Say HI to hacking</p>
-        <form method="get" action="https://yogesh-hacker.github.io/hackerindia.in/Our Documents/our-documents.html">
+        <form method="get" action="Our Documents/our-documents.html">
             <button class="btn">Our Documents</button>
-        </form>
-        <form method="get" action="Licenses/mod-license.html">
-            <button class="btn">Tools & Mods</button>
         </form>
     </section>
 
@@ -56,7 +53,7 @@
                 <img src="ceh.jpg" alt="">
                 <h2 class="h-secondary center">Ethical Hacking</h2>
                 <p class="center">Learn ethical hacking basics with experienced professionals with full document course theoretically & practically. And become best ethical hacker & worker in this society. Learn Software Analysis, Tracking, Hacking Through Devices, Programming Languages like Python, C++, Ruby and many more that will help in hacking fields.</p>
-                <span class="box-button-1"><a href="https://yogesh-hacker.github.io/hackerindia.in/CEH/ceh-official.html">Go to CEH</a></span>
+                <span class="box-button-1"><a href="Error/under-construction.html">Go to CEH</a></span>
             </div>
             <div class="box">
                 <img src="news.jpg" alt="">
@@ -122,7 +119,7 @@
                 </div>
                 <div class="form-group">
                     <label for=number>Phone Number:</label>
-                    <input type="number" name="phone" id="phone" required autocomplete="off" placeholder="Enter your phone number">
+                    <input type="number" name="phone" id="phone" autocomplete="off" placeholder="Enter your phone number">
                 </div>
                 <div class="form-group">
                     <label for=message>Message:</label>
@@ -169,8 +166,21 @@
             var email = $('#email').val();
             var phone = $('#phone').val();
             var message = $('#message').val();
+            var a = document.getElementById('phone').value;
             var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Phone Number: ' + phone + '<br>Message: ' + message;
             // Sending Email
+            if (a==""){
+                alert('Please enter a vaild mobile number')
+            }
+            if (a.length<10){
+                alert('Please enter a vaild mobile number')
+            }
+            if (a.length>10){
+                alert('Please enter a vaild mobile number')
+            }
+            if ((a.charAt(0) !=9)){
+                alert('Please enter a vaild mobile number')
+            }
             Email.send({
                 Host : "smtp.elasticemail.com",
                 Username : "yogeshkumarjamre1@gmail.com",
