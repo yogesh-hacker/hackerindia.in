@@ -217,15 +217,13 @@ html{
 }
 #form .form {
     position: relative;
-    width: 20rem;
-    height: 3rem;
     margin-bottom: 60px;
 }
 .form input{
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     border: 2px solid #e1e5ee;
     border-radius: .5rem;
     font-family: inherit;
