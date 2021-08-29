@@ -215,11 +215,11 @@ html{
     background: #060b23 repeat center center/cover;
     height: 600px;
 }
-.for-det .form {
+#form .form {
     position: relative;
     width: 20rem;
     height: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .form input{
     position: absolute;
