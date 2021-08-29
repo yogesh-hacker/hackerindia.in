@@ -265,6 +265,7 @@ html{
     font-size: 1.2rem;
     font-family: 'Convergence', Sans-Serif;
     transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .form-group input:focus + span{
@@ -274,6 +275,11 @@ html{
     font-size: 0.8rem;
 }
 
+.form-group input:valid + span{
+    top: 0;
+    background: #060b23;
+    font-size: 0.8rem;
+}
 
 #contact-box form{
     width: 40%;
