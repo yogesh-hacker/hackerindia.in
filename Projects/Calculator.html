@@ -1,0 +1,59 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->  
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title>Calculator</title>
+<link rel="stylesheet" href="Style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>  
+<body>  
+<div class= "formstyle">
+    <form name = "form1" action="javascript:return false();">
+        <audio id="sound1" preload="auto" src="sound.mp3"></audio>
+        <div class="title">
+            <h1 class="heading">Calculator</h1>
+            <span class="sun_battery"></span>
+        </div>
+        <div class="form-group-1">
+            <input id = "calc" type ="text" name = "answer" disabled="">
+        </div>
+        <div class="form-group-2">
+            <button id="numc" onclick="form1.answer.value = ' '; document.getElementById('sound1').play();">C</button>
+            <button id="numpm" onclick="form1.answer.value += '-'; document.getElementById('sound1').play();">+/-</button>
+            <button id="numcut" type="button" onclick="setBack(); document.getElementById('sound1').play();">←</button>
+            <button id="numdiv" onclick="form1.answer.value += '/'; document.getElementById('sound1').play(); ">÷</button>
+        </div>
+        <div class="form-group-3">
+            <button id="num7" onclick="form1.answer.value += '7'; document.getElementById('sound1').play(); ">7</button> 
+            <button id="num8" onclick="form1.answer.value += '8'; document.getElementById('sound1').play(); ">8</button> 
+            <button id="num9" onclick="form1.answer.value += '9'; document.getElementById('sound1').play(); ">9</button>
+            <button id="nummul" onclick="form1.answer.value += '*'; document.getElementById('sound1').play(); ">×</button>
+        </div>
+        <div class="form-group-4">
+            <button id="num4" onclick="form1.answer.value += '4'; document.getElementById('sound1').play(); ">4</button>
+            <button id="num5" onclick="form1.answer.value += '5'; document.getElementById('sound1').play(); ">5</button>
+            <button id="num6" onclick="form1.answer.value += '6'; document.getElementById('sound1').play(); ">6</button>
+            <button id="num-" onclick="form1.answer.value += '-'; document.getElementById('sound1').play(); ">-</button>
+        </div>
+        <div class="form-group-5">
+            <button id="num1" onclick="form1.answer.value += '1'; document.getElementById('sound1').play(); ">1</button>
+            <button id="num2" onclick="form1.answer.value += '2'; document.getElementById('sound1').play(); ">2</button>
+            <button id="num3" onclick="form1.answer.value += '3'; document.getElementById('sound1').play(); ">3</button>
+            <button id="numplus" onclick="form1.answer.value += '+'; document.getElementById('sound1').play(); ">+</button>
+        </div>
+        <div class="form-group-6">
+            <button id="num0" onclick="form1.answer.value += '0'; document.getElementById('sound1').play(); ">0</button>
+            <button id="numdot" onclick="form1.answer.value += '.'; document.getElementById('sound1').play(); ">.</button>
+            <button id="num=" onclick = "form1.answer.value = eval(form1.answer.value);document.getElementById('sound1').play();">=</button> 
+        </div>
+    </form>  
+</div>
+<script>
+    function setBack(){
+        document.getElementById('calc').value = document.getElementById('calc').value.substring(0, document.getElementById('calc').value.length - 1);focus();}
+</script>
+</body>  
+</html>  
