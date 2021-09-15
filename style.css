@@ -270,6 +270,7 @@ html{
     margin-bottom: 25px;
     position: relative;
     margin-top: 10px;
+    margin-right: 10px;
 }
 .form-group input{
     width: 100%;
