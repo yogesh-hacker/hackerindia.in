@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HaCkEr InDiA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/vs2015.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+<!--Output-->
+<div class="information">
+    <h2>How to make a working Calculator with HTML, CSS, JavaScript</h2>
+    <input type="button" name="previous" id="previous" value="< Previous" />
+    <input type="button" name="next" id="next" value="Next >" />
+    <hr with=100% color=lightgrey size=1>
+    <p>
+Learn how to make a awesome working Calculator with sound effetcs.</p>
+    <hr with=100% color=lightgrey size=1>
+</div>
+
+<section id="output">
+<div class= "formstyle">
+    <form name = "form1" action="javascript:return false();">
+        <audio id="sound1" preload="auto" src="sound.mp3"></audio>
+        <div class="title">
+            <h1 class="heading">Calculator</h1>
+            <span class="sun_battery"></span>
+        </div>
+        <div class="form-group-1">
+            <input id = "calc" type ="text" name = "answer" disabled="">
+        </div>
+        <div class="form-group 2">
+            <button id="numc" onclick="form1.answer.value = ' '; document.getElementById('sound1').play();">C</button>
+            <button id="numpm" onclick="form1.answer.value += '-'; document.getElementById('sound1').play();">+/-</button>
+            <button id="numcut" type="button" onclick="setBack(); document.getElementById('sound1').play();">←</button>
+            <button id="numdiv" onclick="form1.answer.value += '/'; document.getElementById('sound1').play(); ">÷</button>
+        </div>
+        <div class="form-group 3">
+            <button id="num7" onclick="form1.answer.value += '7'; document.getElementById('sound1').play(); ">7</button> 
+            <button id="num8" onclick="form1.answer.value += '8'; document.getElementById('sound1').play(); ">8</button> 
+            <button id="num9" onclick="form1.answer.value += '9'; document.getElementById('sound1').play(); ">9</button>
+            <button id="nummul" onclick="form1.answer.value += '*'; document.getElementById('sound1').play(); ">×</button>
+        </div>
+        <div class="form-group 4">
+            <button id="num4" onclick="form1.answer.value += '4'; document.getElementById('sound1').play(); ">4</button>
+            <button id="num5" onclick="form1.answer.value += '5'; document.getElementById('sound1').play(); ">5</button>
+            <button id="num6" onclick="form1.answer.value += '6'; document.getElementById('sound1').play(); ">6</button>
+            <button id="num-" onclick="form1.answer.value += '-'; document.getElementById('sound1').play(); ">-</button>
+        </div>
+        <div class="form-group 5">
+            <button id="num1" onclick="form1.answer.value += '1'; document.getElementById('sound1').play(); ">1</button>
+            <button id="num2" onclick="form1.answer.value += '2'; document.getElementById('sound1').play(); ">2</button>
+            <button id="num3" onclick="form1.answer.value += '3'; document.getElementById('sound1').play(); ">3</button>
+            <button id="numplus" onclick="form1.answer.value += '+'; document.getElementById('sound1').play(); ">+</button>
+        </div>
+        <div class="form-group">
+            <button id="num0" onclick="form1.answer.value += '0'; document.getElementById('sound1').play(); ">0</button>
+            <button id="numdot" onclick="form1.answer.value += '.'; document.getElementById('sound1').play(); ">.</button>
+            <button id="num=" onclick = "form1.answer.value = eval(form1.answer.value);document.getElementById('sound1').play();">=</button> 
+        </div>
+    </form>  
+</div>
+</section>
+
+        <!--Input/Source Code-->
+
+<!--HTML-->
+<div class="information">
+    <hr with=100% color=lightgrey size=1>
+    <h2>Awesome! Calculator</h2>
+    <h3>Step 1) Add HTML:</h3>
+</div>
+    <h2>Example</h2>
+<section id="languages">
+<input type="button" onclick="myFunction()" name="copy" id="copy" value="Copy" />
+<div class="code">
+<pre><code class="html" id="codeblock">
+&lt;!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. --&gt;  
+&lt;!DOCTYPE html&gt;  
+&lt;html lang = "en"&gt;  
+&lt;head&gt;  
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; 
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt; 
+    &lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/head&gt;  
+&lt;body&gt;
+    &lt;div class= "formstyle"&gt;
+        &lt;form name = "form1" action="javascript:return false();"&gt;
+            &lt;audio id="sound1" preload="auto" src="sound.mp3"&gt;&lt;/audio&gt;
+            &lt;div class="title"&gt;
+                &lt;h1 class="heading"&gt;Calculator&lt;/h1&gt;
+                &lt;span class="sun_battery"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group-1"&gt;
+                &lt;input id = "calc" type ="text" name = "answer" disabled=""&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group-2"&gt;
+                &lt;button id="numc" onclick="form1.answer.value = ' '; document.getElementById('sound1').play();"&gt;C&lt;/button&gt;
+                &lt;button id="numpm" onclick="form1.answer.value += '-'; document.getElementById('sound1').play();"&gt;+/-&lt;/button&gt;
+                &lt;button id="numcut" type="button" onclick="setBack(); document.getElementById('sound1').play();"&gt;←&lt;/button&gt;
+                &lt;button id="numdiv" onclick="form1.answer.value += '/'; document.getElementById('sound1').play(); "&gt;÷&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group-3"&gt;
+                &lt;button id="num7" onclick="form1.answer.value += '7'; document.getElementById('sound1').play(); "&gt;7&lt;/button&gt; 
+                &lt;button id="num8" onclick="form1.answer.value += '8'; document.getElementById('sound1').play(); "&gt;8&lt;/button&gt; 
+                &lt;button id="num9" onclick="form1.answer.value += '9'; document.getElementById('sound1').play(); "&gt;9&lt;/button&gt;
+                &lt;button id="nummul" onclick="form1.answer.value += '*'; document.getElementById('sound1').play(); "&gt;×&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group-4"&gt;
+                &lt;button id="num4" onclick="form1.answer.value += '4'; document.getElementById('sound1').play(); "&gt;4&lt;/button&gt;
+                &lt;button id="num5" onclick="form1.answer.value += '5'; document.getElementById('sound1').play(); "&gt;5&lt;/button&gt;
+                &lt;button id="num6" onclick="form1.answer.value += '6'; document.getElementById('sound1').play(); "&gt;6&lt;/button&gt;
+                &lt;button id="num-" onclick="form1.answer.value += '-'; document.getElementById('sound1').play(); "&gt;-&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group-5"&gt;
+                &lt;button id="num1" onclick="form1.answer.value += '1'; document.getElementById('sound1').play(); "&gt;1&lt;/button&gt;
+                &lt;button id="num2" onclick="form1.answer.value += '2'; document.getElementById('sound1').play(); "&gt;2&lt;/button&gt;
+                &lt;button id="num3" onclick="form1.answer.value += '3'; document.getElementById('sound1').play(); "&gt;3&lt;/button&gt;
+                &lt;button id="numplus" onclick="form1.answer.value += '+'; document.getElementById('sound1').play(); "&gt;+&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group-6"&gt;
+                &lt;button id="num0" onclick="form1.answer.value += '0'; document.getElementById('sound1').play(); "&gt;0&lt;/button&gt;
+                &lt;button id="numdot" onclick="form1.answer.value += '.'; document.getElementById('sound1').play(); "&gt;.&lt;/button&gt;
+                &lt;button id="num=" onclick = "form1.answer.value = eval(form1.answer.value);document.getElementById('sound1').play();"&gt;=&lt;/button&gt; 
+            &lt;/div&gt;
+        &lt;/form&gt;  
+    &lt;/div&gt;
+&lt;/body&gt;  
+&lt;/html&gt;
+</code></pre>
+</div>
+</section>
+
+<!--CSS-->
+<div class="information">
+    <hr with=100% color=lightgrey size=1>
+    <h3>Step 2) Add CSS:</h3>
+</div>
+    <h2>Example</h2>
+
+<section id="languages">
+<input type="button" name="copy" id="copy" value="Copy" />
+<pre><code class="CSS">
+.title{
+    display: flex;
+}
+
+.heading{
+    color: white;
+}
+
+.sun_battery{
+    margin-top: 23px;
+    margin-left: 30px;
+    width: 107px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #3d2115;
+    background-image: repeating-linear-gradient(to right,transparent,transparent 26px,rgba(255, 255, 255, .1) 26px,rgba(255, 255, 255, .1) 27px);
+    box-shadow: 0 -3px 5px -3px rgba(255, 255, 255, .2),
+    5px 0 3px -5px rgba(255, 255, 255, .8),
+    0 2px 5px -2px rgba(0, 0, 0, .5),
+    -3px 0 3px -1px rgba(0, 0, 0, .8),
+    inset 0 -5px 3px -3px rgba(0, 0, 0, .5),
+    inset 5px 0 5px -2px rgba(0, 0, 0, .8);
+}
+
+form{
+    display: grid;
+    background: radial-gradient(#5e6470, #161213) !important;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .7),
+    0 0 20px 0 rgba(0, 0, 0, .5),
+    0 0 25px 0 rgba(0, 0, 0, .3),
+    10px 0 4px 10px rgba(0, 0, 0, .3),
+    inset 0 0 3px 0 rgba(0, 0, 0, .7),
+    inset 0 0 10px 0 rgba(0, 0, 0, .5),
+    inset 0 -25px 5px 0 rgba(0, 0, 0, .2),
+    inset 0 -5px 10px 0 rgba(255, 255, 255, .3);
+}
+
+.form-group-1{
+    display: flex;
+}
+
+.form-group{
+    display: flex;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+    width: 304px;
+    height: 64px;
+}
+
+.form-group-1 input{
+    font-family: &apos;Orbitron&apos;;
+    font-stretch: ;
+    font-style: normal;
+    color: black;
+    width: 304px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: right;
+    background: linear-gradient(-155deg, #44443a 0%, #656f66 100%);;
+    box-shadow: 0 -4px 4px -3px rgba(255, 255, 255, .3),
+    5px 0 3px -5px rgba(255, 255, 255, .8),
+    0 5px 5px -3px rgba(0, 0, 0, .5),
+    -3px 0 3px -1px rgba(0, 0, 0, .8),
+    inset 0 -5px 3px -3px rgba(0, 0, 0, .5),
+    inset 5px 0 5px -2px rgba(0, 0, 0, .8);
+}
+
+button{
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-weight: bold;
+    margin: 2.5px;
+    font-family: &apos;Times New Roman&apos;;
+    border: 0px solid white;
+    color: white !important;
+    background: linear-gradient(25deg, #525a65, #3b424c) !important;
+    box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    4px 1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 1px 0 rgba(0, 0, 0, .5),
+    4px -1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 5px 0 rgba(0, 0, 0, .5),
+    5px 0 1px 0 rgba(255, 255, 255, .3); !important
+    transform: translate(1px, -1px);
+}
+
+button:focus{
+    box-shadow: inset 1px -1px 3px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    0px -1px 1px 0 rgba(0, 0, 0, .5),
+    0px -1px 1px 0 rgba(0, 0, 0, .5),
+    1px 1px 1px 0 rgba(0, 0, 0, .5),
+    0px -1px 1px 0 rgba(0, 0, 0, .5),
+    0px 0 1px 0 rgba(255, 255, 255, .3); !important
+    transform: translate(1px, -1px);
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    transition: .3s;
+}
+
+button:active {
+    box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    3px 1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 1px 0 rgba(0, 0, 0, .5),
+    3px -1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 5px 0 rgba(0, 0, 0, .5),
+    4px 0 1px 0 rgba(255, 255, 255, .3);
+    transform: translate(1px, -1px);
+}
+
+</code></pre>
+</section>
+
+<!--JavaScript-->
+<div class="information">
+    <hr with=100% color=lightgrey size=1>
+    <h3>Step 3) Add JavaScript:</h3>
+</div>
+    <h2>Example</h2>
+<section id="languages">
+<input type="button" name="copy" id="copy" value="Copy" />
+<pre><code class="javascript">function setBack(){
+        document.getElementById(&apos;calc&apos;).value = document.getElementById(&apos;calc&apos;).value.substring(0, document.getElementById(&apos;calc&apos;).value.length - 1);focus();}
+</code></pre>
+</section>
+
+
+<footer>
+    <div class="center">
+        Copyright &copy; <a href="#home">www.HackerIndia.in</a> All rights reserved!
+    </div>
+</footer>
+</body>
+</html>
