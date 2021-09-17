@@ -1,6 +1,10 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head Section-->
+
 <head>
+    <title>HaCkEr InDiA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,160 +14,131 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="main.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
+<!-- Body Starts-->
+
 <body>
-<!--Output-->
-<div class="information">
-    <h2>How to make a working Calculator with HTML, CSS, JavaScript</h2>
-    <input type="button" name="previous" id="previous" value="< Previous" />
-    <input type="button" name="next" id="next" value="Next >" />
-    <hr with=100% color=lightgrey size=1>
-    <p>
-Learn how to make a awesome working Calculator with sound effetcs.</p>
-    <hr with=100% color=lightgrey size=1>
-</div>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://yogesh-hacker.github.io/hackerindia.in/logo.png" alt="HackerIndia.in">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">About</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
 
-<section id="output">
-<div class= "formstyle">
-    <form name = "form1" action="javascript:return false();">
-        <audio id="sound1" preload="auto" src="sound.mp3"></audio>
-        <div class="title">
-            <h1 class="heading">Calculator</h1>
-            <span class="sun_battery"></span>
-        </div>
-        <div class="form-group-1">
-            <input id = "calc" type ="text" name = "answer" disabled="">
-        </div>
-        <div class="form-group 2">
-            <button id="numc" onclick="form1.answer.value = ' '; document.getElementById('sound1').play();">C</button>
-            <button id="numpm" onclick="form1.answer.value += '-'; document.getElementById('sound1').play();">+/-</button>
-            <button id="numcut" type="button" onclick="setBack(); document.getElementById('sound1').play();">←</button>
-            <button id="numdiv" onclick="form1.answer.value += '/'; document.getElementById('sound1').play(); ">÷</button>
-        </div>
-        <div class="form-group 3">
-            <button id="num7" onclick="form1.answer.value += '7'; document.getElementById('sound1').play(); ">7</button> 
-            <button id="num8" onclick="form1.answer.value += '8'; document.getElementById('sound1').play(); ">8</button> 
-            <button id="num9" onclick="form1.answer.value += '9'; document.getElementById('sound1').play(); ">9</button>
-            <button id="nummul" onclick="form1.answer.value += '*'; document.getElementById('sound1').play(); ">×</button>
-        </div>
-        <div class="form-group 4">
-            <button id="num4" onclick="form1.answer.value += '4'; document.getElementById('sound1').play(); ">4</button>
-            <button id="num5" onclick="form1.answer.value += '5'; document.getElementById('sound1').play(); ">5</button>
-            <button id="num6" onclick="form1.answer.value += '6'; document.getElementById('sound1').play(); ">6</button>
-            <button id="num-" onclick="form1.answer.value += '-'; document.getElementById('sound1').play(); ">-</button>
-        </div>
-        <div class="form-group 5">
-            <button id="num1" onclick="form1.answer.value += '1'; document.getElementById('sound1').play(); ">1</button>
-            <button id="num2" onclick="form1.answer.value += '2'; document.getElementById('sound1').play(); ">2</button>
-            <button id="num3" onclick="form1.answer.value += '3'; document.getElementById('sound1').play(); ">3</button>
-            <button id="numplus" onclick="form1.answer.value += '+'; document.getElementById('sound1').play(); ">+</button>
-        </div>
-        <div class="form-group">
-            <button id="num0" onclick="form1.answer.value += '0'; document.getElementById('sound1').play(); ">0</button>
-            <button id="numdot" onclick="form1.answer.value += '.'; document.getElementById('sound1').play(); ">.</button>
-            <button id="num=" onclick = "form1.answer.value = eval(form1.answer.value);document.getElementById('sound1').play();">=</button> 
-        </div>
-    </form>  
-</div>
-</section>
+            <!--Output-->
+<div class="hi3-bar hi3-card-2 notranslate" style="z-index: -7;font-size: 18px;background-color: white;color:#282A35;padding-left:12px;padding-right:16px;font-family: 'Source Sans Pro', sans-serif;">
+  <a href="https://www.hi3schools.com/" class="hi3-bar-item hi3-button hi3-hover-none hi3-left hi3-padding-16" title="Home" style="width:77px">
+    <i class="fa fa-logo ws-text-green ws-hover-text-green" style="position:relative;font-size:42px!important;"></i>
+  </a>
 
-        <!--Input/Source Code-->
 
-<!--HTML-->
-<div class="information">
-    <hr with=100% color=lightgrey size=1>
-    <h2>Awesome! Calculator</h2>
-    <h3>Step 1) Add HTML:</h3>
+<h1>How TO - Make Awsome! Calculator</h1>
+<div class="hi3-clear nextprev">
+<a class="hi3-left ws-btn" href="#">❮ Previous</a>
+<a class="hi3-right ws-btn" href="#">Next ❯</a>
 </div>
-    <h2>Example</h2>
-<section id="languages">
-<input type="button" onclick="myFunction()" name="copy" id="copy" value="Copy" />
-<div class="code">
-<pre><code class="html" id="codeblock">
-&lt;!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. --&gt;  
-&lt;!DOCTYPE html&gt;  
-&lt;html lang = "en"&gt;  
-&lt;head&gt;  
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
-    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"&gt;
-    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; 
-    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt; 
-    &lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"&gt;
-    &lt;script src="main.js"&gt;&lt;/script&gt;
-&lt;/head&gt;  
+<hr>
+<p class="intro">Learn how make a working calculator with HTML, CSS, JavaScript.</p>
+<hr>
+<img src="content-icon.jpg" width="332" height="">
+<hr>
+<h2>Awsome! calculator</h2>
+<h5>Step 1) Add HTML:</h5>
+<div class="hi3-example">
+<h3>Example</h3>
+<div class="hi3-code notranslate htmlHigh">
+<pre><code class="html">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;Awsome! Calculator&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/vs2015.min.css&quot;&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+    &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
+
+&lt;/head&gt;
 &lt;body&gt;
-    &lt;div class= "formstyle"&gt;
-        &lt;form name = "form1" action="javascript:return false();"&gt;
-            &lt;audio id="sound1" preload="auto" src="sound.mp3"&gt;&lt;/audio&gt;
-            &lt;div class="title"&gt;
-                &lt;h1 class="heading"&gt;Calculator&lt;/h1&gt;
-                &lt;span class="sun_battery"&gt;&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group-1"&gt;
-                &lt;input id = "calc" type ="text" name = "answer" disabled=""&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group-2"&gt;
-                &lt;button id="numc" onclick="form1.answer.value = ' '; document.getElementById('sound1').play();"&gt;C&lt;/button&gt;
-                &lt;button id="numpm" onclick="form1.answer.value += '-'; document.getElementById('sound1').play();"&gt;+/-&lt;/button&gt;
-                &lt;button id="numcut" type="button" onclick="setBack(); document.getElementById('sound1').play();"&gt;←&lt;/button&gt;
-                &lt;button id="numdiv" onclick="form1.answer.value += '/'; document.getElementById('sound1').play(); "&gt;÷&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group-3"&gt;
-                &lt;button id="num7" onclick="form1.answer.value += '7'; document.getElementById('sound1').play(); "&gt;7&lt;/button&gt; 
-                &lt;button id="num8" onclick="form1.answer.value += '8'; document.getElementById('sound1').play(); "&gt;8&lt;/button&gt; 
-                &lt;button id="num9" onclick="form1.answer.value += '9'; document.getElementById('sound1').play(); "&gt;9&lt;/button&gt;
-                &lt;button id="nummul" onclick="form1.answer.value += '*'; document.getElementById('sound1').play(); "&gt;×&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group-4"&gt;
-                &lt;button id="num4" onclick="form1.answer.value += '4'; document.getElementById('sound1').play(); "&gt;4&lt;/button&gt;
-                &lt;button id="num5" onclick="form1.answer.value += '5'; document.getElementById('sound1').play(); "&gt;5&lt;/button&gt;
-                &lt;button id="num6" onclick="form1.answer.value += '6'; document.getElementById('sound1').play(); "&gt;6&lt;/button&gt;
-                &lt;button id="num-" onclick="form1.answer.value += '-'; document.getElementById('sound1').play(); "&gt;-&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group-5"&gt;
-                &lt;button id="num1" onclick="form1.answer.value += '1'; document.getElementById('sound1').play(); "&gt;1&lt;/button&gt;
-                &lt;button id="num2" onclick="form1.answer.value += '2'; document.getElementById('sound1').play(); "&gt;2&lt;/button&gt;
-                &lt;button id="num3" onclick="form1.answer.value += '3'; document.getElementById('sound1').play(); "&gt;3&lt;/button&gt;
-                &lt;button id="numplus" onclick="form1.answer.value += '+'; document.getElementById('sound1').play(); "&gt;+&lt;/button&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group-6"&gt;
-                &lt;button id="num0" onclick="form1.answer.value += '0'; document.getElementById('sound1').play(); "&gt;0&lt;/button&gt;
-                &lt;button id="numdot" onclick="form1.answer.value += '.'; document.getElementById('sound1').play(); "&gt;.&lt;/button&gt;
-                &lt;button id="num=" onclick = "form1.answer.value = eval(form1.answer.value);document.getElementById('sound1').play();"&gt;=&lt;/button&gt; 
-            &lt;/div&gt;
-        &lt;/form&gt;  
-    &lt;/div&gt;
-&lt;/body&gt;  
+
+&lt;section id=&quot;output&quot;&gt;
+&lt;div class= &quot;formstyle&quot;&gt;
+    &lt;form name = &quot;form1&quot; action=&quot;javascript:return false();&quot;&gt;
+        &lt;audio id=&quot;sound1&quot; preload=&quot;auto&quot; src=&quot;sound.mp3&quot;&gt;&lt;/audio&gt;
+        &lt;div class=&quot;title&quot;&gt;
+            &lt;h1 class=&quot;heading&quot;&gt;Calculator&lt;/h1&gt;
+            &lt;span class=&quot;sun_battery&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group-1&quot;&gt;
+            &lt;input id = &quot;calc&quot; type =&quot;text&quot; name = &quot;answer&quot; disabled=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group 2&quot;&gt;
+            &lt;button id=&quot;numc&quot; onclick=&quot;form1.answer.value = &apos; &apos;; document.getElementById(&apos;sound1&apos;).play();&quot;&gt;C&lt;/button&gt;
+            &lt;button id=&quot;numpm&quot; onclick=&quot;form1.answer.value += &apos;-&apos;; document.getElementById(&apos;sound1&apos;).play();&quot;&gt;+/-&lt;/button&gt;
+            &lt;button id=&quot;numcut&quot; type=&quot;button&quot; onclick=&quot;setBack(); document.getElementById(&apos;sound1&apos;).play();&quot;&gt;←&lt;/button&gt;
+            &lt;button id=&quot;numdiv&quot; onclick=&quot;form1.answer.value += &apos;/&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;÷&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group 3&quot;&gt;
+            &lt;button id=&quot;num7&quot; onclick=&quot;form1.answer.value += &apos;7&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;7&lt;/button&gt; 
+            &lt;button id=&quot;num8&quot; onclick=&quot;form1.answer.value += &apos;8&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;8&lt;/button&gt; 
+            &lt;button id=&quot;num9&quot; onclick=&quot;form1.answer.value += &apos;9&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;9&lt;/button&gt;
+            &lt;button id=&quot;nummul&quot; onclick=&quot;form1.answer.value += &apos;*&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;×&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group 4&quot;&gt;
+            &lt;button id=&quot;num4&quot; onclick=&quot;form1.answer.value += &apos;4&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;4&lt;/button&gt;
+            &lt;button id=&quot;num5&quot; onclick=&quot;form1.answer.value += &apos;5&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;5&lt;/button&gt;
+            &lt;button id=&quot;num6&quot; onclick=&quot;form1.answer.value += &apos;6&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;6&lt;/button&gt;
+            &lt;button id=&quot;num-&quot; onclick=&quot;form1.answer.value += &apos;-&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;-&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group 5&quot;&gt;
+            &lt;button id=&quot;num1&quot; onclick=&quot;form1.answer.value += &apos;1&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;1&lt;/button&gt;
+            &lt;button id=&quot;num2&quot; onclick=&quot;form1.answer.value += &apos;2&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;2&lt;/button&gt;
+            &lt;button id=&quot;num3&quot; onclick=&quot;form1.answer.value += &apos;3&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;3&lt;/button&gt;
+            &lt;button id=&quot;numplus&quot; onclick=&quot;form1.answer.value += &apos;+&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;+&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;button id=&quot;num0&quot; onclick=&quot;form1.answer.value += &apos;0&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;0&lt;/button&gt;
+            &lt;button id=&quot;numdot&quot; onclick=&quot;form1.answer.value += &apos;.&apos;; document.getElementById(&apos;sound1&apos;).play(); &quot;&gt;.&lt;/button&gt;
+            &lt;button id=&quot;num=&quot; onclick = &quot;form1.answer.value = eval(form1.answer.value);document.getElementById(&apos;sound1&apos;).play();&quot;&gt;=&lt;/button&gt; 
+        &lt;/div&gt;
+    &lt;/form&gt;  
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/body&gt;
 &lt;/html&gt;
+
 </code></pre>
 </div>
-</section>
-
-<!--CSS-->
-<div class="information">
-    <hr with=100% color=lightgrey size=1>
-    <h3>Step 2) Add CSS:</h3>
-</div>
-    <h2>Example</h2>
-
-<section id="languages">
-<input type="button" name="copy" id="copy" value="Copy" />
-<pre><code class="CSS">
+<hr>
+<h5>Step 2) Add CSS:</h5>
+<div class="hi3-example">
+<h3>Example</h3>
+<div class="hi3-code notranslate jsHigh">
+<pre><code class="css">
 .title{
     display: flex;
 }
 
 .heading{
     color: white;
+    margin-top: 20px;
 }
 
 .sun_battery{
     margin-top: 23px;
-    margin-left: 30px;
+    margin-left: 80px;
+    margin-bottom: 40px;
     width: 107px;
     height: 30px;
     border-radius: 3px;
@@ -183,6 +158,7 @@ form{
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .7),
     0 0 20px 0 rgba(0, 0, 0, .5),
@@ -197,7 +173,9 @@ form{
 .form-group-1{
     display: flex;
 }
-
+.form-group .6{
+    margin: 200px;
+}
 .form-group{
     display: flex;
     margin-bottom: 2.5px;
@@ -232,6 +210,7 @@ button{
     font-size: 50px;
     color: white;
     background-color: black;
+    position: relative;
     border-radius: 7px;
     width: 100%;
     height: 100%;
@@ -279,28 +258,28 @@ button:active {
     4px 0 1px 0 rgba(255, 255, 255, .3);
     transform: translate(1px, -1px);
 }
-
 </code></pre>
-</section>
-
-<!--JavaScript-->
-<div class="information">
-    <hr with=100% color=lightgrey size=1>
-    <h3>Step 3) Add JavaScript:</h3>
 </div>
-    <h2>Example</h2>
-<section id="languages">
-<input type="button" name="copy" id="copy" value="Copy" />
-<pre><code class="javascript">function setBack(){
+</div>
+
+<hr>
+<h5>Step 2) Add JavaScript:</h5>
+<div class="hi3-example">
+<h3>Example</h3>
+<div class="hi3-code notranslate jsHigh">
+<pre><code class="javascript">
+    function setBack(text){
         document.getElementById(&apos;calc&apos;).value = document.getElementById(&apos;calc&apos;).value.substring(0, document.getElementById(&apos;calc&apos;).value.length - 1);focus();}
 </code></pre>
-</section>
-
+</div>
+</div>
 
 <footer>
     <div class="center">
         Copyright &copy; <a href="#home">www.HackerIndia.in</a> All rights reserved!
     </div>
 </footer>
+
+
 </body>
 </html>
