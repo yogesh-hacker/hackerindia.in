@@ -95,7 +95,10 @@ html{
 
 /* Main Css*/
 
-
+code{
+height:300;
+}
+pre{height:300;}
 h1{
     font-size:36px
 }
