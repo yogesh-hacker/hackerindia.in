@@ -214,13 +214,19 @@ html{
     border: 1px solid grey;
     border-radius: 5px;
 }
-#catas .html{
+#catas .cata-con{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#catas .html button{
+#catas .cata-con2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#catas .cata-con .btn1{
     border: 0px solid grey;
     border-radius: 50%;
     background-color: orange;
@@ -240,7 +246,55 @@ html{
     position: relative;
 }
 
-#catas .html button:hover{
+#catas .cata-con2 .btn1{
+    border: 0px solid grey;
+    border-radius: 50%;
+    background-color: green;
+    padding-top: 0px;
+    color: white;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px 0px green,
+    0px 0px 20px 0px lime,
+    inset 0px 0px 25px 0px lime;
+    inset 0px 0px 25px 0px green;
+    outline: none;
+    position: relative;
+}
+
+#catas .cata-con2 .btn2{
+    border: 0px solid grey;
+    border-radius: 50%;
+    background-color: maroon;
+    padding-top: 0px;
+    color: white;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px 0px maroon,
+    0px 0px 20px 0px orange,
+    inset 0px 0px 25px 0px orange;
+    inset 0px 0px 25px 0px maroon;
+    outline: none;
+    position: relative;
+}
+
+
+
+#catas .cata-con button:hover{
+    color: black;
+    color: blur(4px);
+    background-color: whitesmoke;
+}
+
+#catas .cata-con2 button:hover{
     color: black;
     color: blur(4px);
     background-color: whitesmoke;
@@ -270,7 +324,6 @@ html{
     margin-bottom: 25px;
     position: relative;
     margin-top: 10px;
-    margin-right: 10px;
 }
 .form-group input{
     width: 100%;
