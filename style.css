@@ -204,6 +204,74 @@ html{
     color: white;
 }
 
+/* Files Section */
+
+#catas{
+    position: relative;
+    background: skyblue;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 300px;
+}
+
+.cata-con,
+.cata-con2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#catas button{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 0px solid white;
+}
+
+.cata-con .btn1{
+    background-color: white;
+    box-shadow: 
+    inset 0 0 50px #fff,
+        inset 20px 0 60px violet,
+        inset -20px 0 60px blue,
+        inset 20px 0 300px violet,
+        inset -20px 0 300px blue,
+          0 0 50px #fff,
+          -10px 0 60px violet,
+          10px 0 60px blue;
+}
+
+.cata-con2 .btn1{
+    background-color: white;
+    box-shadow: 
+    inset 0 0 50px #fff,
+        inset 20px 0 60px green,
+        inset -20px 0 60px yellow,
+        inset 20px 0 300px green,
+        inset -20px 0 300px yellow,
+          0 0 50px #fff,
+          -10px 0 60px green,
+          10px 0 60px orange;
+}
+
+.cata-con2 .btn2{
+    background-color: white;
+    box-shadow: 
+    inset 0 0 50px #fff,
+        inset 20px 0 60px orange,
+        inset -20px 0 60px red,
+        inset 20px 0 300px orange,
+        inset -20px 0 300px red,
+          0 0 50px #fff,
+          -10px 0 60px orange,
+          10px 0 60px yellow;
+}
+
+
+
 /* Contact Section */
 #contact{
     position: relative;
@@ -222,44 +290,7 @@ html{
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
-}
-#contact-box input, 
-#contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border: 2px solid #e1e5ee;
-    border-radius: .5rem;
-    font-family: 'Convergence', Sans-Serif;
-    font-size: 1.1rem;
-    color: white;
-    background: none;
-    outline: none;
-} 
-
-#contact-box input:hover, 
-#contact-box textarea:hover{
-    border-color: #adffff;
-}
-
-#contact-box input:focus, 
-#contact-box textarea:focus{
-    border-color: #18ffff;
-}
-
-#contact-box form{
-    width: 40%;
-}
-
-#contact-box label{
-   font-size: 1.3rem;
-   font-family: 'Bree Serif', serif;
-   color: white;
-
-}
-
-
-#contact-box form{
-    width: 40%;
+    position: relative;
 }
 
 .form-group button{
@@ -281,6 +312,87 @@ html{
     color: black;
 }
 
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .8rem;
+    border: 2px solid #e1e5ee;
+    border-radius: .5rem;
+    font-family: 'Convergence', Sans-Serif;
+    font-size: 1.1rem;
+    color: white;
+    background: none;
+    padding-left: 15px;
+    outline: none;
+}
+
+
+#contact-box input:hover, 
+#contact-box textarea:hover{
+    border-color: #adffff;
+}
+
+#contact-box input:focus, 
+#contact-box textarea:focus{
+    border-color: #18ffff;
+}
+
+#contact-box input:focus + label,
+#contact-box #ota textarea:focus + label{
+    top: 0;
+    left: 10px;
+    background-color: #060b23;
+    font-size: 1.1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: .3s;
+}
+
+#contact-box input:valid + label,
+#contact-box #ota textarea:valid + label{
+    top: 0;
+    left: 10px;
+    background-color: #060b23;
+    font-size: 1.1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: .3s;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+
+#contact-box .form-group label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 15px;
+   transform: translateY(-50%);
+}
+
+#contact-box #ota label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   color: white;
+   position: absolute;
+   top: 24px;
+   left: 15px;
+}
+
+
+#contact-box form{
+    width: 40%;
+}
 
 #load {
     transition: 2s;
@@ -291,7 +403,7 @@ html{
     display: none;
     align-items: center;
     justify-content: center;
-    left: 110px;
+    left: 100px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -319,6 +431,20 @@ footer{
     color: white;
     padding: 9px 20px;
 }
+
+footer a{
+    background: grey;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background: grey;
+    color: red;
+    text-decoration: underline;
+}
+
+
 
 
 /* Utility Classes */
