@@ -35,124 +35,63 @@ html{
 }
 
 /* Navigation Bar */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} 
-nav{
-  display: flex;
-  height: 70px;
-  width: 100%;
-  background: #1b1b1b;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: +2;
 }
-nav .logo{
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
 }
-nav .logo img{
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
     border-radius: 50%;
 }
-nav ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
 }
-nav ul li{
-  margin: 0 5px;
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
 }
-nav ul li a{
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-nav ul li a.active,
-nav ul li a:hover{
-  color: #111;
-  background: #fff;
-}
-nav .menu-btn i{
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"]{
-  display: none;
-}
-@media (max-width: 1000px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-}
-@media (max-width: 920px) {
-  nav .menu-btn i{
+
+#navbar ul li a{
+    color: white;
     display: block;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  nav ul{
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    background: none;
-    color: cyan;
-  }
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
 }
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b;
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
 }
-.content div{
-  font-size: 40px;
-  font-weight: 700;
-}
+
 
 /* Home Section */
 
@@ -196,15 +135,9 @@ input[type="checkbox"]{
     font-family: 'Bree Serif', serif;
 }
 
-#home img{
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
 
 /* Services Section */
-.services-container{
-    margin-top: 40px;
-}
+
 #services{
     margin: 34px;
     display: flex;
@@ -271,102 +204,6 @@ input[type="checkbox"]{
     color: white;
 }
 
-/*Catagory Section*/
-#catas{
-    position: relative;
-    background-color: #C0E2F0;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGUlEQVQ4y2NgoBJwoJAedcGoC0ZdMOAuAABF0hABJ/8lyQAAAABJRU5ErkJggg==);
-    height: 300px;
-    margin: 6px;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-#catas .cata-con{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#catas .cata-con2{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#catas .cata-con .btn1{
-    border: 0px solid grey;
-    border-radius: 50%;
-    background-color: orange;
-    padding-top: 0px;
-    color: white;
-    font-weight: 700;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 20px 0px orange,
-    0px 0px 20px 0px yellow,
-    inset 0px 0px 25px 0px yellow;
-    inset 0px 0px 25px 0px orange;
-    outline: none;
-    position: relative;
-}
-
-#catas .cata-con2 .btn1{
-    border: 0px solid grey;
-    border-radius: 50%;
-    background-color: green;
-    padding-top: 0px;
-    color: white;
-    font-weight: 700;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 20px 0px green,
-    0px 0px 20px 0px lime,
-    inset 0px 0px 25px 0px lime;
-    inset 0px 0px 25px 0px green;
-    outline: none;
-    position: relative;
-}
-
-#catas .cata-con2 .btn2{
-    border: 0px solid grey;
-    border-radius: 50%;
-    background-color: maroon;
-    padding-top: 0px;
-    color: white;
-    font-weight: 700;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 20px 0px maroon,
-    0px 0px 20px 0px orange,
-    inset 0px 0px 25px 0px orange;
-    inset 0px 0px 25px 0px maroon;
-    outline: none;
-    position: relative;
-}
-
-
-
-#catas .cata-con button:hover{
-    color: black;
-    color: blur(4px);
-    background-color: whitesmoke;
-}
-
-#catas .cata-con2 button:hover{
-    color: black;
-    color: blur(4px);
-    background-color: whitesmoke;
-}
-
 /* Contact Section */
 #contact{
     position: relative;
@@ -386,15 +223,10 @@ input[type="checkbox"]{
     align-items: center;
     padding-bottom: 34px;
 }
-.form-group,
-.form-group-3{
-    margin-bottom: 25px;
-    position: relative;
-    margin-top: 10px;
-}
-.form-group input{
+#contact-box input, 
+#contact-box textarea{
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.5rem;
     border: 2px solid #e1e5ee;
     border-radius: .5rem;
     font-family: 'Convergence', Sans-Serif;
@@ -402,125 +234,71 @@ input[type="checkbox"]{
     color: white;
     background: none;
     outline: none;
-    position: relative;
-}
+} 
 
-.form-group-3 textarea{
-    width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #e1e5ee;
-    border-radius: .5rem;
-    font-family: 'Convergence', Sans-Serif;
-    font-size: 1.1rem;
-    color: white;
-    background: none;
-    outline: none;
-    position: relative;
-}
-
-.form-group input:hover{
+#contact-box input:hover, 
+#contact-box textarea:hover{
     border-color: #adffff;
 }
 
-.form-group input:focus{
+#contact-box input:focus, 
+#contact-box textarea:focus{
     border-color: #18ffff;
 }
 
-.form-group-3 textarea:hover{
-    border-color: #adffff;
+#contact-box form{
+    width: 40%;
 }
 
-.form-group-3 textarea:focus{
-    border-color: #18ffff;
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   color: white;
+
 }
 
-.form-group label{
-    font-size: 1.3rem;
-    font-family: 'Convergence',Sans-Serif;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    transition: .2s;
-}
-.form-group-3 label{
-    font-size: 1.3rem;
-    font-family: 'Convergence',Sans-Serif;
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 15px;
-    transform: translateY(-50%);
-    transition: .2s;
-}
-input:focus + label,
-textarea:focus + label{
-    top: 0;
-    left: 10px;
-    background: #060b23;
-    font-size: 15px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
 
-input:valid + label,
-textarea:valid +label{
-    top: 0;
-    left: 10px;
-    background: #060b23;
-    font-size: 15px;
-    padding-left: 4px;
-    padding-right: 4px;
+#contact-box form{
+    width: 40%;
 }
-
 
 .form-group button{
-    padding: 10px 35px 10px 35px;
-    background: #24a0ed;
+    background-color: #24a0ed;
     color: white;
-    border: 1px solid grey;
+    border: 1px dotted black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
     outline: none;
-    border-radius: 3px;
-    font-size: 15px;
-    font-family: "Times New Roman";
 }
 
 .form-group button:hover{
--webkit-box-shadow: 0 0 0px 5px skyblue;
--moz-box-shadow: 0 0 0px 5px skyblue;
-box-shadow: 0 0 0px 5px skyblue;
-transition: 0.1s;
-border: 1px solid #24a0ed;
-border-radius: 3px;
-}
-
-.form-group button:focus{
--webkit-box-shadow: 0 0 0px 5px skyblue;
--moz-box-shadow: 0 0 0px 5px skyblue;
-box-shadow: 0 0 0px 5px skyblue;
-transition: 0.1s;
-border: 1px solid #24a0ed;
-border-radius: 3px;
+    background-color: skyblue;
+    border: 1px solid black;
+    color: black;
 }
 
 
 #load {
     transition: 2s;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 14px;
+    margin-left: 90px;
     margin-bottom: 1px;
     position: absolute;
     display: none;
     align-items: center;
     justify-content: center;
+    left: 110px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     border: white solid 5px;
     outline: none;
     border-top: green 5px solid;
-    animation: loading infinite 1s;
+    animation: loading infinite 0.6s;
     animation-timing-function: linear;
 }
 
@@ -542,11 +320,6 @@ footer{
     padding: 9px 20px;
 }
 
-footer a{
-    color: white;
-    text-decoration: none;
-}
-
 
 /* Utility Classes */
 
@@ -561,9 +334,7 @@ footer a{
     font-size: 2.3rem;
     padding: 12px;
 }
-.hfuck{
-    color: white !important;
-}
+
 .btn{
     padding: 6px 20px;
     border: 1px solid white;
