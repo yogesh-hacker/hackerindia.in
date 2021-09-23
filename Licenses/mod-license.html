@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/zl-fetch"></script>
     <title>License Key!</title>
  </head>
 
 <body>
     <h3>Please enter the license key</h3>
         <!-- Create Form -->
-        <form id="form" method="GET" action="javascript: myFunction()">
+    <div id="form">
+        <form action="javascript: myFunction();function basiclogin (email, password)" method="get">
             <!-- Details -->
             <div class="form-control">
                 <label for="name" id="label-name">License Key :</label>
@@ -23,6 +25,7 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
+    </div>
         
         
 
@@ -30,10 +33,16 @@
     function myFunction(){
         var key = document.getElementById("key").value;
         if (key=="d8d4ab5d-a142-434d-bfc5-873d8b75f64f"){
-            window.location.replace('../Mods/files.html');
+            window.location = "http://newsii.abudayah.com/photo/2";
+            document.getElementById("key").style.boxShadow = "0px 0px 0px 4px #4bb543";
+            document.getElementById("key").style.border = "1px solid grey";
+            document.cookie = "d8d4ab5d-a142-434d-bfc5-873d8b75f64f";
         }
         else{
-            alert('Wrong License Key')
+            document.getElementById("key").style.boxShadow = "0px 0px 0px 4px #ef9a9a";
+            document.getElementById("key").style.border = "1px solid grey";
+            alert('Wrong License Key');
+
         }
     }
     </script>
