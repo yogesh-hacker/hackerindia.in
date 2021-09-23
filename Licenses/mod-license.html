@@ -16,7 +16,7 @@
     <h3>Please enter the license key</h3>
         <!-- Create Form -->
     <div id="form">
-        <form action="javascript: myFunction();function basiclogin (email, password)" method="get">
+        <form action="javascript: myFunction()" method="get">
             <!-- Details -->
             <div class="form-control">
                 <label for="name" id="label-name">License Key :</label>
@@ -35,12 +35,12 @@
         if (key=="d8d4ab5d-a142-434d-bfc5-873d8b75f64f"){
             window.location = "http://newsii.abudayah.com/photo/2";
             document.getElementById("key").style.boxShadow = "0px 0px 0px 4px #4bb543";
-            document.getElementById("key").style.border = "1px solid grey";
+            document.getElementById("key").style.border = "1px solid green";
             document.cookie = "d8d4ab5d-a142-434d-bfc5-873d8b75f64f";
         }
         else{
             document.getElementById("key").style.boxShadow = "0px 0px 0px 4px #ef9a9a";
-            document.getElementById("key").style.border = "1px solid grey";
+            document.getElementById("key").style.border = "1px solid red";
             alert('Wrong License Key');
 
         }
