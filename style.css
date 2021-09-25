@@ -19,10 +19,6 @@ h3{
     font-family: 'Encode Sans', Sans-Serif;
 }
 
-#trail{
-    display: none;
-}
-
 #trail .t-btn{
   position: fixed;
   bottom: 0px;
