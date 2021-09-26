@@ -91,5 +91,15 @@
             <button onclick="window.location.replace('https://bit.ly/3F1NwAT')">Watch on MX Player</button>
         </div>
     </section>
+    <a onclick="openLink()">Open With MX Player</a>
+    <script>
+        function openLink () {
+    var appWindow = window.open("MX Player://app/","_system");
+    setTimeout( function () {if (appWindow) {
+        appWindow.location ="https://bit.ly/2ZAUyMJ";
+            }
+            },1000);
+}
+    </script>
 </body>
 </html>
