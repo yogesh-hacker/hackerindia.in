@@ -110,6 +110,7 @@ h3{
   border: none;
   outline: none;
   background-color: green;
+  font-family: 'Baloo Bhai', cursive;
   color: white;
   cursor: pointer;
   width: 350px;
@@ -117,11 +118,6 @@ h3{
   border-radius: 4px;
   margin: 0px 0px 5px 5px;
   outline: none;
-}
-
-#trail button{
-    font-size: 15px;
-    color: lime;
 }
 
 #myBtn {
