@@ -101,7 +101,7 @@ h3{
     font-family: 'Encode Sans', Sans-Serif;
 }
 
-#trail .t-btn{
+#trail button{
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -119,13 +119,9 @@ h3{
   outline: none;
 }
 
-.t-btn button{
+#trail button{
     font-size: 15px;
     color: lime;
-}
-
-.l-small{
-    font-size: 7px;
 }
 
 #myBtn {
