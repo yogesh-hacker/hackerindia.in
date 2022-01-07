@@ -1,4 +1,7 @@
 
+#trail button{
+ width: 650px;
+}
 /* Navigation */
 #navbar {
     flex-direction: column;
