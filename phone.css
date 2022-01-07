@@ -1,6 +1,22 @@
 #trail button{
-    width: 350px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  font-size: 18px;
+  width: 650px;
+  border: none;
+  outline: none;
+  background-color: green;
+  font-family: 'Baloo Bhai', cursive;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 4px;
+  margin: 0px 0px 5px 5px;
+  outline: none;
 }
+
 /* Navigation */
 #navbar {
     flex-direction: column;
