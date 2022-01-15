@@ -298,6 +298,30 @@ h3{
           10px 0 60px yellow;
 }
 
+.cata-con3 .btn1{
+    background-color: yellow;
+    box-shadow: 
+    inset 0 0 50px orange,
+        inset 0px -6px 23px red,
+        inset 0px -3px 10px orange,
+        inset 9px 0px 15px red,
+        inset -10px 0px 18px orange,
+        -5px 0 30px yellow,
+        10px 0 30px orange;
+}
+
+
+.cata-con3 .btn1:hover{
+    background-color: transparent;
+    box-shadow: 
+    inset 0 0 50px orange,
+        inset 0px 0px 0px red,
+        inset 0px 0px 0px orange,
+        inset 9px 0px 15px red,
+        inset 0px 0px 0px orange,
+        -5px 0 30px yellow,
+        10px 0 30px orange;
+
 
 
 /* Contact Section */
