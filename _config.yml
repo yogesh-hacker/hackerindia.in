@@ -24,7 +24,6 @@ custom_header: false
 custom_nav_footer: false
 reverse: false
 
-url: "https://www.hackerindia.ml"
 gems:
   - jekyll-sitemap
 plugins:
