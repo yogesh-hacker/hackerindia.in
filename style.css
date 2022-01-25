@@ -46,552 +46,6 @@ h3{
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 60px;
-  right: 5px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-#myBtn:hover {
-  background-color: #555;
-}
-
-/* Navigation Bar */
-#navbar{
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    z-index: +2;
-}
-
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.8;
-}
-
-/* Navigation Bar: Logo and Image */
-#logo{
-    margin: 10px 34px;
-}
-
-#logo img{
-    height: 59px;
-    margin: 3px 6px;
-    border-radius: 50%;
-}
-
-
-/* Navigation Bar: List Styling */
-
-#navbar ul{
-    display: flex;
-    font-family: 'Baloo Bhai', cursive;
-}
-
-#navbar ul li{ 
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a{
-    color: white;
-    display: block;
-    padding: 3px 22px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
-}
-
-
-/* Home Section */
-
-#home{
-    display: flex;
-    flex-direction: column;
-    padding:3px 200px;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-}
-
-#home::before{ 
-    content: "";
-    position: absolute;
-    background: url('https://img.wonderhowto.com/img/original/98/50/63579041923510/0/635790419235109850.jpg') no-repeat center center/cover;
-    height: 642px;
-    top:0px;
-    left:0px;
-    width: 100%;
-    z-index: -1;
-    opacity:0.89;
-}
-
-.container p span.cursor.typing {
-  animation: none;
-}
-
-@keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
-}
-
-#home p{
-    color:white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
-}
-
-
-/* Services Section */
-
-#services{
-    margin: 34px;
-    display: flex;
-}
-#services .box{ 
-    border: 2px solid brown;
-    padding: 34px;
-    margin: 2px 40px;
-    border-radius: 28px;
-    background: #f2f2f2;
-    margin-bottom: 20px;
-}
-
-#services .box img{ 
-   height: 160px;
-   margin: auto;
-   display: block;
-}
-
-#services .box p{
-    font-family: 'Bree Serif', serif;
-    text-align: justify;
-
-} 
-
-#services .box .box-button-1 a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: green;
-    background-color: white;
-    border: 2px solid green;
-    margin-left: 37px;
-    margin-right: 37px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding: 8px;
-}
-
-#services .box .box-button-1 a:hover{
-    background-color: lightgreen;
-    color: white;
-}
-
-
-#services .box .box-button-3 a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: red;
-    background-color: white;
-    border: 2px solid red;
-    margin-left: 37px;
-    margin-right: 37px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding: 8px;
-}
-
-#services .box .box-button-3 a:hover{
-    background-color: orange;
-    color: white;
-}
-
-/* Files Section */
-
-#catas{
-    position: relative;
-    background: skyblue;
-    margin: 8px;
-    border: 1px solid black;
-    border-radius: 3px;
-    height: 300px;
-}
-
-.cata-con,
-.cata-con2,
-.cata-con3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-#catas button{
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    margin: 10px;
-    border: 0px solid white;
-}
-
-.cata-con .btn1{
-    background-color: white;
-    box-shadow: 
-    inset 0 0 50px #fff,
-        inset 20px 0 60px violet,
-        inset -20px 0 60px blue,
-        inset 20px 0 300px violet,
-        inset -20px 0 300px blue,
-          0 0 50px #fff,
-          -10px 0 60px violet,
-          10px 0 60px blue;
-}
-
-.cata-con2 .btn1{
-    background-color: white;
-    box-shadow: 
-    inset 0 0 50px #fff,
-        inset 20px 0 60px green,
-        inset -20px 0 60px yellow,
-        inset 20px 0 300px green,
-        inset -20px 0 300px yellow,
-          0 0 50px #fff,
-          -10px 0 60px green,
-          10px 0 60px orange;
-}
-
-.cata-con2 .btn2{
-    background-color: white;
-    box-shadow: 
-    inset 0 0 50px #fff,
-        inset 20px 0 60px orange,
-        inset -20px 0 60px red,
-        inset 20px 0 300px orange,
-        inset -20px 0 300px red,
-          0 0 50px #fff,
-          -10px 0 60px orange,
-          10px 0 60px yellow;
-}
-
-.cata-con3 .btn1{
-    background-color: yellow;
-    box-shadow: 
-    inset 0 0 50px orange,
-        inset 0px -6px 23px red,
-        inset 0px -3px 10px orange,
-        inset 9px 0px 15px red,
-        inset -10px 0px 18px orange,
-        -5px 0 30px yellow,
-        10px 0 30px orange;
-}
-
-
-.cata-con3 .btn1:hover{
-    background-color: transparent;
-    box-shadow: 
-    inset 0 0 50px orange,
-        inset 0px 0px 0px red,
-        inset 0px 0px 0px orange,
-        inset 9px 0px 15px red,
-        inset 0px 0px 0px orange,
-        -5px 0 30px yellow,
-        10px 0 30px orange;
-}
-
-
-/* Contact Section */
-#contact{
-    position: relative;
-}
-#contact::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #060b23 no-repeat center center/cover;
-
-}
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-    position: relative;
-}
-
-.form-group button{
-    background-color: #24a0ed;
-    color: white;
-    border: 1px dotted black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 50%;
-    border-radius: 5px;
-    margin-top: 10px;
-    outline: none;
-}
-
-.form-group button:hover{
-    background-color: skyblue;
-    border: 1px solid black;
-    color: black;
-}
-
-.form-group{
-    position: relative;
-    margin-bottom: 20px;
-    
-}
-
-#contact-box input,
-#contact-box textarea{
-    width: 100%;
-    padding: .8rem;
-    border: 2px solid #e1e5ee;
-    border-radius: .5rem;
-    font-family: 'Convergence', Sans-Serif;
-    font-size: 1.1rem;
-    color: white;
-    background: none;
-    padding-left: 15px;
-    outline: none;
-}
-
-
-#contact-box input:hover, 
-#contact-box textarea:hover{
-    border-color: #adffff;
-}
-
-#contact-box input:focus, 
-#contact-box textarea:focus{
-    border-color: #18ffff;
-}
-
-#contact-box input:focus + label,
-#contact-box #ota textarea:focus + label{
-    top: 0;
-    left: 10px;
-    background-color: #060b23;
-    font-size: 1.1rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: .3s;
-}
-
-#contact-box input:valid + label,
-#contact-box #ota textarea:valid + label{
-    top: 0;
-    left: 10px;
-    background-color: #060b23;
-    font-size: 1.1rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: .3s;
-}
-
-#contact-box form{
-    width: 40%;
-}
-
-
-#contact-box .form-group label{
-   font-size: 1.3rem;
-   font-family: 'Bree Serif', serif;
-   color: white;
-   position: absolute;
-   top: 50%;
-   left: 15px;
-   transform: translateY(-50%);
-}
-
-#contact-box #ota label{
-   font-size: 1.3rem;
-   font-family: 'Bree Serif', serif;
-   color: white;
-   position: absolute;
-   top: 24px;
-   left: 15px;
-}
-
-
-#contact-box form{
-    width: 40%;
-}
-
-#load {
-    transition: 2s;
-    margin-top: 14px;
-    margin-left: 90px;
-    margin-bottom: 1px;
-    position: absolute;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    left: 100px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: white solid 5px;
-    outline: none;
-    border-top: green 5px solid;
-    animation: loading infinite 0.6s;
-    animation-timing-function: linear;
-}
-
-@keyframes loading {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Footer */
-
-footer{
-    background: grey;
-    color: white;
-    padding: 9px 20px;
-}
-
-footer a{
-    background: grey;
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover{
-    background: grey;
-    color: red;
-    text-decoration: underline;
-}
-
-
-
-
-/* Utility Classes */
-
-.h-primary{
-    font-family: 'Bree Serif', serif;
-    font-size: 3.8rem;
-    padding: 12px;
-}
-
-.h-secondary{
-    font-family: 'Bree Serif', serif;
-    font-size: 2.3rem;
-    padding: 12px;
-}
-
-.hfuck{
-    color: white;
-}
- 
-.btn{
-    padding: 6px 20px;
-    border: 1px solid white;
-    background-color: brown;
-    color: white;
-    margin: 17px;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    cursor:pointer;
-}
-
-.center{
-    text-align: center;
-}
-
-.contact-h{
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    font-family: 'Bree Serif', Sans-Serif;
-}
-
-.all-d{
-    text-align: justify;
-    font-family: Times New Roman;
-}
-.ph-no{
-text-decoration: none;
-}
-
-#trail button{
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  z-index: 99;
-  font-size: 18px;
-  width: 1495px;
-  border: none;
-  outline: none;
-  background-color: green;
-  font-family: 'Baloo Bhai', cursive;
-  color: white;
-  cursor: pointer;
-  height: 50px;
-  border-radius: 4px;
-  margin: 0px 0px 5px 5px;
-  outline: none;
-}
-
-
-/* CSS Reset */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-/* CSS Variables */
-:root{
-    --navbar-height: 59px;
-}
-
-/* Back To Top */
-
-h3{
-    font-family: 'Encode Sans', Sans-Serif;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
   bottom: 5px;
   right: 5px;
   z-index: 99;
@@ -782,7 +236,7 @@ h3{
 
 #catas{
     position: relative;
-    background: skyblue;
+    background: lightskyblue;
     margin: 8px;
     border: 1px solid black;
     border-radius: 3px;
@@ -799,75 +253,64 @@ h3{
 }
 
 #catas button{
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    margin: 10px;
-    border: 0px solid white;
+    height: 51px;
+    width: 102;
+    margin: 1em;
+    padding: 1em 2em;
+    border-radius: 30px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.cata-con .btn1{
+.cata-con button{
     background-color: white;
-    box-shadow: 
-    inset 0 0 50px #fff,
-        inset 20px 0 60px violet,
-        inset -20px 0 60px blue,
-        inset 20px 0 300px violet,
-        inset -20px 0 300px blue,
-          0 0 50px #fff,
-          -10px 0 60px violet,
-          10px 0 60px blue;
+    border: 2px solid orange;
+    font-family: 'Bree Serif', serif;
+}
+
+.cata-con button:hover{
+    background-color: orange;
+    transition-duration: 0.5s;
+    color: white;
 }
 
 .cata-con2 .btn1{
     background-color: white;
-    box-shadow: 
-    inset 0 0 50px #fff,
-        inset 20px 0 60px green,
-        inset -20px 0 60px yellow,
-        inset 20px 0 300px green,
-        inset -20px 0 300px yellow,
-          0 0 50px #fff,
-          -10px 0 60px green,
-          10px 0 60px orange;
+    border: 2px solid green;
+    font-family: 'Bree Serif', serif;
+}
+
+.cata-con2 .btn1:hover{
+    background-color: green;
+    transition-duration: 0.5s;
+    color: white;
 }
 
 .cata-con2 .btn2{
     background-color: white;
-    box-shadow: 
-    inset 0 0 50px #fff,
-        inset 20px 0 60px orange,
-        inset -20px 0 60px red,
-        inset 20px 0 300px orange,
-        inset -20px 0 300px red,
-          0 0 50px #fff,
-          -10px 0 60px orange,
-          10px 0 60px yellow;
+    border: 2px solid #e75480;
+    font-family: 'Bree Serif', serif;
 }
 
+.cata-con2 .btn2:hover{
+    background-color: #e75480;
+    transition-duration: 0.5s;
+    color: white;
+}
 .cata-con3 .btn1{
-    background-color: yellow;
-    box-shadow: 
-    inset 0 0 50px orange,
-        inset 0px -6px 23px red,
-        inset 0px -3px 10px orange,
-        inset 9px 0px 15px red,
-        inset -10px 0px 18px orange,
-        -5px 0 30px yellow,
-        10px 0 30px orange;
+    background-color: white;
+    border: 2px solid teal;
+    font-family: 'Bree Serif', serif;
 }
-
 
 .cata-con3 .btn1:hover{
-    background-color: transparent;
-    box-shadow: 
-    inset 0 0 50px orange,
-        inset 0px 0px 0px red,
-        inset 0px 0px 0px orange,
-        inset 9px 0px 15px red,
-        inset 0px 0px 0px orange,
-        -5px 0 30px yellow,
-        10px 0 30px orange;
+    background-color: teal;
+    transition-duration: 0.5s;
+    color: white;
 }
 
 
