@@ -39,7 +39,7 @@
     <section id="ab-buttons">
         <div class="diff-btn">
             <p><button class="abbtn1">Share</button></p>
-            <p class="result"></p>
+            <p class="result" style="text-align: center;"></p>
             <button class="abbtn2" onclick="window.location.replace('https://www.facebook.com/hackerindia1/')">Facebook</button>
             <button class="abbtn3" onclick="window.location.replace('../')">Go Back</button>
         </div>
@@ -59,7 +59,7 @@
   btn.addEventListener('click', async () => {
     try {
       await navigator.share(shareData)
-      resultPara.textContent = 'MDN shared successfully'
+      resultPara.textContent = 'Website shared successfully'
     } catch(err) {
       resultPara.textContent = 'Error: ' + err
     }
