@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <meta name="theme-color" content="rgb(153,104,200)" />
+    <link rel="icon" href="logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HaCkEr InDiA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="about-logo">
+        <div class="ap-1">
+            <div class="circle">
+                <img src="logo.png" alt="" />
+            </div>
+        </div>
+            <h3>Hacker India</h3>
+    </section>
+    <section id="ap-2">
+        <div class="ab-det-1">
+            <h1>About Me</h1>
+            <p>Hello my name is Yogesh Kumar Jamre & I am 16 years old, I am learning Ethical Hacking instead of this I am a Higher Secondary student. This is my Website I made it with pure <b>HTML, JavaScript & CSS</b>. I don't know PHP advance so in my website there no login page or special user. All the properties free and I don't charge any money and subscription I made it <b>fully free and easy accessable</b>. Dear Customer, Your details like IP, Account & Contact details that stored on our server or database these all are safe & secure. My website hosted on <b>GitHub</b> the domain sponsered by <b>Freenom</b> and i use <b>CloudFlare</b> to get SSL/TLS certificate these all free. I want to buy better domain and I always try to improve my services so if you don't mind you can <b>Share my website</b> this will help me to improve my services and get more customers I don't asking you much money 10 rupee is enough for me. I am started this website at least 1 year ago I don't remember :) properly. For more information about my services check below.</p>
+        </div>
+    </section>
+    <section id="ap-3">
+        <div class="ab-det-2">
+            <h1>About My Services</h1>
+            <p><b>Our Documents : </b>Those documents i supply through my website these all are my learning from WEBEL Computer Training Center. I made it free for you and I made it PDF & TXT format those dosen't support .pdf format. Basically those documents are basic documents of Software Development Course. Go and check now.</p>
+            <p><b>Ethical Hacking : </b>On this page I would try to teach you Ethical Hacking(Basic+High). But currently it was no available because I don't have much time to publish about on it. If you support me so it will available soon.</p>
+            <p><b>Tech Newses :</b>My page doesn't support PHP this is why I am unable to publish much Newses but you can follow me on Facebook Page for tech newses.</p>
+            <p><b>Top Examples :</b> In this section you can find pure HTML CSS & JavaScript examples.</p>
+            <p><b>Mod apps & games : </b>I give my customers paid games and apps for free in this section you can find mod apps and games fully free and no viruses</p>
+            <p><b>Paid Movies : </b>In this page you can find paid movies free in any language any country any movie. Basically I doesn't pirate movies I find third party websites like Filmywap, Filmyzill, Tamilrockers & Filmymeet and give you direct link for download movies this will help you to easily get movies without seeing ads and viruses.</p>
+        </div>
+    </section>
+    <section id="ab-buttons">
+        <div class="diff-btn">
+            <p><button class="abbtn1">Share</button></p>
+            <p class="result"></p>
+            <button class="abbtn2" onclick="window.location.replace('https://www.facebook.com/hackerindia1/')">Facebook</button>
+            <button class="abbtn3" onclick="window.location.replace('../')">Go Back</button>
+        </div>
+    </section>
+</body>
+<script>
+    const shareData = {
+    title: 'HaCkEr InDiA',
+    text: 'Learn Ethical Hacking on Hacker India',
+    url: 'https://www.hackerindia.ml'
+  }
+
+  const btn = document.querySelector('.abbtn1');
+  const resultPara = document.querySelector('.result');
+
+  // Share must be triggered by "user activation"
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.share(shareData)
+      resultPara.textContent = 'MDN shared successfully'
+    } catch(err) {
+      resultPara.textContent = 'Error: ' + err
+    }
+  });
+</script>
+</html>
