@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 
 <body>
@@ -32,15 +33,21 @@
 <div class="info-box">
 <p class="info">No annoying ads, <b>no download limits</b>, enjoy it and don't forget to bookmark and share the love!</p>
 </div>
+<div class="searchbar">
+<input type="text" class="search" id="myInput" onkeyup="myFunction()" placeholder="Search for apps or games...">
+</div>
+
 <div class="catagory">
 <b><a href="#"><i class="fab fa-android" aria-hidden="true"></i> Mod Apks</a></b>
 </div>
 
 <div class="file-list">
-<ul>
-
+<ul id="myUL" class="name lists">
+    
+    
+    
 <li>
-<div class="row">
+<div class="row GBwhatsapp">
 <div class="col-sm">
 <div class="file-left">
 <a href="#">
@@ -179,36 +186,14 @@
 </div>
 </li>
 
-<li>
-<div class="row">
-<div class="col-sm">
-<div class="file-left">
-<a href="https://www.mediafire.com/file/vtey6o5iljww3b6/Code+Editor_0.5.6.apk/file">
-<img src="codeeditor.jpg" alt="ThopTV Hacker India">
-</a>
-</div>
-<div class="file-right">
-<a href="https://www.mediafire.com/file/vtey6o5iljww3b6/Code+Editor_0.5.6.apk/file">
-<h2>Code Editor</h2>
-</a>
-<div class="file-info">
-<span class="file-pageno">Version 0.5.6</span><span class="dot-1"> • </span><span class="file-year">31 Jan 2022</span><span class="dot-1"> • </span><span class="file-size">8.35 MB</span><span class="dot-1"> • </span><span class="file-downloads">0 Downloads</span>
-</div>
-</div>
-</div>
-</div>
-</li>
-
-
-
-
+<div class="not-found apps" style="display:none">No Apps Found</div>
 
 <div class="catagory">
 <b><a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i> Mod Games</a></b>
 </div>
 
 <div class="file-list">
-<ul id="second">
+<ul id="second myUL">
 
 <li>
 <div class="row">
@@ -289,7 +274,7 @@
 </div>
 </div>
 </li>
-
+<div class="not-found games" style="display:none">No Games Found</div>
 
 
 
@@ -297,4 +282,34 @@
 </div>
 </section>
 </body>
+<script>
+function myFunction() {
+    let match = false;
+    var input, filter, ul, li, a, i, txtValue,result;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+    result=document.getElementById('result')
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h2")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            match = true
+        }else {
+            li[i].style.display = "none";
+        }
+        if (match === false) {
+            document.querySelector(".apps").style.display = 'flex';
+            document.querySelector(".games").style.display = 'flex';
+        } else {
+            document.querySelector(".not-found").style.display = 'none';
+        }
+    }
+}
+
+
+
+</script>
 </html>
