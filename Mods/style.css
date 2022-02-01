@@ -105,11 +105,10 @@ html{
 .searchbar button{
     border: 1px solid grey;
     width: 70px;
-    height: 37px;
+    height: 38px;
     border-left: 0px;
     margin-right: 8px;
     border-radius: 0px 2px 2px 0px;
-    position: relative;
     transition: background 400ms;
     color: #fff;
     background-color: rgb(25,148,255);
