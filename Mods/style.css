@@ -117,7 +117,6 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     outline: 0;
-    border: 0;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
