@@ -1,0 +1,186 @@
+/* In this document i will show you possible
+styles of an tag/element with explanation*/
+
+
+/* This is for root/main page/whole webpage style */
+*{
+    margin: 0; /* This sets the whole page margin*/
+    padding: 0; /*This sets the whole page padding*/
+}
+
+
+
+
+
+/* This is for say browser how the webpage scrolled*/
+
+html{
+    scroll-behavior: smooth; /*There are two values auto, smooth*/
+}
+
+
+/*root are same like "*" */
+
+:root{
+    --navbar-height: 0px; /*this sets by default navbar height*/
+    background: black;/*This will sets whole page background: color;*/
+    /*You can add more changes that are used in css but those are not used always*/
+}
+
+
+/*body is also same like root and * but here all types possibility have*/
+body{
+    margin: ;/*Sets margin*/
+    padding: ;/*sets padding*/
+    background-clip: ; /*sets a clip*/
+    background-color: ; /* sets background color*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*From here basic styles starts i used this 
+style to explain all styles and how they 
+works*/
+
+
+/* tags this will help you to learn
+
+<div class="buttons">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+</div>
+*/
+
+
+.buttons{ /* For class "." for id "#" for external "@"*/
+    text-align: center; /*If in this div 
+    text have so you can align them like p,
+    a,text etc it not work on other tags;*/
+    text-decoration: none; /*This hepls to 
+    add/remove text styles like strikthrough, underline, italic etc.*/
+    text-decoration-color: red; /*Sets the 
+    text-decoration color in which color: the decoration will show*/
+    text-decoration-thickness: ; /*Sets the underline/italic bold type style*/
+    color: green; /*Sets the color of a text
+    in a tag or element*/
+    font-family: 'font-name', font-type; /*Sets the font style
+    of a text/whole page*/
+    font-size: 5px; /*Sets the font font
+    size*/
+    font-weight: bold/100px; /*Sets how
+    thick the font will be*/
+    font-display: none; /*Sets the how the font will be displayed*/
+    display: none; /*This tell browser how
+    the tag/element will be displayed 
+    there are many values none, flex, block
+    ,flex-box, inline, inline-block etc.;*/
+    flex-direction: row/column; /*Tells in 
+    which direction the flex work row or 
+    column for this you need display flex 
+    must*/
+    align-items: none; /*Only works with 
+    flex this and justify-content: none; 
+    helps us to align flex items */
+    justify-content: none;
+    margin: 0px; /*Sets the margin of the 
+    element or tag this only changes 
+    position of the element not changes his
+    size you tell differently margin from 
+    all sides using
+    margin-bottom: ;
+    margin-top: ;
+    margin-right: ;
+    margin-left: ;
+    margin: 0px 0px 0px 0px; this helps at 
+    once first is top second for right 
+    third for bottom fourth for left one 
+    value says same margin from all sides*/
+    padding: 0px; /*For understand read 
+    margin comment those are same but 
+    padding: ; sets element inside size*/
+    border: 1px solid black; /*sets border 
+    of the element from all sides solid 
+    says how the border looks like solid or
+    those dashed, dotted etc. none says
+    there no border even remove by default
+    border*/
+    border: 0px 0px 0px 0px; /*read margin
+    and border to understand*/
+    border-radius: 3px; /*Sets the radius 
+    of the element "50%" can make circle
+    border-radius: 0px 0px 0px 0px; for
+    understand read margin anf borde
+    -radius*/
+    border-color: red green white black;
+    /*for understand read margin and border*/
+    position: none; /*Says the browser what
+    position will use the element those are
+    values sticky, fixed, relative,
+    absolute*/
+    
+    background: none; /* sets the
+    background  color or image. no-repeat
+    used to use img without repeat  */
+    
+    overflow: ;
+    overflow-x: ;
+    overflow-y: ; /*Sets the element
+    overflow hidden or shown*/
+    
+    flex-wrap: nowrap; /* sets are element
+    break or not*/
+    
+    opacity: 7px; /*this tells how many
+    opacity will take by element*/
+    
+    top: ;
+    left: ;
+    bottom: ;
+    right: ; /* This is and margin are little bit same but position absolute it helps to margin from a side it will be anything form top or right or left */
+    height: ; /*sets height of the element*/
+    width: ; /*sets width of the element
+    padding and this are same*/
+    box-shadow: ; /*Sets the shadow of an
+    element for more information say me*/
+}
+
+::after{ /*Sets an element afters style*/
+    
+}
+
+::before{ /*Sets an element befores style*/
+    
+}
+
+:hover{ /*Sets on hover style*/
+    background-color: red;
+    transition-duration: 0.0s; /*Tells how
+    many time will take to transform from
+    before style to after style*/
+    transition-delay: 0.0s; /* Tells how
+    many times after the transform will
+    happen*/
+}
+
+@media screen and (max-height/width: 450px) { /*Sets if scree height/width 450px so what style element take*/
+    .buttons{
+        background-color: red;
+    }
+
+}
+
+-webkit-tap-highlight-color: transparent; /*It remove/add on click effect it mostly used to remove blue effect on hover on an "a" tag*/
+
+
+If anything i missed or you unable to understand say me i will tell you about
