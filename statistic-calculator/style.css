@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #D8FFFA;
+}
+
+
+i{
+    padding: 2px;
+}
+
+/* Usser Inputs */
+
+#user-inputs{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px 10px 5px;
+}
+
+.fields label{
+    font-family: "Arima Madurai";
+    font-weight: 800;
+    padding: 0px 0px 5px 0px;
+    color: #000B5F;
+}
+
+.fields input,
+.fields textarea{
+    border: 2px solid #000B5F;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 5px;
+    outline: none;
+    font-size: 15px;
+    font-family: "Ubuntu";
+}
+
+.scores{
+    height: 80px !important;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate{
+    margin: 5px 0px 0px 0px;
+    background-color: #009528;
+    height: 1.2cm;
+    width: 3cm;
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid #000B5F;
+    font-family: "Roboto Mono";
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.calculate:hover,
+.reset:hover{
+    background-color: #4CE5EA !important;
+    color: white;
+    box-shadow: inset 1px 1px 2px 1px white,
+    inset 1px -1px 2px 1px grey,
+    inset -1px 1px 4px 1px grey,
+    inset -1px -1px 4px 1px grey;
+    border: none;
+    
+}
+
+.reset{
+    margin-bottom: 5px;
+    background-color: red;
+}
+
+
+
+table {
+  font-family: "Laila";
+  border-collapse: collapse;
+  width: 99%;
+  text-align: center;
+  margin: 2px;
+}
+
+th{
+    background-color: #005DD7;
+    color: white;
+}
+
+td, th {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+/* Utility Classes */
+
+.center{
+    text-align: center;
+}
+
+h2,
+h3,
+p{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+}
