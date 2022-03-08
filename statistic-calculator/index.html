@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Statictics Calculator!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@600&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <h2 id="title" class="center">Statictics Calculator</h2>
+    <div class="select">
+        <select name="ab" id="modes" onchange="mySelection(this)">
+            <option value="statictics">Statictics</option>
+            <option value="mean">Mean</option> 
+            <option value="mod">Mod</option>
+            <option value="meadian">Meadian</option>
+        </select>
+    </div>
+    <section id="user-inputs">
+        <div class="fields">
+            <label>Scores</label>
+            <textarea class="scores" id="scores" type="text" placeholder="Enter the scores"></textarea>
+            <label style="color:red;font-family: 'Roboto Mono'; font-size: 15px">* Multiple values can be seperated by comma ","</label>
+        </div>
+        <div class="fields">
+            <label>Level expansion</label>
+            <input id="levelex" type="number" placeholder="Enter the level expansion"/>
+        </div>
+        <div class="buttons center">
+            <button id="calculate" onclick="myArr()" style="background-color: #6200CB" class="calculate">Calculate</button>
+            <button onclick="myReset()" class="calculate reset" >Reset</button>
+            
+        </div>
+    </section>
+    <section id="mean">
+    <div class="mean-user-inputs">
+        <div class="fields">
+            <label>Lowest Score</label>
+            <input id="meanlow" type="number" placeholder="Enter the lowest score"/>
+        </div>
+        <div class="fields">
+            <label>Highest Score</label>
+            <input id="meanhigh" type="number" placeholder="Enter the highest score"/>
+        </div>
+        <div class="fields">
+            <label>Level expansion</label>
+            <input id="meanlevelex" type="number" placeholder="Enter the Level expansion"/>
+        </div>
+        <div class="fields">
+            <label>Statistics</label>
+            <input id="statistics" type="text" placeholder="Enter the statistics"/>
+            <label style="color:red;font-family: 'Roboto Mono'; font-size: 15px">* Multiple values can be seperated by comma ","</label>
+        </div>
+        <div class="buttons center">
+            <button onclick="myMean()" id="calculate" style="background-color: #6200CB" class="calculate">Calculate</button>
+            <button onclick="myReset()" class="calculate reset" >Reset</button>
+        </div>
+    </div>
+</section>
+    <h2 class="center">Result</h2>
+    
+    <table id="result">
+        <tr>
+            <th>Level</th>
+            <th>Tally</th>
+            <th>Statictics</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="border-right: none"></td>
+            <td style="border-left: none"></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    
+    <table id="mean-result">
+        <tr>
+            <th>Levels</th>
+            <th>Statistics<br>(f)</th>
+            <th>Medium<br>(x<sup>1</sup>)</th>
+            <th>fx<sup>1</sup></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    
+    <p id="mr"></p>
+    <p id="myMin"></p>
+    <p id="myMax"></p>
+    <h3 class="center" style="margin: 20px">Created By Yogesh Kr. Jamre</h3>
+
+</body>
+</html>
