@@ -493,6 +493,9 @@ function mySelection(){
         title.innerHTML = "Statictics Calculator";
         mean.style.display = 'none';
         meanresult.style.display = 'none';
+        document.getElementById('myMin').innerHTML = "";
+        document.getElementById('myMax').innerHTML = "";
+        document.getElementById('myMean').innerHTML = "";
     }
     
     if (selectedmode === 'mean'){
@@ -501,6 +504,9 @@ function mySelection(){
         title.innerHTML = "Mean Calculator";
         mean.style.display = 'block';
         meanresult.style.display = 'table';
+        document.getElementById('myMin').innerHTML = "";
+        document.getElementById('myMax').innerHTML = "";
+        document.getElementById('myMean').innerHTML = "";
     }
 }
 
