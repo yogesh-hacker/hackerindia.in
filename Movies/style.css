@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.player{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3895d3;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Exo 2' , sans-serif;
+    font-size: 15px;
+}
+
+.player:hover{
+    background-color: lightgrey;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+img{
+    border: 1px solid green;
+    padding: 2px;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Convergence';
+    color: black;
+    margin: 10px;
+}
+
+.lists{
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+button{
+    font-family: 'Exo 2' , sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3895d3;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+}
+
+button:hover{
+    background-color: lightgrey;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+#list{
+    margin-bottom: 100px;
+}
+
+.new-m{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.m-det{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-m p{
+    color: #048888;
+    padding: 6px;
+    font-family: 'Baloo Bhai' , sans-serif;
+}
+
+.new-m button{
+    margin-bottom: 10px;
+}
+
+.downsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#downmovie{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin: 50px
+    text-align: center;
+    background-color: #3895d3;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+    font-size: 10px;
+}
+
+#downmovie:hover{
+    background-color: lightgrey;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+video{
+    margin: 5px;
+    width: 350px;
+}
+
+#srcfetch{
+    display: none;
+}
