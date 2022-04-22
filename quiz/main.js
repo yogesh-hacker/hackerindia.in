@@ -456,7 +456,7 @@ const quizData = [
                 Body : Body})
     quiz.innerHTML = `  
        <h2>Thanks for playing this quiz.<br>You will get your result within 3 hours</h2>  
-       <button onclick="window.location.replace('https://www.hackerindia.ml">Go to Home</button>  
+       <button onclick="window.location.replace('https://www.hackerindia.ml')">Go to Home</button>  
      ` // location.reload() won't work in CodePen for security reasons;  
    }  
   }  
