@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- The following tag is not obeyed -->
+<title>m3u8 Sniffer popup-script</title>
+<link rel="stylesheet" href="popup.css">
+<link rel="stylesheet" href="slider.css">
+<!-- javascript includes are at end of <body> -->
+</head>
+<body>
+    <div>
+        <span class="title">Video m3u8 URL Link Sniffer</span>
+        <span class="highlighted buttons unselectable" style="padding-right:3px;">
+            <span id="helpButton" class="cssbutton"
+                title="Shows a more detailed explanation of the extension and options">
+                &nbsp;&nbsp;&nbsp;&nbsp;About / Help&nbsp;&nbsp;&nbsp;
+            </span>&nbsp;&nbsp;&nbsp;
+            <span id="refreshButton" class="cssbutton"
+                title="Refresh this popup with the last m3u8 URL found">
+                &nbsp;&nbsp;&nbsp;&nbsp;Refresh&nbsp;&nbsp;&nbsp;
+            </span>
+        </span>&nbsp;
+    </div>
+    <p>
+        This extension intercepts the visited web page's network requests and
+        identifies all m3u8 URLs. When a m3u8 URL request is found, it is displayed 
+        in a box that overlays the visited page. Also, you can open this extension 
+        popup to view and open the first and last m3u8 URLs found.
+    </p>
+    <div id="sliders" class="unselectable">
+        <span class="highlighted"
+            title="Enable/Disable m3u8 URL sniffing and injection into web pages">
+            m3u8 Sniffing: 
+            <label class="switch">
+                <input type="checkbox" id="m3u8SniffingEnabled">
+                <div class="slider round"></div>
+            </label>
+        </span>
+        &nbsp;
+        <span class="highlighted"
+            title="Enable/Disable only m3u8 URL injection into web pages">
+            URL Injection: 
+            <label class="switch">
+                <input type="checkbox" id="m3u8InjectionEnabled">
+                <div class="slider round"></div>
+            </label>
+        </span>
+        &nbsp;&nbsp;
+        <span class="highlighted buttons unselectable" style="padding-right:2px;">
+            <span id="copyFirstButton" class="cssbutton"
+                title="Copy the FIRST m3u8 URL to the clipboard">
+                &nbsp;&nbsp;Copy First&nbsp;
+            </span>
+            <span id="copyLastButton" class="cssbutton"
+                title="Copy the LAST m3u8 URL to the clipboard">
+                &nbsp;&nbsp;Copy Last&nbsp;&nbsp;
+            </span>
+        </span>
+    </div>
+    <br>
+    <span class="options unselectable">Show m3u8 URL links for:&nbsp;
+        <span title="Show the last m3u8 URL found from the active tab">
+            <input type="radio" id="activeTabRadio" name="scope" 
+                class="clickable" value="Active Tab" checked>
+            <label for="activeTabRadio">Active Tab</label>
+        </span>
+        <span title="Show the last m3u8 URL found from the active window">
+            <input type="radio" id="activeWindowRadio" name="scope" 
+                class="clickable" value="All Tabs">
+            <label for="activeWindowRadio">Active Window</label>
+        </span>
+        <span title="Show the last m3u8 URL found from all windows">
+            <input type="radio" id="allWindowsRadio" name="scope" 
+                class="clickable" value="All Windows">
+            <label for="allWindowsRadio">All Windows</label>
+        </span>&nbsp;
+        <span id="m3u8CountSpan" style="cursor:context-menu;" 
+            title="Count of m3u8 URLs found">
+        </span>
+    </span>
+    <br><br>
+    <span class="results">First m3u8 URL from:&nbsp;
+        <span id="firstUrlDiv"></span>
+    </span>
+	<div id="firstM3u8Div" class="nobreak" 
+        title="Click this link to open the URL in a new window/tab">
+    </div>
+    <br>
+    <span class="results">Last m3u8 URL from:&nbsp;
+        <span id="lastUrlDiv"></span>
+    </span>
+	<div id="lastM3u8Div" class="nobreak" 
+        title="Click this link to open the URL in a new window/tab">
+    </div>
+    <br>
+    <div>Note: Click or use shift, control, or right click to open the URLs 
+        from this popup window. If the link fails to open properly, there might 
+        be permissions issues that prevent it from being opened from outside the 
+        original web page. Check the Dev Tools Network activity if in doubt.
+    </div>  
+    <script src="popup.js"></script>
+    <script src="logging.js"></script>
+    <script src="asyncwrap.js"></script>
+</body>
+</html>
