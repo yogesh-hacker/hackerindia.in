@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="theme-color" content="#58cced" />
+    <link rel="icon" href="https://yogesh-hacker.github.io/hackerindia.in/logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Player : Default</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <video id="moviesrc" poster="unavailable_poster.jpg" src="https://www-uvt81412.ssl0d.com/hls/DwXSXwdPlSbjeaDxYxO3fQ/1651056856/2nhas-tnwxSdPxRs-wtKX9YOW_irPpc76DgnyZv3Z79c8D8WWuKUn2Vu1elArCJjIhMJlXlnMYkwqL10Pu7TSFubiurl1CVAJ85abJitm-qtp9bZqj6UHGk24zMIlsbo4yJ0RhEHlr01Jj9Wta_i4k4mc13wx8qdKSqqS09XIaKm1elv3ynADuThDVuZnieT9BOKDAP_ODCqFv9sDncDxEaAkPN6CbI7uoXrbuiP4Hm81gn-jWSXMifvbwLK9xejEzhG4gWdaLlD22xGYMK43Q/index-v1-a1.m3u8" controls></video>
+    <div class="downsec">
+        <a id="downmovie" href="#">Download</a>
+    </div>
+<hide>
+<script>
+if (Hls.isSupported()) {
+    var video = document.getElementById('moviesrc');
+    var source = video.getAttribute('src');
+    var hls = new Hls();
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+        hls.loadSource(source);
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+      });
+    });
+  }
+</script>
+</hide>
+</body>
+</html>
