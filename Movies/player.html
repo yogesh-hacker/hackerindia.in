@@ -1,36 +1,100 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="theme-color" content="#58cced" />
-    <link rel="icon" href="https://yogesh-hacker.github.io/hackerindia.in/logo.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Online Player : Default</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-</head>
-<body>
-    <video id="moviesrc" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDWBwjxw7XiO6qy1-fKN7SBt5ILeB-TJCjA&usqp=CAU" src="https://www-uvt81412.ssl0d.com/hls/DwXSXwdPlSbjeaDxYxO3fQ/1651056856/2nhas-tnwxSdPxRs-wtKX9YOW_irPpc76DgnyZv3Z79c8D8WWuKUn2Vu1elArCJjIhMJlXlnMYkwqL10Pu7TSFubiurl1CVAJ85abJitm-qtp9bZqj6UHGk24zMIlsbo4yJ0RhEHlr01Jj9Wta_i4k4mc13wx8qdKSqqS09XIaKm1elv3ynADuThDVuZnieT9BOKDAP_ODCqFv9sDncDxEaAkPN6CbI7uoXrbuiP4Hm81gn-jWSXMifvbwLK9xejEzhG4gWdaLlD22xGYMK43Q/index-v1-a1.m3u8" controls></video>
-    <div class="downsec">
-        <a id="downmovie" href="#">Download</a>
-    </div>
-<hide>
-<script>
-if (Hls.isSupported()) {
-    var video = document.getElementById('moviesrc');
-    var source = video.getAttribute('src');
-    var hls = new Hls();
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-        hls.loadSource(source);
-        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-      });
-    });
-  }
-</script>
-</hide>
-</body>
+<!--
+    Copyright 2018 Novage LLC.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>Online Player : VideoJs</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js"></script> 
+
+        <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet" />
+        <script src="https://vjs.zencdn.net/7.6.0/video.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest"></script>
+        <!-- Video.js base CSS -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+
+<!-- City -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+
+<!-- Fantasy -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<!-- Forest -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+<!-- Sea -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+            #moviesrc {
+                width: 99.5%;
+                margin: 1px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <video
+        id="moviesrc" 
+        class="video-js vjs-theme-fantasy" 
+        preload="none" 
+        autoplay 
+        src="https://ht45ufb.cfeucdn.com/silverlight/secip/130955/63949/OONJlxXktpY1jOdeyNOwvA/MTM5LjE2Mi41Mi4xNzc=/1651178189/hls-vod-s001/flv/api/files/videos/2022/04/14/16499255791cwqj.mp4.m3u8"
+        controls 
+        poster="none">
+</video>
+
+        <script>
+            if (p2pml.hlsjs.Engine.isSupported()) {
+                var engine = new p2pml.hlsjs.Engine();
+
+                var player = videojs("moviesrc", {
+                    html5: {
+                        hlsjsConfig: {
+                            liveSyncDurationCount: 7, // To have at least 7 segments in queue
+                            loader: engine.createLoaderClass(),
+                        },
+                    },
+                });
+                var source = player.getAttribute('src');
+                console.log(source)
+
+                p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
+
+                player.src({
+                    src: source,
+                    type: "application/x-mpegURL"
+                });
+
+                player.ready(function () {
+                    player.volume(1); // 1%
+                });
+            } else {
+                document.write("Not supported :(");
+            }
+        </script>
+    </body>
 </html>
