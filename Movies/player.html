@@ -17,7 +17,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online Player : VideoJs</title>
 
         <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js"></script> 
@@ -28,6 +28,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest"></script>
         <script src="https://cdn.jsdelivr.net/npm/videojs-landscape-fullscreen@11.113.0/dist/videojs-landscape-fullscreen.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.1/dist/videojs-seek-buttons.min.js" type="text/javascript" charset="utf-8"></script>
         <!-- Video.js base CSS -->
 <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
 
@@ -42,6 +43,7 @@
 
 <!-- Sea -->
 <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.0/dist/videojs-seek-buttons.css"/>
 
         <style>
         *{
@@ -87,7 +89,8 @@
 
                 player.src({
                     src: source,
-                    type: "application/x-mpegURL"
+                    type: "application/x-mpegURL",
+                    allowSeeksWithinUnsafeLiveWindow: true
                 });
 
                 player.ready(function () {
@@ -101,6 +104,27 @@
   var player = videojs('moviesrc');
 
   player.landscapeFullscreen();
+  </script>
+  <script>
+  var player = videojs('moviesrc');
+
+  player.seekButtons({
+    forward: 10,
+    back: 10
+  });
+
+
+// You could alternatively include the plugin in the setup options, e.g.
+// var player = videojs('my-video', {
+//   plugins: {
+//     seekButtons: {
+//       forward: 10,
+//       back: 10
+//     }
+//   }
+// });
+
 </script>
+
     </body>
 </html>
