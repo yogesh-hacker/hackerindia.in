@@ -27,6 +27,7 @@
         <script src="https://vjs.zencdn.net/7.6.0/video.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/videojs-landscape-fullscreen@11.113.0/dist/videojs-landscape-fullscreen.min.js" type="text/javascript" charset="utf-8"></script>
         <!-- Video.js base CSS -->
 <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
 
@@ -96,5 +97,10 @@
                 document.write("Not supported :(");
             }
         </script>
+        <script>
+  var player = videojs('moviesrc');
+
+  player.landscapeFullscreen();
+</script>
     </body>
 </html>
