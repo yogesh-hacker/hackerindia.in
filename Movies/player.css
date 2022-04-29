@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#moviesrc {
+    width: 99.5%;
+    margin: 1px;
+    height: 200px;
+}
+
+body{
+    background: rgb(0,174,187);
+    background: linear-gradient(180deg, rgba(0,174,187,1) 4%, rgba(0,252,127,1) 45%, rgba(230,255,67,1) 93%);
+}
