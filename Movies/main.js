@@ -1,4 +1,4 @@
-setTimeout(fetch,3000);
+setTimeout(fetch,1000);
 
 
 function fetch(){
