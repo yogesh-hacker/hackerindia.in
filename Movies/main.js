@@ -7,3 +7,4 @@ function fetch(){
         document.getElementById('moviename').style.color = "red";
     }
 }
+ 
