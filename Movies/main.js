@@ -1,6 +1,3 @@
-setTimeout(fetch,500);
-
-
 function fetch(){
     var iframevid = document.getElementById('srcfetch').contentWindow.document.getElementById('moviesrc');
     var moviesrc = iframevid.getAttribute('src')
