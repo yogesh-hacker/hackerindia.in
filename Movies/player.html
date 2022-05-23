@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
     Copyright 2018 Novage LLC.
@@ -22,7 +21,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#58cced" />
     <title>Online Player : VideoJs</title>
-    <script src="/cdn-cgi/apps/head/G7jt0_w9PXLSQWbwowYBHl-iiY4.js"></script><link rel="stylesheet" href="player.css" type="text/css" media="all" />
+    <script src="/cdn-cgi/apps/head/G7jt0_w9PXLSQWbwowYBHl-iiY4.js"></script>
+    <script src="/cdn-cgi/apps/head/G7jt0_w9PXLSQWbwowYBHl-iiY4.js"></script>
+    <link rel="stylesheet" href="player.css" type="text/css" media="all" />
     <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.0/dist/videojs-seek-buttons.css"/>
@@ -32,18 +33,35 @@
     <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/videojs-landscape-fullscreen@11.113.0/dist/videojs-landscape-fullscreen.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.1/dist/videojs-seek-buttons.min.js" type="text/javascript" charset="utf-8"></script>
-<script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=7040e2aa3fe894c4'></script></head>
+    <script async src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=7040e2aa3fe894c4'></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdnbye-mp4@latest"></script>
+    <script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?ts=1651903200'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    >
+    </head>
 <body>
     <video
     id="moviesrc" 
     class="video-js vjs-theme-fantasy"
-    poster="none"
+    poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLl3sxCn60HwUEQV6whf9faKClQe78WWEiew&usqp=CAU"
     src="https://www-1sk66130.ssl0d.com/fM2jU56Z5squJGj-_azBNA/1653168405/H97PV6N8pgoA1JP2-dnBHHOSB9Tz5rFYjznG-lvJf8Umf4QH2NmAxGn_8waFOVe9CX5hoaI9WFTmyX6wpkqSqxirpWFI5PVKG3Fqk-gZxXfyxyn868kWnNKo-6c0l31RkqhL6oLcOLTgyMu4oIZfJ7_VovaD23S_jjQhgQxWB-pOc4ZOy4NOPofJEH3yBohScNEFpjg9uIkoCcwX1Fsbic3bpnOn__xTXOBoi8LJ8ElldjZfwyoeGecg_u4w1rIZt5-wn_tjeE804rJ_726Q2qDLTjRYpqLlcFqLtde4DKI/KGF+2+%282022%29+Hindi+HDRip+-+-+HQ+Clean+-+700MB+-+HC-ESub.mp4?stream=1"
-    preload="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvh4SDfqQOI9sfGknKWf3zgJuIvQBPFLWdSg&usqp=CAU" 
+    preload="none" 
     autoplay 
     controls>
     </video>
-        
+
+
+<div class="downloadbtn">
+    <a class="" href="#">Download Now <i class="fa-solid fa-download"></i></a>
+    
+</div>
+
 <script>
     if (p2pml.hlsjs.Engine.isSupported()) {
         var engine = new p2pml.hlsjs.Engine();
@@ -61,7 +79,7 @@
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
-            type: "video/mp4",
+            type: "application/x-mpegURL",
             allowSeeksWithinUnsafeLiveWindow: true
         });
 
@@ -91,5 +109,5 @@ player.seekButtons({
 
 
 
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'7040e2aa3fe894c4',m:'xAhM5rF.NfJES1JtJ59E1tac1i6TrDblvHbPQpV0SuA-1651328084-0-Ab8NcNOkSefqGbf8XFsQpKyjE1I0bV8psL1W/X2HeDXzPzYPjJjGAYg+ukfXr7tEqhMa6BPo34Sjv1BOSYuv+LvGwkecFeVsqu8pf2eaehQ4pz3YTm7SMlbrqmF1G/94v88N1UKBFlH8psSGOmwA4Mk=',s:[0x2f292ad8cd,0xba1bcedfe2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'7040e2aa3fe894c4',m:'xAhM5rF.NfJES1JtJ59E1tac1i6TrDblvHbPQpV0SuA-1651328084-0-Ab8NcNOkSefqGbf8XFsQpKyjE1I0bV8psL1W/X2HeDXzPzYPjJjGAYg+ukfXr7tEqhMa6BPo34Sjv1BOSYuv+LvGwkecFeVsqu8pf2eaehQ4pz3YTm7SMlbrqmF1G/94v88N1UKBFlH8psSGOmwA4Mk=',s:[0x2f292ad8cd,0xba1bcedfe2],u:'/cdn-cgi/challenge-platform/h/g'}})();</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'7077c8c08bfe94c2',m:'I.PtaLvl8EjDy7KfNA.o.Y_sNKXycuxE79Q5iOtOgBM-1651903740-0-AafgwONWB5lO6A2YGUaFhzSPtDak1Qi2qPiLVThfM3sO+UmHJMis1BRjnsWyJeTF6A0lDaA4/oF9n8rbjzwE163uYlVJCg3xp1xnyg6tGWgKV4y+GlSDb6DlrpSQWpLPPqxOhrAgfPNMAbPI51AmoM8=',s:[0x75a8c5b005,0xbe0ebb2c77],u:'/cdn-cgi/challenge-platform/h/g'}})();</script></body>
 </html>
