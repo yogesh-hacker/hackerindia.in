@@ -16,10 +16,10 @@ function autodet(){
     const movie = document.getElementById("moviename").innerText;
     const poster = document.getElementById('preposter');
     if(movie === mydata[0].moviename){
-        poster.src = mydata[0].poster;
+        poster.src = mydata[0].poster;alert("fuck")
     }
     if(movie === mydata[1].moviename){
-        poster.src = mydata[1].poster;
+        poster.src = mydata[1].poster;alert("wtf)"
     }
     if(movie === mydata[2].moviename){
         poster.src = mydata[2].poster;
