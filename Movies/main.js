@@ -14,7 +14,7 @@ function fetch(){
 function autodet(){
     const mydata = JSON.parse(JSON.stringify(data));
     const movie = document.getElementById("moviename").innerText;
-    const poster = document.getElementById('preposter');
+    const poster = document.getElementById('preposter');alert(mydata[0].moviename)
     if(movie === mydata[0].moviename){
         poster.src = mydata[0].poster;alert("fuck")
     }
