@@ -1,5 +1,5 @@
-setTimeout(play,1000);
-setTimeout(loadvideo,500)
+setTimeout(play,2500);
+setTimeout(loadvideo,2000)
 
 function play(){
     if (p2pml.hlsjs.Engine.isSupported()) {
@@ -34,5 +34,15 @@ function play(){
 function loadvideo(){
     var iframevid = document.getElementById('moviedet').contentWindow.document.getElementById('moviename');
     var name = iframevid.innerText;
-    alert(name)
+    const mydata = JSON.parse(JSON.stringify(data));
+    const poster = document.getElementById('moviesrc');
+    if(name === mydata[0].movieid){
+        poster.src = mydata[0].source;
+    }
+    if(name === mydata[1].movieid){
+        poster.src = mydata[1].source;
+    }
+    if(name === mydata[2].movieid){
+        poster.src = mydata[2].source;
+    }
 }
