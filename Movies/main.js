@@ -1,8 +1,10 @@
 setTimeout(autodet,200);
 setTimeout(fetchitem,500);
+setTimeout(fetch,1000);
 
 function fetchitem (){
-
+    var a = document.getElementById('srcfetch');
+    a.src = "player.html"
 }
 
 function fetch(){
