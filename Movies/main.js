@@ -1,4 +1,9 @@
-setTimeout(autodet,500);
+setTimeout(autodet,200);
+setTimeout(fetchitem,500);
+
+function fetchitem (){
+
+}
 
 function fetch(){
     var iframevid=document.getElementById('srcfetch').contentWindow.document.getElementById('moviesrc');
