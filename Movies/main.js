@@ -16,7 +16,6 @@ function autodet(){
     console.log(typeof (mydata))
     const movie = document.getElementById("moviename").innerText;
     const poster = document.getElementById('preposter');
-
     if(movie === mydata[0].movieid){
         poster.src = mydata[0].poster;
     }
