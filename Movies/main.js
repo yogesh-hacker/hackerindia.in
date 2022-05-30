@@ -1,4 +1,4 @@
-setTimeout(autodet,2000);
+setTimeout(autodet,500);
 
 function fetch(){
     var iframevid=document.getElementById('srcfetch').contentWindow.document.getElementById('moviesrc');
@@ -16,7 +16,7 @@ function autodet(){
     console.log(typeof (mydata))
     const movie = document.getElementById("moviename").innerText;
     const poster = document.getElementById('preposter');
-    alert(mydata[0].movieid)
+
     if(movie === mydata[0].movieid){
         poster.src = mydata[0].poster;
     }
