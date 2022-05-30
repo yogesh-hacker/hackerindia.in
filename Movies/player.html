@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
     Copyright 2018 Novage LLC.
@@ -22,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#58cced" />
     <title>Online Player : VideoJs</title>
-    <script src="/cdn-cgi/apps/head/G7jt0_w9PXLSQWbwowYBHl-iiY4.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
@@ -41,50 +40,27 @@
     <video
     id="moviesrc" 
     class="video-js vjs-theme-fantasy"
-    poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYpkCuBFrQ0pN7XC8K_fSh29t2ff6i8gDfw&usqp=CAU"
-    src="none"
+    poster=""
+    src="#"
     preload=""
-    autoplay 
     controls>
     </video>
+    
+    
 
 <div class="downloadbtn">
     <a class="" id="downloadlink">Download Now <i class="fa-solid fa-download"></i></a>
     
 </div>
+
+<iframe id="moviedet" src="movies.html"></iframe>
+
 <script>
     var downlink = document.getElementById("downloadlink");
     var player = document.getElementById("moviesrc")
     var downsrc = player.getAttribute('src');
+    
     downlink.setAttribute("href",downsrc)
-</script>
-<script>
-    if (p2pml.hlsjs.Engine.isSupported()) {
-        var engine = new p2pml.hlsjs.Engine();
-
-        var player = videojs("moviesrc", {
-            html5: {
-                hlsjsConfig: {
-                    liveSyncDurationCount: 7, // To have at least 7 segments in queue
-                    loader: engine.createLoaderClass(),
-                },
-            },
-        });
-        
-        var source = player.getAttribute('src');
-        p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
-        player.src({
-            src: source,
-            type: "video/mp4",
-            allowSeeksWithinUnsafeLiveWindow: true
-        });
-
-        player.ready(function () {
-            player.volume(1); // 1%
-            });
-            } else {
-                document.write("Not supported :(");
-            }
 </script>
 
 
@@ -103,6 +79,7 @@ player.seekButtons({
 });
 </script>
 
+<script src="main2.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>
