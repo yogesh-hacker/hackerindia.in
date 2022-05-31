@@ -38,9 +38,7 @@ function play(){
             } else {
                 document.write("Not supported :(");
             }
-player.load()
-            player.play()
-alert("Already played what are you waiting for!")
+
 }
 
 
