@@ -29,7 +29,7 @@ function play(){
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
-            type: "video/mp4",
+            type: "application/x-mpegURL",
             allowSeeksWithinUnsafeLiveWindow: true
         });
 
