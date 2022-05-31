@@ -1,4 +1,4 @@
-setTimeout(play,1500);
+setTimeout(play,2000);
 
 function play(){
     if (p2pml.hlsjs.Engine.isSupported()) {
@@ -17,20 +17,25 @@ function play(){
         if(name === mydata[0].movieid){
             const source = mydata[0].link;
         }
+    
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
             type: "application/x-mpegURL",
             allowSeeksWithinUnsafeLiveWindow: true
         });
-
+        player.landscapeFullscreen();
+        player.seekButtons({
+            forward: 10,
+            back: 10
+        });
         player.ready(function () {
             player.volume(1); // 1%
             });
             } else {
                 document.write("Not supported :(");
             }
-
+            
 }
 
 
