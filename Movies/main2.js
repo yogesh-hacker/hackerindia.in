@@ -16,6 +16,8 @@ function play(){
     const iframevid = document.getElementById('moviedet').contentWindow.document.getElementById('moviename');
     const name = iframevid.innerText;
     const mydata = JSON.parse(JSON.stringify(data));
+var x = mydata[0].movieid;
+alert(x)
     if(name === mydata[0].movieid){
         const source = mydata[0].link;
         alert(source)
