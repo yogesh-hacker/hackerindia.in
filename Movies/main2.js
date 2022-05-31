@@ -16,7 +16,6 @@ function play(){
     const iframevid = document.getElementById('moviedet').contentWindow.document.getElementById('moviename');
     const name = iframevid.innerText;
     const mydata = JSON.parse(JSON.stringify(data));
-    alert(name)
     if(name === mydata[0].movieid){
         const source = mydata[0].link;
     }
@@ -39,7 +38,9 @@ function play(){
             } else {
                 document.write("Not supported :(");
             }
+player.load()
             player.play()
+alert("Already played what are you waiting for!")
 }
 
 
