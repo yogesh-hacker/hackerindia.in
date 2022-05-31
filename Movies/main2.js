@@ -1,7 +1,12 @@
 setTimeout(play,1500);
 
 function play(){
-    console.log("Playing...")
+    const iframevid = document.getElementById('moviedet').contentWindow.document.getElementById('moviename');
+    const name = iframevid.innerText;
+    const mydata = JSON.parse(JSON.stringify(data));
+    if(name === mydata[0].movieid){
+        const source = mydata[0].link;
+    }
     if (p2pml.hlsjs.Engine.isSupported()) {
         var engine = new p2pml.hlsjs.Engine();
         var player = videojs("moviesrc", {
@@ -12,20 +17,10 @@ function play(){
                 },
             },
         });
-        
-    const iframevid = document.getElementById('moviedet').contentWindow.document.getElementById('moviename');
-    const name = iframevid.innerText;
-    const mydata = JSON.parse(JSON.stringify(data));
-var x = mydata[0].movieid;
-alert(x)
-    if(name === mydata[0].movieid){
-        const source = mydata[0].link;
-        alert(source)
-    }
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
-            type: "application/x-mpegURL",
+            type: "video/mp4",
             allowSeeksWithinUnsafeLiveWindow: true
         });
 
