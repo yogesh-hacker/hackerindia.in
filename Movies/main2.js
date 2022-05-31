@@ -1,4 +1,4 @@
-setTimeout(play,1000);
+setTimeout(play,1500);
 
 function play(){
     console.log("Playing...")
