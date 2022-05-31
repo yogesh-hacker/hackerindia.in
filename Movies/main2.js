@@ -18,14 +18,8 @@ function play(){
     const mydata = JSON.parse(JSON.stringify(data));
     if(name === mydata[0].movieid){
         const source = mydata[0].link;
+        alert(source)
     }
-    if(name === mydata[1].movieid){
-        const source = mydata[1].link;
-    }
-    if(name === mydata[2].movieid){
-        const soruce = mydata[2].link;
-    }
-alert(source);
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
