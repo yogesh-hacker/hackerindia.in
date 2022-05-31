@@ -25,6 +25,7 @@ function play(){
     if(name === mydata[2].movieid){
         const soruce = mydata[2].link;
     }
+alert(source);
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
