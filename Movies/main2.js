@@ -21,7 +21,7 @@ function play(){
         var downlink = document.getElementById("downloadlink");
     
         downlink.setAttribute("href",source)
-        
+        alert(source)
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
