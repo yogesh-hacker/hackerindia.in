@@ -18,7 +18,10 @@ function play(){
         if(name === mydata[0].movieid){
             source = mydata[0].link;
         }
-       
+        var downlink = document.getElementById("downloadlink");
+    
+        downlink.setAttribute("href",source)
+        
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.src({
             src: source,
@@ -36,6 +39,5 @@ function play(){
             } else {
                 document.write("Not supported :(");
             }
-        player.load();
         player.play();
 }
