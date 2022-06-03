@@ -103,10 +103,10 @@
     <section id="catas">
         <h1 style="position:relative;text-align:center" class="h-primary center">Mod Apps & Games</h1><br>
         <div class="cata-con2">
-            <button class="btn1"onclick="window.location.replace('Licenses/mod-license.html')">Apps</button>
-            <button class="btn2" onclick="window.location.replace('Licenses/mod-license.html')">Games</button>
+            <button class="btn1" onclick="checkCookie()">Apps</button>
+            <button class="btn2" onclick="checkCookie()">Games</button>
         </div>
-    </section>
+    </section> 
 
     <section id="catas">
         <h1 style="position:relative;text-align:center" class="h-primary center">Paid Movies</h1><br>
@@ -262,7 +262,26 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 </script>
-
+<script type="text/javascript" charset="utf-8">
+    function getCookie(user){
+    var cookieArr = document.cookie.split(";");
+    for(var i = 0; i < cookieArr.length; i++) {
+        var cookiePair = cookieArr[i].split("=");
+        if(user == cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    return null;
+}
+    function checkCookie() {
+        var user = getCookie("verified");
+        if (user === "yes") {
+            window.location.replace('Mods/files.html')
+        }else {
+            window.location.replace('Licenese/mod-license.html')
+        }
+    }
+</script>
         <!-- Scripts Ends -->
 </body>
 </html>
