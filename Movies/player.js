@@ -1,4 +1,11 @@
 setTimeout(play,2000)
+setTimeout(loaded,2100)
+
+
+function loaded(){
+    document.getElementById('loader').style.display="none"
+}
+
 
 function play(){
     if (p2pml.hlsjs.Engine.isSupported()) {
