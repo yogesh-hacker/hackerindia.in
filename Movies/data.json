@@ -45,7 +45,7 @@ data=[
         "movieid" : "Main Tera Hero",
         "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnuJElXx_3AP6vFsjSDXm0CVLrNXH_aQ07A&usqp=CAU",
         "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0_PbokGWCHqwDLeSSv67suGJa-ALA6qxn6w&usqp=CAU",
-        "link" : "",
+        "link" : "https://indiamovie.b-cdn.net//movies/gd/Main-Tera-Hero.mp4?_=1",
         "filetype" : "video/mp4",
     },
     {
