@@ -52,7 +52,7 @@ data=[
         "serialno" : "7",
         "movieid" : "Main Hoon Na",
         "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR08AHnZeUjPLlyxYEKwuwrc_JkdAQKDXnmzQ&usqp=CAU",
-        "thumbnail" : "",
+        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDPGO75wpKGQ-H1ZdROREStAM7SCO-0H5CNQ&usqp=CAU",
         "link" : "https://www-hzc9228.ssl0d.com/EbCx_hruYxxuuv6B6cLNmg/1656201077/I5EXWkZmjUyMzZG-tzFHnppt_6PXGnyOAVi3tdctaR3Z7ZwUlAKx7pbz3RXEQ_ns7kZOXa9-GYrCiRFPrPjSarkIaFEWg76lnZrnRHlEGmMRxKq47ha8liVLC8fBSovx9qb2QG_-JKaetP0uhJUMtAJAoPsFq8eiPpXgABHgKk2VdNiutBg_8LaZXPcxjOLs2SZquLik2xBmL6rAyebrXLe1IyErOOdxbRY0Ve_xLq8dxc8xX4whqcO3J1On6IiWBStjcYB19vnj9pMSYsnM0w/6801478.mp4?stream=1",
         "filetype" : "video/mp4",
     },
