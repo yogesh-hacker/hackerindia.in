@@ -58,10 +58,10 @@ data=[
     },
     {
         "serialno" : "8",
-        "movieid" : "",
-        "poster" : "",
-        "thumbnail" : "",
-        "link" : "",
+        "movieid" : "Vishwatma",
+        "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShQiWutZQKKvaxtXtO8XJTC2REaUUIgfU5hQ&usqp=CAU",
+        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMlP0VM-WDli-VIc5TIFkyVLFPBHOWi5x0cw&usqp=CAU",
+        "link" : "https://indiamovie.b-cdn.net//movies/disk2/md/Vishwatma.mp4",
         "filetype" : "video/mp4",
     },
     {
