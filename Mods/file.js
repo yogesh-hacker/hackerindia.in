@@ -28,7 +28,7 @@ function search_value() {
             if (requested_package == json.records[i].package_name) {
                 
                 package_name.append(json.records[i].package_name)
-                package_version.append(
+                package_version.append(json.records[i].package_version)
                 
                 check_point = 0
 
