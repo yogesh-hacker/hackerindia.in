@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
-<body onclick="openFullscreen()" onmousedown="openFullscreen()">
+<body onclick="openFullscreen()" onload="startTime()">
     <section id="status_bar">
         <div class="left">
-            <p id="clock">7:25</p>
+            <p id="clock"></p>
         </div>
         <div class="right">
             <div class="battery">
@@ -26,11 +26,112 @@
         </div>
     </section>
 
-    <button class="button" onclick="openFullscreen()">Full Screen</button>
 
+    <section id="main_body">
+        <div class="path">
+            <span><a id="path_root" href="#">HI Mod</a></span>
+            <span class="path_splitter">/</span>
+            <span><a class="package_name" id="path_package_id" href="#"></a></span>
+        </div>
+        
+        <div class="application_container">
+            <div class="app_box">
+                <div class="application_icon">
+                    <img id="package_icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCDm2sMfaU53uz5Nb8-mQ0pqyxvxzUK9F4-Q" alt="" />
+                </div>
+                <div class="application_details">
+                    <p id="package_name" class="package_name">
+                    </p>
+                    <p id="package_upload_date" class="package_upload_date">
+                       
+                    </p>
+                    <p id="package_version" class="package_version">
+                        1.19.20.02
+                    </p>
+                </div>
+            </div>
+
+            <div class="download_box" style="padding-bottom: 0;">
+                <a href="" class="download_btn">
+                    <span>Download APK (160.07 MB)</span>
+                </a>
+            </div>
+            <div class="download_box " style="padding-bottom: 0;">
+                <a href="" class="download_btn" style="background: #333;">
+                    <i></i>
+                    <span>Fast Download</span>
+                </a>
+            </div>
+            <p class="report_info">
+                All mod apks are uploaded by owner,if there is any infrigement
+            </p>
+            <p class="report_info">
+                Please send <a href="#">DMCA report to us.</a>
+            </p>
+
+
+            <div class="contents_section">
+                <h2>Contents : </h2>
+                <ul class="contents_list">
+                    <li><a href="">Mod Info</a></li>
+                    <li><a href="">Specifications</a></li>
+                    <li><a href="">Download Links</a></li>
+                    <li><a href="">Tags</a></li>
+                    <li><a href="">User Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="contents_info" id="mod_info">
+                <h3>Mod Info:</h3>
+            </div>
+            <div class="contents_info" id="specifications">
+                <h3>Specifications:</h3>
+                <table border="">
+                    <tr>
+                        <td>Size</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Version</td>
+                        <td id="package_version"></td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Root Need</td>
+                        <td>No Need</td>
+                    </tr>
+                    <tr>
+                        <td>In-App Purchase</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contents_info" id="download_links">
+                <h3>Download Links:</h3>
+                <div class="apk_links">
+                    <a href="">Minecraft 1.19.20</a>
+                    <a href="">Google Play Link</a>
+                </div>
+
+            </div>
+            <div class="contents_info" id="tags">
+                <h3>Tags:</h3>
+            </div>
+            <div class="contents_info" id="user_reviews">
+                <h3>User Reviews:</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--button class="button" onclick="openFullscreen()">Full Screen</button-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="file.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
