@@ -100,9 +100,9 @@ function processRows(json) {
         applicationContainer.className = "application_card";
         let apps = document.createElement("div");
         apps.className = "application_card";
-        apps.innerHTML = "<a class='application_link' href='/file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
-        games.innerHTML = "<a class='application_link' href='/file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
-        applicationContainer.innerHTML = "<a class='application_link' href='/file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
+        apps.innerHTML = "<a class='application_link' href='/Mods/file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
+        games.innerHTML = "<a class='application_link' href='/Mods/file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
+        applicationContainer.innerHTML = "<a class='application_link' href='/Mods/file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
         
         document.getElementById("hot_recommended").appendChild(applicationContainer);
         if (row.package_hot_apps === "yes"){
