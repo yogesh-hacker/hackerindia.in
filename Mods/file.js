@@ -1,7 +1,7 @@
 const requested_parameter = new URLSearchParams(window.location.search)
 var requested_package = requested_parameter.get('id')
 
-console.log(requested_package)
+alert(requested_package)
 
 $(document).ready(search_value())
 var script_url = "https://script.google.com/macros/s/AKfycbwomVjIQHoXUNc1ISnMCNOd7YXHSoqgeXpH3bGI1kHY3fb-5ZkTdD_7u2bF5Pje64it/exec";
@@ -18,18 +18,17 @@ function search_value() {
     var package_upload_date = $(".package_upload_date")
     var package_mod_info = $(".package_mod_info");
     var package_hot_apps = $(".package_hot_apps");
-    var package_categories = $("#package_categories");
-    
+    var package_categories = $(".package_categories");
+    check_point = 1
 
     $.getJSON(url, function (json) {
-        var current_package_name = $("#search_package").val().trim();
         //console.log(json.records[0].serial_no)
         for (var i = 0; i < json.records.length; i++) {
 
             if (requested_package == json.records[i].package_name) {
                 
                 package_name.append(json.records[i].package_name)
-                pa
+                package_version.append(
                 
                 check_point = 0
 
