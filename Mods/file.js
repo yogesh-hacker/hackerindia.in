@@ -28,7 +28,7 @@ function search_value() {
                 package_mod_info.append(json.records[i].package_mod_info)
             }
             if (check_point == 1) {
-                document.write("Package not found!")
+                console.log("Package not found!")
             }
             $("#loader").css("display", "none")
         }
