@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Navbar*/
+
+#status_bar {
+    width: 100%;
+    height: 26px;
+    background-color: #3A933F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.left {
+    position: absolute;
+    left: 10px;
+    height: 100%;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.battery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    position: relative;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#battery-level {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+
+#main_body {
+    background-color: rgb(245,245,245);
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    z-index: 0;
+}
+
+/*Path*/
+
+.path {
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+}
+
+.path a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: green;
+    outline: none;
+}
+
+.path_splitter {
+    padding: 0px 10px 0px 10px;
+}
+
+
+/*Main Body Starts*/
+
+
+.application_container {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 10px;
+}
+
+.application_icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin: 5px 20px 0px 0px;
+}
+
+.app_box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.application_details {
+    width: 150px;
+}
+
+.application_details p {
+    margin: 0;
+    padding: 0;
+}
+
+.application_name {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.application_upload_date,
+.application_version {
+    font-size: 17px;
+    color: #666;
+}
+
+.download_btn {
+    text-decoration: none;
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    width: 250px;
+    padding: 0;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px auto 0;
+    background-color: #05880a;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    text-transform: capitalize;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12)
+}
+
+.download_btn span {
+    display: inline;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.download_btn span,.download_btn span:hover,.download_btn:hover {
+    color: #fff
+}
+
+.download_btn:hover {
+    opacity: .7
+}
+
+.report_info {
+    position: relative;
+    color: #666;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.report_info a {
+    color: #666;
+}
+
+.contents_section {
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+
+.contents_section ul,
+.contents_section li,
+.contents_list {
+    margin: 0px 0px 0px 10px;
+    padding: 0;
+    color: #ffb700;
+}
+
+.contents_section li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #ffb700;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contents_info {
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+#specifications table {
+    display: table;
+    border: none;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+#specifications table tr td {
+    color: rgb(153,153,153);
+    padding: 10px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: 50%;
+    word-break: break;
+}
+
+#specifications tr:nth-child(2n+1) {
+    background-color: rgb(243,245,249);
+}
+
+.apk_links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+}
+
+.apk_links a {
+    padding: 5px;
+    text-decoration: none;
+    color: #05880a;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.apk_links a:hover {
+    opacity: 0.8;
+    color: #05880a;
+}
+
+
+/*Utility Classes*/
+
+#loader {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    margin-top: 32px;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+    transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+}
+.boxes .box {
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.boxes .box:nth-child(1) {
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    -webkit-animation: box1 1s linear infinite;
+    animation: box1 1s linear infinite;
+}
+.boxes .box:nth-child(2) {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    -webkit-animation: box2 1s linear infinite;
+    animation: box2 1s linear infinite;
+}
+.boxes .box:nth-child(3) {
+    -webkit-transform: translate(100%, 100%);
+    transform: translate(100%, 100%);
+    -webkit-animation: box3 1s linear infinite;
+    animation: box3 1s linear infinite;
+}
+.boxes .box:nth-child(4) {
+    -webkit-transform: translate(200%, 0);
+    transform: translate(200%, 0);
+    -webkit-animation: box4 1s linear infinite;
+    animation: box4 1s linear infinite;
+}
+
+
+.boxes .box > div {
+    background: #5C8DF6;
+    --translateZ: 15.5px;
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5C8DF6;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    -webkit-transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+}
+
+
+.boxes .box > div:nth-child(1) {
+    top: 0;
+    left: 0;
+    background: #5C8DF6;
+}
+.boxes .box > div:nth-child(2) {
+    background: #145af2;
+    right: 0;
+    --rotateY: 90deg;
+}
+.boxes .box > div:nth-child(3) {
+    background: #447cf5;
+    --rotateX: -90deg;
+}
+.boxes .box > div:nth-child(4) {
+    background: #DBE3F4;;
+    top: 0;
+    left: 0;
+    --translateZ: -90px;
+}
+
+
+@keyframes box1 {
+    0%,
+    50% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(200%, 0);
+    }
+}
+
+@keyframes box2 {
+    0% {
+        transform: translate(0, 100%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes box3 {
+    0%,
+    50% {
+        transform: translate(100%, 100%);
+    }
+    100% {
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes box4 {
+    0% {
+        transform: translate(200%, 0);
+    }
+    50% {
+        transform: translate(200%, 100%);
+    }
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
