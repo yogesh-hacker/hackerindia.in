@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'Caribbean';
+    src: url('Caribbean.ttf')
+}
+
+/*Navbar*/
+
+#navbar {
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #01875F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    position: sticky;
+    z-index: 2;
+}
+
+#navbar::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+.nav_brand {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Caribbean";
+}
+
+
+.navcontent_left {
+    position: absolute;
+    left: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navcontent_right {
+    position: absolute;
+    right: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sidebar*/
+
+#sidebar {
+    width: 0px;
+    max-height: 0px;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0;
+    background-color: #ffffff;
+    transition: 0.5s;
+    overflow: hidden;
+    font-family: 'Ubuntu', Sans-Serif;
+}
+
+.active {
+    width: 300px;
+    max-height: 100vh;
+}
+
+.sidebar_links {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar_links ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    padding: 0;
+}
+
+.links {
+    margin: 0px !important;
+}
+
+
+.links a {
+    display: block;
+    width: 100%;
+    background-color: #F6F6F6;
+    color: #4A4A4A;
+    border-bottom: 1px solid rgb(238,238,238);
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.sidenav_brand {
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid rgb(238,238,238);
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sidenav_brand:hover {
+    color: white;
+}
+
+
+.links a:hover {
+    color: black;
+}
+
+
+
+
+
+/*--------------------------------------*/
+
+
+#main_body {
+    background-color: rgb(245,245,245);
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    z-index: 0;
+    display: none;
+}
+
+
+/*Path*/
+
+.path {
+    color: #01875F;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+.path a,
+.path span {
+    color: #01875F;
+    text-decoration: none;
+    margin: 0px 5px;
+    letter-spacing: 1px;
+    font-family: 'Arima Madurai';
+    font-weight: 600;
+}
+
+
+/*Main Body Starts*/
+
+
+.application_container {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 10px;
+}
+
+.application_icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin: 5px 20px 0px 0px;
+}
+
+.app_box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.application_details {
+    width: 150px;
+}
+
+.application_details p {
+    margin: 0;
+    padding: 0;
+}
+
+.application_name {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.application_upload_date,
+.application_version {
+    font-size: 17px;
+    color: #666;
+}
+
+.download_btn {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #01875F;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.download_btn:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+.report_info {
+    position: relative;
+    color: #666;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.report_info a {
+    color: #666;
+}
+
+.contents_section {
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+
+.contents_section ul,
+.contents_section li,
+.contents_list {
+    margin: 0px 0px 0px 10px;
+    padding: 0;
+    color: #ffb700;
+}
+
+.contents_section li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #ffb700;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contents_info {
+    margin: 40px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+#specifications table {
+    display: table;
+    border: none;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+#specifications table tr td {
+    color: rgb(153,153,153);
+    padding: 10px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: 50%;
+    word-break: break;
+}
+
+#specifications tr:nth-child(2n+1) {
+    background-color: rgb(243,245,249);
+}
+
+.apk_links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+}
+
+.apk_links a {
+    padding: 5px;
+    text-decoration: none;
+    color: #01875F;
+    font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.apk_links a:hover {
+    opacity: 0.8;
+    color: #01875F;
+}
+
+#tags .categories{
+    display: block;
+    height: 50px;
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+
+.tags{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 1px 5px;
+}
+
+/*Utility Classes*/
+
+.opacity::before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 5s ease;
+    transition: all 5s ease;
+
+}
+
+#loader {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    margin-top: 32px;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+    transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+}
+.boxes .box {
+    width: 32px;
+    height: 32px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.boxes .box:nth-child(1) {
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    -webkit-animation: box1 1s linear infinite;
+    animation: box1 1s linear infinite;
+}
+.boxes .box:nth-child(2) {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    -webkit-animation: box2 1s linear infinite;
+    animation: box2 1s linear infinite;
+}
+.boxes .box:nth-child(3) {
+    -webkit-transform: translate(100%, 100%);
+    transform: translate(100%, 100%);
+    -webkit-animation: box3 1s linear infinite;
+    animation: box3 1s linear infinite;
+}
+.boxes .box:nth-child(4) {
+    -webkit-transform: translate(200%, 0);
+    transform: translate(200%, 0);
+    -webkit-animation: box4 1s linear infinite;
+    animation: box4 1s linear infinite;
+}
+
+
+.boxes .box > div {
+    background: #5C8DF6;
+    --translateZ: 15.5px;
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5C8DF6;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    -webkit-transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+}
+
+
+.boxes .box > div:nth-child(1) {
+    top: 0;
+    left: 0;
+    background: #5C8DF6;
+}
+.boxes .box > div:nth-child(2) {
+    background: #145af2;
+    right: 0;
+    --rotateY: 90deg;
+}
+.boxes .box > div:nth-child(3) {
+    background: #447cf5;
+    --rotateX: -90deg;
+}
+.boxes .box > div:nth-child(4) {
+    background: #DBE3F4;;
+    top: 0;
+    left: 0;
+    --translateZ: -90px;
+}
+
+
+@keyframes box1 {
+    0%,
+    50% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(200%, 0);
+    }
+}
+
+@keyframes box2 {
+    0% {
+        transform: translate(0, 100%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes box3 {
+    0%,
+    50% {
+        transform: translate(100%, 100%);
+    }
+    100% {
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes box4 {
+    0% {
+        transform: translate(200%, 0);
+    }
+    50% {
+        transform: translate(200%, 100%);
+    }
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
+
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+}
+
+.ripple::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease-in-out 0.5s;
+    transform: scale(5, 5);
+}
+
+.ripple:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: .1;
+    transition: 0s;
+    transform: scale(0, 0);
+}
