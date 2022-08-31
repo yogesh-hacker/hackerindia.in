@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SP Mod</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css" type="text/css" media="all" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav_brand">
+            <h3 style="margin:0;padding:0;">Sparrow Mod</h3>
+        </div>
+        <div class="navcontent_left">
+            <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
+        </div>
+        <input class="search_bar" type="text" id="search_bar" value="" placeholder="Enter Keywords to search..."/>
+        <div class="navcontent_right">
+            
+            <i class="fa-solid fa-magnifying-glass" onclick="openSearch()"></i>
+        </div>
+    </nav>
+
+    <div id="sidebar" class="">
+        <a class="sidenav_brand" href="#">SP Mod</a>
+        <div class="sidebar_links">
+            <ul class="links">
+                <li><a href="#" class="ripple">SP Mod Official</a></li>
+                <li><a href="#" class="ripple">App Mods</a></li>
+                <li><a href="#" class="ripple">Game Mods</a></li>
+                <li><a href="#" class="ripple">Upcoming Mods</a></li>
+                <li><a href="#" class="ripple">Top Mods</a></li>
+                <li><a href="#" class="ripple">About Us</a></li>
+                <li><a href="#" class="ripple">Contact Us</a></li>
+                <li><a href="#" class="ripple">APK Install</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section id="head">
+        <div class="appnav-2 transparent">
+            <div class="appnav2bottom ">
+                <button onclick="showMods()" class="b-same ripple" id="mods" type="submit">Mods</button>
+                <button onclick="showApps()" class="b-same ripple" id="apps" type="submit">Apps</button>
+                <button onclick="showGames()" id="games" class="b-same ripple" type="submit">Games</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="body">
+        <div class="quick-actions">
+            <div class="f-row">
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: " class=""><img class="quick-games" src="https://c.tenor.com/273216U1fPMAAAAC/steve-minecraft.gif" alt="" /></button>
+                    <p>
+                        Quick Games
+                    </p>
+                </div>
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: #01c853" class=""><i class="fa-solid fa-computer"></i></button>
+                    <p>
+                        Offline
+                    </p>
+                </div>
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: #2d9eff" class=""><i class="fa-solid fa-gamepad-modern"></i></button>
+                    <p>
+                        Single Player
+                    </p>
+                </div>
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="font-size:30px;background-color: #ff9d1c" class=""><i class="fa-regular fa-circle-dollar"></i></button>
+                    <p>
+                        Paid
+                    </p>
+                </div>
+            </div>
+
+            <div class="s-row">
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: #fec919" class=""><i class="fa-solid fa-paper-plane"></i></button>
+                    <p>
+                        Community
+                    </p>
+                </div>
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: #ef471a" class=""><i class="fa-regular fa-list-ul"></i></button>
+                    <p>
+                        All Requests
+                    </p>
+                </div>
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: #b457cb" class=""><i class="fa-brands fa-android"></i></button>
+                    <p>
+                        All Uploads
+                    </p>
+                </div>
+                <div class="content">
+                    <button onclick="alert('Under Construction!')" style="background-color: #1de9b6" class=""><i class="fa-solid fa-location-pin-lock"></i></button>
+                    <p>
+                        Region Locked
+                    </p>
+                </div>
+            </div>
+            <div id="announcements">
+                <i class="fa-regular fa-megaphone"></i>
+                <p class="ann-content">
+                    HackerIndia.in is the only official website
+                </p>
+
+            </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="category_title">
+            <div class="category_title_align">
+                <div class="category_title_left">
+                    <h3>Hot Recommended</h3>
+                </div>
+                <div class="category_title_right">
+                    <h3><i class="fa-solid fa-angle-right"></i></h3>
+                </div>
+            </div>
+        </div>
+        <div id="hot_recommended">
+        </div>
+    </section>
+
+
+
+
+
+    <section id="body_apps">
+        <div class="category_title">
+            <div class="category_title_align">
+                <div class="category_title_left">
+                    <h3 class="category_title_text">Recommended App Mods</h3>
+                </div>
+                <div class="category_title_right">
+                    <h3><i class="fa-solid fa-angle-right"></i></h3>
+                </div>
+            </div>
+        </div>
+        <div id="recommended_apps">
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="body_games">
+        <div class="category_title">
+            <div class="category_title_align">
+                <div class="category_title_left">
+                    <h3 class="category_title_text">Recommended Game Mods</h3>
+                </div>
+                <div class="category_title_right">
+                    <h3><i class="fa-solid fa-angle-right"></i></h3>
+                </div>
+            </div>
+        </div>
+        <div id="recommended_games">
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+</body>
+</html>
