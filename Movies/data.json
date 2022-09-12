@@ -9,10 +9,10 @@ data=[
     },
     { 
         "serialno" : "2",
-        "movieid" : "Ghost Rider : Spirit of Vengeance",
-        "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFi6zrDTv1M0Nd-fUDre7EGFKb9iYthGABw&usqp=CAU",
-        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMYjvpjJknzygMHvpCaVt7j9CNJPKN9kbGSg&usqp=CAU",
-        "link" : "#",
+        "movieid" : "Abhimaan",
+        "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdwt8s4rk0ws52_BNGedtLkZmZ9ufJthHPw&usqp=CAU",
+        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWagTWKYWtiqtJzmtdlIcD4IhLdohTi8bbQ&usqp=CAU",
+        "link" : "http://162.12.215.254/Data/Movies/Kolkata/Old/Abhimaan%20%282016%29%20Bengali%201080p%20HDRip/Abhimaan%20%282016%29%20Bengali%201080p%20HDRip.mkv",
         "filetype" : "video/mp4",
     },
     {
