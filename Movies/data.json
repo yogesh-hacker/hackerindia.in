@@ -13,7 +13,7 @@ data=[
         "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdwt8s4rk0ws52_BNGedtLkZmZ9ufJthHPw&usqp=CAU",
         "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWagTWKYWtiqtJzmtdlIcD4IhLdohTi8bbQ&usqp=CAU",
         "link" : "http://162.12.215.254/Data/Movies/Kolkata/Old/Abhimaan%20%282016%29%20Bengali%201080p%20HDRip/Abhimaan%20%282016%29%20Bengali%201080p%20HDRip.mkv",
-        "filetype" : "application/x-mpegURL",
+        "filetype" : "video/mp4",
     },
     {
         "serialno" : "3",
