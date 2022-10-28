@@ -8,7 +8,7 @@ RewriteCond %{REQUEST_URI} ^(.*)/{2,}(.*)$
 RewriteRule (.*) %1/%2 [R=301,L]
 </IfModule>
 
-RewriteCond %{HTTP_HOST} !^$
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteCond %{HTTPS}s ^on(s)|
-RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{https://yogesh-hacker.github.io} !^$
+RewriteCond %{https://yogesh-hacker.github.io} !^www\. [NC]
+RewriteCond %{https://yogesh-hacker.github.io ^on(s)|
+RewriteRule ^ http%1://www.%{https://yogesh-hacker.github.io}%{https://yogesh-hacker.github.io/hackerindia.in} [R=301,L]
