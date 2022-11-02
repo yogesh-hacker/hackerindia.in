@@ -17,10 +17,10 @@ data=[
     },
     {
         "serialno" : "3",
-        "movieid" : "The Time Machine (2002)",
-        "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROvqTUKDWxv_7SlmLY45dFeiMzkNC_cI2W6Q&usqp=CAU",
-        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6InGwvC3PNuPNL_40W0rlWvgqIKX1QCQBg&usqp=CAU",
-        "link" : "http://www.moviesyug.net/assets/files/3963/The Time Machine (2002) (BluRay) (PC HD Full Movie).mp4",
+        "movieid" : "Annadata (2002)",
+        "poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbPUlsO_KHdSHBJegr0e1Cb6vSVIpqN1FEmg&usqp=CAU",
+        "thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC_xMdFTvA7GRr_SSkS3C3rDGO6h_2SORf1A&usqp=CAU",
+        "link" : "https://rr3---sn-qxaeenl6.c.drive.google.com/videoplayback?expire=1667414545&ei=0YFiY_a_MI2--LYP6cuE8AY&ip=2409:4061:2ecc:8174:1e5f:cb44:427d:85f2&cp=QVRLWUVfU1VSRlhPOjZqbFFhekRUTG9hZmgwcHBqMWMtSGgteFk1N2dLY2MtdTk4Y1U1Y2tvZHo&id=384981cf1f9a4d0f&itag=18&source=webdrive&requiressl=yes&mh=Cg&mm=32&mn=sn-qxaeenl6&ms=su&mv=m&mvi=3&pl=41&sc=yes&ttl=transient&susc=dr&driveid=1w9zSVWWERWhPnjJrs0u5hOAEtbC95mNV&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=9812.613&lmt=1667164887638371&mt=1667399814&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAIW4Ci-Vnsu0m-E1bdBy2rTP6L2vQ6RjOKaoQ7CbdEaMAiEAlREST6tQmxioJs6yfZ6-g8lVb6TPWAplg1d5CNVly1U=&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AG3C_xAwRAIhAJDPRc8zLOHhEmdrF1gEc00OtrAUOdU85zqkZtyYY01cAh8R1vdIxt1_DRtwCr0lQaldz6jEnln97y-tPJn7TDwI&cpn=Zj3S_PeevrGv6MeO&c=WEB_EMBEDDED_PLAYER&cver=1.20221030.00.00",
         "filetype" : "video/mp4",
     },
     {
