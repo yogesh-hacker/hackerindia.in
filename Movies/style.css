@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0C101A;
+    transition-duration: 0.2s;
+    padding: 70px 0px 0px 0px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: #0C101A;
+    border-bottom: 1px solid #192133;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu{
+    display: block;
+    position: absolute;
+    left: 10px;
+    color: #A1A3A9;
+    font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transition-duration: 0.2s;
+}
+
+.nav_menu:hover{
+    color: white;
+}
+
+.nav_items{
+    list-style-type: none;
+    background-color: #0C101A;
+    top: 0;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+
+.canvas{
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_items ul li,
+.nav_items li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 15px;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.nav_items li a{
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.nav_items li i{
+    margin-right: 5px;
+    color: #A1A3A9;
+    transition-duration: 0.2s;
+}
+
+.nav_items a:hover i{
+    color: white;
+}
+
+.nav_logo{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar h2{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway';
+}
+
+#hi_movie{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+}
+.mv_poster_container{
+    position: relative;
+    width: 200px;
+    height: auto;
+    border: 1px solid white;
+}
+
+.mv_poster{
+    position: relative;
+    width: 100%;
+    
+}
+.mv_name{
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+    color: white;
+}
+
+
+.awaited_films{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.awaited_films div{
+    position: relative;
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    margin: 10px;
+    transition-duration: 0.2s;
+}
+
+.awaited_films div:hover{
+    opacity: 0.7;
+}
+
+
+
+.awaited_films div img{
+    width: 110px;
+    height: 150px;
+    border: 1px solid white;
+
+}
+
+.awaited_films div p{
+    color: white;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+#hi_player{
+    display: flex;
+    justify-content: center;
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0C101A;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+
+#player{
+    margin: 2px auto 0px auto;
+    width: 98%;
+    height: 200px;
+    border: 1px solid #A1A3A9;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    border-top: 1px solid #192133;
+}
+
+.nav_links_con{
+    margin: 20px 0px;
+}
+
+.nav_links_con ul li,
+.nav_links_con a{
+    list-style-type: none;
+    color: #A1A3A9;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    -webkit-tap-highlight-color: transparent;
+    padding: 5px;
+    transition-duration: 0.2s;
+}
+
+.link_social{
+    display: flex;
+    flex-direction: row;
+}
+
+.link_social li,
+.link_social a{
+    margin: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.link_social a{
+    display: block;
+    padding: 0px;
+    padding: 2px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.nav_links_con ul a:hover{
+    color: white;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 15px 0px auto;
+}
+
+.info img,
+.nav_items img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.info p,
+.nav_items p{
+    font-size: 15px;
+    color: white;
+    margin: 2px;
+    font-family: 'Montserrat';
+}
+
+/* Utility Classes */
+
+
+h1,h2,h3,h4{
+    color: white;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+button,
+.download{
+    margin: 20px 5px 20px 5px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 10px;
+    color: #A1A3A9;
+    background-color: #192133;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    transition-duration: 0.2s;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:hover,
+.download:hover{
+    color: white;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #192133;
+    border-left: none;
+    border-right: none;
+    margin: 0px 0px 20px 0px;
+}
