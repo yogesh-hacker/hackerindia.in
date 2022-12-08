@@ -1,12 +1,12 @@
 data=[{
-    "serial_no" : "1",
-    "movie_name" : "Tron : Legacy",
-    "movie_poster" : "",
-    "movie_thumbnail" : "",
-    "movie_src" : "",
-    "stream_type" : "application/x-mpegURL",
-    "is_playing" : "false"
-},
+        "serial_no" : "1",
+        "movie_name" : "Tron : Legacy",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
+        "stream_type" : "application/x-mpegURL",
+        "is_playing" : "false"
+    },
     {
 
         "serial_no" : "2",
