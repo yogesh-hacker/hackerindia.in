@@ -10,10 +10,10 @@ data=[{
     {
 
         "serial_no" : "2",
-        "movie_name" : "Big Buck Bunny",
-        "movie_poster" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Big_buck_bunny_poster_big.jpg/1200px-Big_buck_bunny_poster_big.jpg",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-Kp8h8e0HTa1HcK7mTm0_LTKBQFbXbXJiA&usqp=CAU",
-        "movie_src" : "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+        "movie_name" : "Brahmāstra: Part One – Shiva",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegakybEifekftFDbW1aX96uhmK26mg3QhKw&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpQbd3Uxd4P0xOaWesHCmOQBR1mNldTwVig&usqp=CAU",
+        "movie_src" : "https://www-seq40452.ssl0d.com/hls2/Ni45lTsOKOr7NW4tmxMTIg/1670584847/5g82cOWrY8xSmFQWS-avj2Iys12gv0BdlYZQ83-G3Ks/master.m3u8",
         "stream_type" : "application/x-mpegURL",
         "is_playing" : "true"
     },
