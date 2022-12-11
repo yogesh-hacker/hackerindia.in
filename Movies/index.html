@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;500;600&family=Raleway:wght@500;600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.0/dist/videojs-seek-buttons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.0/dist/videojs-seek-buttons.css" />
     <script src='https://cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js'></script> 
+    <script src='https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js'></script>
     <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest'></script>
     <script src='https://cdn.jsdelivr.net/npm/videojs-landscape-fullscreen@11.113.0/dist/videojs-landscape-fullscreen.min.js' type='text/javascript' charset='utf-8'></script>
@@ -46,16 +46,9 @@
         </div>
         <h2>Hacker India</h2>
     </nav>
-    <h4>Currently Playing</h4>
     <section id="hi_movie">
-        <div class="mv_poster_container">
-            <img class="mv_poster" src="" alt="" />
-        </div>
-        <h4 class="mv_name"></h4>
-        <div>
-            <a class="download" type="submit">Download</a>
-            <button class="watch_online" type="submit">Watch Online</button>
-        </div>
+        <h4>Currently Playing</h4>
+        <br />
     </section>
     <hr />
     <h4>Most Awaited Films</h4>
@@ -79,15 +72,34 @@
             </p>
         </div>
     </div>
+
     <section id="hi_player">
+        <div class="nav">
+            <div id="nav-icon" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="title"></div>
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="tool-nav">
+            <ul>
+                <li onclick="DayOrNight()"><i class="fa-solid fa-sun"></i></li>
+                <li id="settings"><i class="fa-solid fa-gear"></i></li>
+            </ul>
+        </div>
         <video
             id="player"
             class="video-js vjs-theme-fantasy"
             src=""
-            preload=""
             poster=""
             controls>
         </video>
+        <a class="mx_player" href=""><i class="fa-sharp fa-solid fa-play"></i> MX Player</a>
     </section>
     <footer>
         <div class="nav_links_con">
@@ -113,10 +125,8 @@
             </p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
-     <script src="data.json" type="text/javascript" charset="utf-8"></script>
-    
-   
+    <script src="data.json" type="text/javascript" charset="utf-8"></script>
+    <script src="appConfig.js" type="text/javascript" charset="utf-8"></script>
 </body>

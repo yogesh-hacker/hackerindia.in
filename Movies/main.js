@@ -1,19 +1,32 @@
-$(".nav_menu").click(function(){
-    $(".nav_items").css("width","250px")
-    $(".canvas").css("display","block")
+$(".nav_menu").click(function() {
+    $(".nav_items").css("width", "250px")
+    $(".canvas").css("display", "block")
 })
 
-$(".canvas").click(function(){
-    $(".nav_items").css("width","0px")
-    $(".canvas").css("display","none")
+$(".canvas").click(function() {
+    $(".nav_items").css("width", "0px")
+    $(".canvas").css("display", "none")
 })
 
-$(".watch_online").click(function(){
-    $("#hi_movie").css("display","none")
-    $("footer").css("display","none")
-    $(".awaited_films").css("display","none")
-    $("#hi_player").css("display","flex")
+
+var currPlay;
+$(document).on('click', '.watch_online', function() {
+    $("#hi_movie").css("display", "none")
+    $("footer").css("display", "none")
+    $(".awaited_films").css("display", "none")
+    $("#hi_player").css("display", "flex")
+    currPlay = $(this).attr("movie-name")
+    $(".title").html(currPlay)
     load()
+})
+
+$(".close").click(function() {
+    $("#hi_movie").css("display", "flex")
+    $("footer").css("display", "flex")
+    $(".awaited_films").css("display", "flex")
+    $("#hi_player").css("display", "none")
+    movie_src = ""
+    play()
 })
 
 var data = []
@@ -24,29 +37,62 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    for(var i = 0;i<data.length;i++){
-        if(data[i].is_playing === "true"){
-            $(".mv_poster").attr("src",data[i].movie_poster)
-            $(".mv_name").text(data[i].movie_name)
-            $(".download").attr("href",data[i].movie_src)
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].is_playing === "true") {
+            if (data[i].download_link === "") {
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+            }
+            else{
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+            }
         }
     }
 })
 
+
+$(document).ready(function() {
+    $('#nav-icon').click(function() {
+        $(this).toggleClass('open');
+        $(".tool-nav").toggleClass('tool-nav-open')
+    });
+});
+
+
+
 var movie_src, movie_thumbnail, stream_type;
-function load(){
-    for(var i = 0;i<data.length;i++){
-        if(data[i].is_playing === "true"){
-            movie_src = data[i].movie_src
-            movie_thumbnail = data[i].movie_thumbnail;
-            stream_type = data[i].stream_type
+
+function load() {
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].is_playing === "true") {
+            if (data[i].movie_name === currPlay) {
+                movie_src = data[i].movie_src
+                movie_thumbnail = data[i].movie_thumbnail;
+                stream_type = data[i].stream_type
+                $(".mx_player").attr("href", "intent:"+data[i].movie_src+"#Intent;package=com.mxtech.videoplayer.ad;S.title="+data[i].movie_name+";end")
+            }
         }
     }
     setTimeout(play, 1000);
 }
 
 
-function play(){
+function DayOrNight() {
+    var x = $("#hi_player").css("background-color")
+    if (x === "rgb(12, 16, 26)") {
+        $("#hi_player , .nav").css("background-color", "#ffffff")
+        $(".close , .title").css("color", "black")
+        $("#nav-icon span").css("background-color", "black")
+    }
+    if (x === "rgb(255, 255, 255)") {
+        $("#hi_player , .nav").css("background-color", "#0C101A")
+        $(".close , .title").css("color", "#ffffff")
+        $("#nav-icon span").css("background-color", "")
+    }
+}
+
+
+
+function play() {
     if (p2pml.hlsjs.Engine.isSupported()) {
         var engine = new p2pml.hlsjs.Engine();
         var player = videojs("player", {
@@ -73,8 +119,8 @@ function play(){
         });
         player.ready(function () {
             player.volume(1); // 1%
-            });
-            } else {
-                document.write("Not supported :(");
-            }
+        });
+    } else {
+        document.write("Not supported :(");
+    }
 }
