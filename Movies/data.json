@@ -25,8 +25,8 @@ data=[{
         "movie_name" : "Knock Knock",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Ml3apyXfIMI6BjqAceRKA_C2qdtvwOKyKA&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFwOSyEX4V_IQ_XF4HsD_j4rf6zlfRZEy7A&usqp=CAU",
-        "movie_src" : "https://11opm.vkcdn5.com/olaxk5t6thuiolyobgl2dqtjnupxsrcrbzpn2cinycaipuf233bxots6gtwa/v.mp4",
-        "download_link" : "",
+        "movie_src" : "https://ds4rth.cfeucdn.com/silverlight/secip/111429/13335/o0ggjxVv4QjRIbNJb4LHhw/MTA0LjI4LjIzMS4xNDc=/1670852634/hls-vod-s0010/flv/api/files/videos/2020/03/20/1584716400k81co.mp4.m3u8",
+        "download_link" : "https://11opm.vkcdn5.com/olaxk5t6thuiolyobgl2dqtjnupxsrcrbzpn2cinycaipuf233bxots6gtwa/v.mp4",
         "stream_type" : "application/x-mpegURL",
         "is_playing" : "true"
     },
