@@ -34,7 +34,7 @@ data=[{
 
         "serial_no" : "4",
         "movie_name" : "",
-        "movie_poster" : ",
+        "movie_poster" : "",
         "movie_thumbnail" : "",
         "movie_src" : "",
         "download_link" : "",
