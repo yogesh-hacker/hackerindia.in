@@ -27,19 +27,19 @@ data=[{
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFwOSyEX4V_IQ_XF4HsD_j4rf6zlfRZEy7A&usqp=CAU",
         "movie_src" : "https://11opm.vkcdn5.com/olaxk5t6thuiolyobgl2dqtjnupxsrcrbzpn2cinycaipuf273oimf2bcv3q/v.mp4",
         "download_link" : "",
-        "stream_type" : "video/mp4",
+        "stream_type" : "application/x-mpegURL",
         "is_playing" : "true"
     },
     {
 
         "serial_no" : "4",
-        "movie_name" : "Tron : Legacy",
-        "movie_poster" : "",
-        "movie_thumbnail" : "",
-        "movie_src" : "",
+        "movie_name" : "Kantara",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGfaOvAfdkFXYOFJ0C5BbsH6NKpcSDs_j5w&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwkn-BH3UGJbHD8zAXLpcVWJk4Z3FXfTZuw&usqp=CAU",
+        "movie_src" : "https://908357237.tapecontent.net/radosgw/BaVoPZxAWkiyJPx/A5cM4QwYpZzEWuszaTi_UECnm7zOBwq_Gs0YkT-E4_KPsZjInJ4xWuVmhr9aTO_nBzMyvF99KeiRoGobrNyIpVGtWLv7sd0kUF7gQd0_pdKGSOirE6qZ9-oDb9oNPfCCL43K1PLJTsoCHYRv8JYIZMmGxFbwzr2yBbw7hCfHHGgZPCT--i9-Yy-pqqZu3xkSGO5Ji6xQ4FEbKgLLIHaamIZaAepMtoqfx5jxSWsJ5nfQ_UUAm9uiDz8_Lk0XFnpxRpXAg-Iy0siUclph2kt6JsjJDlikcqePhqRDEqtnxO7LNE4Nge2U-HlZnKGPUtbLO-f1bDKbw-W6aseTXDmBI8TDLi0xAQIHP-3c8g/Kantara+%282022%29+Hindi+HQ+HDRip+-+x264+-+AAC+-+700MB+ESub.mkv.mp4?stream=1",
         "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "is_playing" : "true"
     },
     {
         "serial_no" : "5",
