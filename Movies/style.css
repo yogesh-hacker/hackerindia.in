@@ -275,9 +275,9 @@ body {
 
 }
 
-@media (min-width:1000px){
+@media (min-width:900px){
     #player{
-          height: 400px;
+          height: 500px;
     }
 }
 
