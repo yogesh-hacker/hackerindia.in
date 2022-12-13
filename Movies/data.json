@@ -1,12 +1,12 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Main Hoon Na",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR08AHnZeUjPLlyxYEKwuwrc_JkdAQKDXnmzQ&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwl1hrxu270UVD89z_3sqgSJox2hPXPYkvkA&usqp=CAU",
-        "movie_src" : "https://3130-2078.sendcdn.com/d/afy5uzls6gosj4l4rj3ujd5yqrdmzr4mzdhtaroqjwyhgszvxhrnsrtn25wmtohsgjzngmu6/video.mkv",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
         "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
