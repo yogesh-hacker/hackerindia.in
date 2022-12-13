@@ -11,24 +11,24 @@ data=[{
     {
 
         "serial_no" : "2",
-        "movie_name" : "Brahmāstra: Part One – Shiva",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegakybEifekftFDbW1aX96uhmK26mg3QhKw&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpQbd3Uxd4P0xOaWesHCmOQBR1mNldTwVig&usqp=CAU",
-        "movie_src" : "https://www-seq40452.ssl0d.com/hls2/Ni45lTsOKOr7NW4tmxMTIg/1670584847/5g82cOWrY8xSmFQWS-avj2Iys12gv0BdlYZQ83-G3Ks/master.m3u8",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
         "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
         "serial_no" : "3",
-        "movie_name" : "Knock Knock",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Ml3apyXfIMI6BjqAceRKA_C2qdtvwOKyKA&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFwOSyEX4V_IQ_XF4HsD_j4rf6zlfRZEy7A&usqp=CAU",
-        "movie_src" : "https://ds4rth.cfeucdn.com/silverlight/secip/111429/13335/o0ggjxVv4QjRIbNJb4LHhw/MTA0LjI4LjIzMS4xNDc=/1670852634/hls-vod-s0010/flv/api/files/videos/2020/03/20/1584716400k81co.mp4.m3u8",
-        "download_link" : "https://11opm.vkcdn5.com/olaxk5t6thuiolyobgl2dqtjnupxsrcrbzpn2cinycaipuf233bxots6gtwa/v.mp4",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
+        "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
