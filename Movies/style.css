@@ -275,6 +275,12 @@ body {
 
 }
 
+@media (min-width:1000px){
+    #player{
+          height: 400px;
+    }
+}
+
 .mx_player{
     display: block;
     margin: 10px auto;
