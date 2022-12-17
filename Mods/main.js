@@ -103,13 +103,13 @@ function read_value() {
     $.getJSON(url, function (json) {
         for (var i = 0; i < json.records.length; i++) {
             if (json.records[i].package_hot_apps === "yes") {
-                $("#hot_recommended").append("<div class='application_card'><a class='application_link' href='/file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
+                $("#hot_recommended").append("<div class='application_card'><a class='application_link' href='file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
             }
             if (json.records[i].package_type === "app") {
-                $("#recommended_apps").append("<div class='application_card'><a class='application_link' href='/file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
+                $("#recommended_apps").append("<div class='application_card'><a class='application_link' href='file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
             }
             if (json.records[i].package_type === "game") {
-                $("#recommended_games").append("<div class='application_card'><a class='application_link' href='/file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
+                $("#recommended_games").append("<div class='application_card'><a class='application_link' href='file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
             }
         }
     })
