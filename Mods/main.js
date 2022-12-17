@@ -87,67 +87,30 @@ function openFullscreen() {
 
 
 
-const base = `https://docs.google.com/spreadsheets/d/1BnmvQou7PyXTIjTeIl6fOrRfv_blSMbYGgw-O5E9zjQ/gviz/tq?`;
-const sheetName = 'Sheet1';
-const query = encodeURIComponent('Select *')
-const url = `${base}&sheet=${sheetName}&tq=${query}`
- 
-const data = []
-document.addEventListener('DOMContentLoaded', init)
- 
-const output = document.querySelector('.output')
- 
-function init() {
-    fetch(url)
-        .then(res => res.text())
-        .then(rep => {
-            //Remove additional text and extract only JSON:
-            const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            const colz = [];
-            const tr = document.createElement('tr');
-            //Extract column labels
-            jsonData.table.cols.forEach((heading) => {
-                if (heading.label) {
-                    let column = heading.label;
-                    colz.push(column);
-                }
-            })
- 
-            //extract row data:
-            jsonData.table.rows.forEach((rowData) => {
-                const row = {};
-                colz.forEach((ele, ind) => {
-                    row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
-                })
-                data.push(row);
-            })
-            processRows(data);
-        })
-}
-  
-function processRows(json) {
-    json.forEach((row) => {
-        const keys = Object.keys(row);
-        let applicationContainer = document.createElement("div");
-        let games = document.createElement("div");
-        games.className = "application_card";
-        applicationContainer.className = "application_card";
-        let apps = document.createElement("div");
-        apps.className = "application_card";
-        apps.innerHTML = "<a class='application_link' href='file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
-        games.innerHTML = "<a class='application_link' href='file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
-        applicationContainer.innerHTML = "<a class='application_link' href='file.html?id="+row.package_name+"'><img class='' src='"+row.package_icon+"' alt='' /><p class='application_name'>"+row.package_name+"</p><p class='mod_info'>MOD, "+row.package_mod_info+"</p><p class='application_rating'>"+row.package_rating+"</p></a>";
-        
-        document.getElementById("hot_recommended").appendChild(applicationContainer);
-        if (row.package_hot_apps === "yes"){
-            document.getElementById("hot_recommended").appendChild(applicationContainer);
-        }
-        if(row.package_type === "game"){
-            document.getElementById("recommended_games").appendChild(games)
-        }
-        if(row.package_type === "app"){
-            document.getElementById("recommended_apps").appendChild(apps)
+$(document).ready(function() {
+    read_value()
+})
+
+var script_url = "https://script.google.com/macros/s/AKfycbwomVjIQHoXUNc1ISnMCNOd7YXHSoqgeXpH3bGI1kHY3fb-5ZkTdD_7u2bF5Pje64it/exec";
+
+
+function read_value() {
+    $("#result_container").css("left",
+        "-500px");
+    $("#loader").css("top",
+        "5px");
+    var url = script_url + "?action=read";
+    $.getJSON(url, function (json) {
+        for (var i = 0; i < json.records.length; i++) {
+            if (json.records[i].package_hot_apps === "yes") {
+                $("#hot_recommended").append("<div class='application_card'><a class='application_link' href='/file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
+            }
+            if (json.records[i].package_type === "app") {
+                $("#recommended_apps").append("<div class='application_card'><a class='application_link' href='/file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
+            }
+            if (json.records[i].package_type === "game") {
+                $("#recommended_games").append("<div class='application_card'><a class='application_link' href='/file.html?id="+json.records[i].package_name+"'><img class='' src='"+json.records[i].package_icon+"' alt='' /><p class='application_name'>"+json.records[i].package_name+"</p><p class='mod_info'>MOD, "+json.records[i].package_mod_info+"</p><p class='application_rating'>"+json.records[i].package_rating+"</p></a></div>")
+            }
         }
     })
-    
 }
