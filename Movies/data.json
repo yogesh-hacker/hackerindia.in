@@ -1,12 +1,12 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "",
-        "movie_poster" : "",
-        "movie_thumbnail" : "",
-        "movie_src" : "",
-        "download_link" : "",
+        "movie_name" : "Tiger Zinda Hai",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsd4cXTBkpkadYw_lQc9wrP2WLJZlfwzMWw&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDLRrr14zzoe8fiEIly3ObEzDI1yKboDIGsg&usqp=CAU",
+        "movie_src" : "https://cdn.ggcc8.com//movies/disk3/disk3_2/TIGER.ZINDA.HAI.2017.mp4",
+        "download_link" : "https://cdn.ggcc8.com//movies/disk3/disk3_2/TIGER.ZINDA.HAI.2017.mp4",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "is_playing" : "true"
     },
     {
 
