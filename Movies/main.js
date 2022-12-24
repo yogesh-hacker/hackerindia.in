@@ -46,9 +46,9 @@ $(document).ready(function() {
             } else {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
             }
-        } if(checkpoint == 0) {
+        } if (checkpoint == 0) {
             $("#hi_movie").html(`<h4>Currently Playing</h4>
-        <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+                <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
         }
     }
 })
@@ -77,7 +77,7 @@ function load() {
                 $(".mx_player").attr("href", "intent:"+data[i].movie_src+"#Intent;package=com.mxtech.videoplayer.ad;S.title="+data[i].movie_name+";end")
             }
         }
-        if(checkpoint==0){
+        if (checkpoint == 0) {
             movie_src = "Unavailable"
             movie_thumbnail = "unavailable_thumbnail.jpg"
             stream_type = "video/mpeg"
@@ -93,11 +93,13 @@ function DayOrNight() {
         $("#hi_player , .nav").css("background-color", "#ffffff")
         $(".close , .title").css("color", "black")
         $("#nav-icon span").css("background-color", "black")
+        $("#dayornight").attr("class","fa-solid fa-moon")
     }
     if (x === "rgb(255, 255, 255)") {
         $("#hi_player , .nav").css("background-color", "#0C101A")
         $(".close , .title").css("color", "#ffffff")
         $("#nav-icon span").css("background-color", "")
+        $("#dayornight").attr("class","fa-solid fa-sun")
     }
 }
 
@@ -135,3 +137,27 @@ function play() {
         document.write("Not supported :(");
     }
 }
+
+$(document).ready(function() {
+    const upcoming = JSON.parse(JSON.stringify(upcoming_movies))
+    for(var i=0;i<upcoming.length;i++){
+        $(".awaited_films").append(`<div><img src="`+upcoming[i].movie_poster+`"></img><p>`+upcoming[i].movie_name+`</p><span data-movie="`+upcoming[i].movie_name+`">`+upcoming[i].release_year+`</span></div>`)
+    }
+})
+
+$(document).on('click', '.awaited_films div', function() {
+    var toggle = $(this).find("span").css("opacity")
+    $(".awaited_films").find("img").css("opacity","1")
+        $(".awaited_films").find("span").css("opacity","0")
+        $(".awaited_films").find("span").css("bottom","0px")
+    if(toggle === "0"){
+        $(this).find("img").css("opacity","0.6")
+        $(this).find("span").css("opacity","1")
+        $(this).find("span").css("bottom","50%")
+    }
+    else{
+        $(this).find("img").css("opacity","1")
+        $(this).find("span").css("opacity","0")
+        $(this).find("span").css("bottom","0")
+    }
+})
