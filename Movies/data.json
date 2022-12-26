@@ -14,7 +14,7 @@ data=[{
         "movie_name" : "The Fast & The Furious: Tokyo Drift",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhse6sk-M2dOBy3_yO9Sp2px47zFq7WYl_Q&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGbGcaeZn9RwAsBjQ8VBQbiJ8_8xRnG4CLgg&usqp=CAU",
-        "movie_src" : "https://sw17.vkcdn5.com/olaxlp7nthuiolyobgp2dclmgvyayfxxigrkjj6onk47a55u37fot5jqynma/v.mp4",
+        "movie_src" : "https://my.bakshiold.workers.dev/0:/2005-2010/The%20Fast%20and%20the%20Furious%20Tokyo%20Drift%20(2006)%20720p%20Dual%20Audio%20(Hin-Eng)%20.mkv",
         "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
