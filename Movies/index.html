@@ -15,15 +15,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;500;600&family=Raleway:wght@500;600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <!-- Video.js Themes -->
+    <!-- Video.js base CSS -->
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+    <!-- City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+    <!-- Fantasy -->
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.0/dist/videojs-seek-buttons.css" />
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+    <!-- Sea -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+    <!-- Video.js Addons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.css" />
+    <!-- P2P Media Loader -->
     <script src='https://cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js'></script>
-    <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+    <!-- Video.js Base JS -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest'></script>
-    <script src='https://cdn.jsdelivr.net/npm/videojs-landscape-fullscreen@11.113.0/dist/videojs-landscape-fullscreen.min.js' type='text/javascript' charset='utf-8'></script>
-    <script src='https://cdn.jsdelivr.net/npm/videojs-seek-buttons@2.2.1/dist/videojs-seek-buttons.min.js' type='text/javascript' charset='utf-8'></script>
+    <script src='https://www.unpkg.com/videojs-landscape-fullscreen@11.1111.0/dist/videojs-landscape-fullscreen.min.js' type='text/javascript' charset='utf-8'></script>
+    <script src='https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.min.js' type='text/javascript' charset='utf-8'></script>
+
 </head>
 <body>
     <nav id="navbar">
@@ -43,10 +57,12 @@
 
         </ul>
         <div class="canvas">
-
         </div>
         <h2>Hacker India</h2>
     </nav>
+
+    <!-- Main Page -->
+
     <section id="hi_movie">
         <h4>Currently Playing</h4>
         <br />
@@ -55,6 +71,9 @@
     <h4>Most Awaited Films</h4>
     <div class="awaited_films">
     </div>
+
+    <!-- Player -->
+
     <section id="hi_player">
         <div class="nav">
             <div id="nav-icon" class="hamburger">
@@ -83,6 +102,80 @@
         </video>
         <a class="mx_player" href=""><i class="fa-sharp fa-solid fa-play"></i> MX Player</a>
     </section>
+    
+    <div class="resume_play">
+        <p></p>
+        <button id="rsm_play" type="submit">Yes, please</button>
+        <button class="rsm_close" type="submit">No, Thanks</button>
+    </div>
+    
+    <div class="volume_booster">
+        <hr />
+        <div>
+            <p class="currVol">Volume : 1%</p>
+        <button type="submit">Destroy Panel</button>
+        <input class="volume" max="100" min="1" type="range" value="1" />
+        </div>
+    </div>
+
+    <!-- Player Settings -->
+    <div class="sett_canvas"></div>
+    <section id="player_settings">
+        <h3>Settings</h3>
+        <div class="player_dropdown">
+            <label for="Themes">Themes</label>
+            <select name="select" id="select">
+                <option value="fantasy" selected>Fantasy (Default)</option>
+                <option value="city">City</option>
+                <option value="forest">Forest</option>
+                <option value="sea">Sea</option>
+                <option value="base">Base</option>
+
+            </select>
+        </div>
+        <div class="quick_shortcuts sett_part">
+            <p>
+                Quick Shortcuts
+            </p>
+            <div class="content">
+                <div class="checkboxes">
+                    <input id="1" type="checkbox" checked/>
+                    <label for="1">Resume Play</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="2" type="checkbox" checked/>
+                    <label for="2">Remember selections</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="3" type="checkbox" />
+                    <label for="3">Preview while seeking</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="4" type="checkbox" />
+                    <label for="4">Picture-in-Picture popup</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="5" type="checkbox" checked disabled/>
+                    <label for="5">Desktop compatibale mode (System Default)</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="6" type="checkbox"/>
+                    <label for="6">Volume boost</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="7" type="checkbox"/>
+                    <label for="7">Audio track selectable</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="8" type="checkbox"/>
+                    <label for="8">Equilizer</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
     <footer>
         <div class="nav_links_con">
             <ul>
@@ -107,7 +200,8 @@
             </p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
     <script src="data.json" type="text/javascript" charset="utf-8"></script>
     <script src="upcoming.json" type="text/javascript" charset="utf-8"></script>

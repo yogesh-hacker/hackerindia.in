@@ -40,15 +40,17 @@ $(document).ready(function() {
     var checkpoint = 0;
     for (var i = 0; i < data.length; i++) {
         if (data[i].is_playing === "true") {
-            checkpoint = 1;
             if (data[i].download_link === "") {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                checkpoint = 1;
             } else {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                checkpoint = 1;
             }
-        } if (checkpoint == 0) {
-            $("#hi_movie").html(`<h4>Currently Playing</h4>
-                <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+            if (checkpoint == 0) {
+                $("#hi_movie").html(`<h4>Currently Playing</h4>
+                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+            }
         }
     }
 })
@@ -93,13 +95,13 @@ function DayOrNight() {
         $("#hi_player , .nav").css("background-color", "#ffffff")
         $(".close , .title").css("color", "black")
         $("#nav-icon span").css("background-color", "black")
-        $("#dayornight").attr("class","fa-solid fa-moon")
+        $("#dayornight").attr("class", "fa-solid fa-moon")
     }
     if (x === "rgb(255, 255, 255)") {
         $("#hi_player , .nav").css("background-color", "#0C101A")
         $(".close , .title").css("color", "#ffffff")
         $("#nav-icon span").css("background-color", "")
-        $("#dayornight").attr("class","fa-solid fa-sun")
+        $("#dayornight").attr("class", "fa-solid fa-sun")
     }
 }
 
@@ -116,6 +118,7 @@ function play() {
                 },
             },
         });
+
         player.load()
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.poster(movie_thumbnail);
@@ -138,26 +141,156 @@ function play() {
     }
 }
 
+
 $(document).ready(function() {
     const upcoming = JSON.parse(JSON.stringify(upcoming_movies))
-    for(var i=0;i<upcoming.length;i++){
+    for (var i = 0; i < upcoming.length; i++) {
         $(".awaited_films").append(`<div><img src="`+upcoming[i].movie_poster+`"></img><p>`+upcoming[i].movie_name+`</p><span data-movie="`+upcoming[i].movie_name+`">`+upcoming[i].release_year+`</span></div>`)
     }
 })
 
 $(document).on('click', '.awaited_films div', function() {
     var toggle = $(this).find("span").css("opacity")
-    $(".awaited_films").find("img").css("opacity","1")
-        $(".awaited_films").find("span").css("opacity","0")
-        $(".awaited_films").find("span").css("bottom","0px")
-    if(toggle === "0"){
-        $(this).find("img").css("opacity","0.6")
-        $(this).find("span").css("opacity","1")
-        $(this).find("span").css("bottom","50%")
-    }
-    else{
-        $(this).find("img").css("opacity","1")
-        $(this).find("span").css("opacity","0")
-        $(this).find("span").css("bottom","0")
+    $(".awaited_films").find("img").css("opacity", "1")
+    $(".awaited_films").find("span").css("opacity", "0")
+    $(".awaited_films").find("span").css("bottom", "0px")
+    if (toggle === "0") {
+        $(this).find("img").css("opacity", "0.6")
+        $(this).find("span").css("opacity", "1")
+        $(this).find("span").css("bottom", "50%")
+    } else {
+        $(this).find("img").css("opacity", "1")
+        $(this).find("span").css("opacity", "0")
+        $(this).find("span").css("bottom", "0")
     }
 })
+
+/*---------- Settings ----------*/
+
+$("#settings").click(function() {
+    $("#player_settings").css("display", "block")
+    $(".sett_canvas").css("display", "block");
+    $(".hamburger").click()
+})
+
+$(".sett_canvas").click(function() {
+    $("#player_settings").css("display", "none")
+    $(".sett_canvas").css("display", "none")
+})
+
+$("#select").change(function() {
+    var theme = $(this).val();
+    document.cookie = "player-theme="+theme+";";
+    $("#player").removeClass()
+    $("#player").addClass("video-js vjs-theme-"+theme)
+})
+
+$("#player").on('play', function() {
+    const cookie = `; ${document.cookie}`;
+    const vb_parts = cookie.split(`; ${'volume-boost'}=`);
+    var volume_boost = vb_parts.pop().split(';').shift()
+    const preMv_parts = cookie.split(`; ${'last-movie'}=`);
+    const preTim_parts = cookie.split(`; ${'last-time'}=`);
+    var last_movie = preMv_parts.pop().split(';').shift()
+    var last_time = preTim_parts.pop().split(';').shift()
+    secs = Math.round(last_time);
+    var hours = Math.floor(secs / (60 * 60));
+    var divisor_for_minutes = secs % (60 * 60);
+    var minutes = Math.floor(divisor_for_minutes / 60);
+    var divisor_for_seconds = divisor_for_minutes % 60;
+    var seconds = Math.ceil(divisor_for_seconds);
+    var format_time = hours+":"+minutes+":"+seconds
+    var areResume = $("#1").prop("checked")
+    if (areResume == true) {
+        if (last_movie === currPlay) {
+            $(".resume_play").css("display", "flex")
+            $(".resume_play").find("p").html("You left at <b>"+format_time+"</b> do you want to continue?")
+        }
+    }
+    if (volume_boost === "true") {
+        $(".volume_booster").css("display", "flex")
+    }
+    var vid = $(this)
+    setInterval(function() {
+        document.cookie = "last-movie="+currPlay+";";
+        document.cookie = "last-time="+vid[0].currentTime+";";
+    }, 100);
+    cI_6z(1);
+})
+
+$(".rsm_close").click(function() {
+    $(".resume_play").css("display", "none")
+})
+
+
+$("#6").click(function() {
+    var isChecked = $(this).prop('checked')
+    document.cookie = "volume-boost=" + isChecked+";";
+    if (isChecked == true) {
+        $(".volume_booster").css("display", "flex")
+    }
+    if (isChecked == false) {
+        $(".volume_booster").css("display", "none")
+        cG_6z(1)
+    }
+})
+
+$("#rsm_play").click(function() {
+    const cookie = `; ${document.cookie}`;
+    const preTim_parts = cookie.split(`; ${'last-movie'}=`);
+    var last_time = preTim_parts.pop().split(';').shift()
+    $("#player")[0].currentTime = last_time
+    $(".resume_play").css("display", "none")
+})
+
+$(document).ready(function() {
+    const cookie = `; ${document.cookie}`;
+    const pT_parts = cookie.split(`; ${'player-theme'}=`);
+    var playerTheme = pT_parts.pop().split(';').shift()
+    $("#player").removeClass()
+    $("#player").addClass("video-js vjs-theme-"+playerTheme)
+    $("#select").val(playerTheme)
+    const vb_parts = cookie.split(`; ${'volume-boost'}=`);
+    var volume_boost = vb_parts.pop().split(';').shift()
+    if (volume_boost === "true") {
+        $("#6").attr("checked", "")
+    }
+
+})
+
+var prompt = 0
+$(".volume").change(function() {
+    var volume = $(this).val()
+    if (prompt == 0) {
+        if (volume > "60%") {
+            alert("Please beware about high volume especially upper than 60% this can damage hearing/speakers. ALL USE IS AT YOUR OWN RISK.")
+            prompt = 1;
+        }
+    }
+    $(".currVol").html("Volume : "+volume+"%")
+    cG_6z(volume)
+})
+
+$(".volume_booster").find("button").click(function() {
+    $(".volume_booster").css("display", "none")
+    cG_6z(1)
+})
+
+var g_6z;
+
+function cI_6z() {
+    ctx_6z = new AudioContext(); var el_6z = document.querySelector("video") ? document.querySelector("video"): document.querySelector("audio")? document.querySelector("audio"): alert('Media DOM not exist. Aborting.'); if (el_6z) {
+        g_6z = ctx_6z.createGain(); g_6z.gain.value = 1; var src_6z = ctx_6z.createMediaElementSource(el_6z); src_6z.connect(g_6z).connect(ctx_6z.destination);
+    }
+};
+
+function cG_6z(volume) {
+    g_6z.gain.value = volume;
+};
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2)
+        return parts.pop().split(';').shift();
+}
