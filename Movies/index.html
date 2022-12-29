@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css" type="text/css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;500;600&family=Raleway:wght@500;600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;500;600&family=Raleway:wght@500;600;700&family=Ubuntu:wght@400;500&family=Andika:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <!-- Video.js Themes -->
     <!-- Video.js base CSS -->
@@ -76,22 +76,11 @@
 
     <section id="hi_player">
         <div class="nav">
-            <div id="nav-icon" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <li id="settings"><i class="fa-solid fa-gear"></i></li>
             <div class="title"></div>
             <div class="close">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-regular fa-xmark"></i>
             </div>
-        </div>
-        <div class="tool-nav">
-            <ul>
-                <li onclick="DayOrNight()"><i id="dayornight" class="fa-solid fa-sun"></i></li>
-                <li id="settings"><i class="fa-solid fa-gear"></i></li>
-            </ul>
         </div>
         <video
             id="player"
@@ -102,19 +91,21 @@
         </video>
         <a class="mx_player" href=""><i class="fa-sharp fa-solid fa-play"></i> MX Player</a>
     </section>
-    
+
     <div class="resume_play">
         <p></p>
         <button id="rsm_play" type="submit">Yes, please</button>
         <button class="rsm_close" type="submit">No, Thanks</button>
     </div>
-    
+
     <div class="volume_booster">
         <hr />
         <div>
-            <p class="currVol">Volume : 1%</p>
-        <button type="submit">Destroy Panel</button>
-        <input class="volume" max="100" min="1" type="range" value="1" />
+            <p class="currVol">
+                Volume : 1%
+            </p>
+            <button type="submit">Destroy Panel</button>
+            <input class="volume" max="100" min="1" type="range" value="1" />
         </div>
     </div>
 
@@ -133,42 +124,51 @@
 
             </select>
         </div>
+        <div class="player_dropdown">
+            <label for="Themes">Theme Mode</label>
+            <select name="theme_mode" id="theme_mode">
+                <option value="dark" selected>Dark Mode</option>
+                <option value="light">Light Mode</option>
+                <option value="black">Black Mode</option>
+
+            </select>
+        </div>
         <div class="quick_shortcuts sett_part">
             <p>
                 Quick Shortcuts
             </p>
             <div class="content">
                 <div class="checkboxes">
-                    <input id="1" type="checkbox" checked/>
+                    <input id="1" type="checkbox" checked />
                     <label for="1">Resume Play</label>
                 </div>
                 <div class="checkboxes">
-                    <input id="2" type="checkbox" checked/>
-                    <label for="2">Remember selections</label>
+                    <input id="2" type="checkbox" checked />
+                    <label for="2">Equalizer</label>
                 </div>
                 <div class="checkboxes">
                     <input id="3" type="checkbox" />
-                    <label for="3">Preview while seeking</label>
+                    <label for="3">Volume boost</label>
                 </div>
                 <div class="checkboxes">
                     <input id="4" type="checkbox" />
-                    <label for="4">Picture-in-Picture popup</label>
+                    <label for="4">Preview while seeking</label>
                 </div>
                 <div class="checkboxes">
-                    <input id="5" type="checkbox" checked disabled/>
-                    <label for="5">Desktop compatibale mode (System Default)</label>
+                    <input id="5" type="checkbox" />
+                    <label for="5">Picture-in-Picture popup</label>
                 </div>
                 <div class="checkboxes">
-                    <input id="6" type="checkbox"/>
-                    <label for="6">Volume boost</label>
+                    <input id="6" type="checkbox" />
+                    <label for="6">Audio track selectable</label>
                 </div>
                 <div class="checkboxes">
-                    <input id="7" type="checkbox"/>
-                    <label for="7">Audio track selectable</label>
+                    <input id="7" type="checkbox" checked disabled />
+                    <label for="7">Desktop compatibale mode (System Default)</label>
                 </div>
                 <div class="checkboxes">
-                    <input id="8" type="checkbox"/>
-                    <label for="8">Equilizer</label>
+                    <input id="8" type="checkbox" />
+                    <label for="8">Remember selections</label>
                 </div>
             </div>
         </div>
@@ -202,7 +202,9 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="theme-mode.js" type="text/javascript" charset="utf-8"></script>
     <script src="data.json" type="text/javascript" charset="utf-8"></script>
     <script src="upcoming.json" type="text/javascript" charset="utf-8"></script>
 </body>

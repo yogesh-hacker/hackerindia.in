@@ -1,3 +1,4 @@
+var show = 1;
 $(".nav_menu").click(function() {
     $(".nav_items").css("width", "250px")
     $(".canvas").css("display", "block")
@@ -17,7 +18,9 @@ $(document).on('click', '.watch_online', function() {
     $("#hi_player").css("display", "flex")
     currPlay = $(this).attr("movie-name")
     $(".title").html(currPlay)
+    show = 1;
     load()
+    hide_seek()
 })
 
 $(".close").click(function() {
@@ -25,6 +28,7 @@ $(".close").click(function() {
     $("footer").css("display", "flex")
     $(".awaited_films").css("display", "flex")
     $("#hi_player").css("display", "none")
+    $(".volume_booster").css("display", "none")
     movie_src = ""
     play()
 })
@@ -56,15 +60,6 @@ $(document).ready(function() {
 })
 
 
-$(document).ready(function() {
-    $('#nav-icon').click(function() {
-        $(this).toggleClass('open');
-        $(".tool-nav").toggleClass('tool-nav-open')
-    });
-});
-
-
-
 var movie_src, movie_thumbnail, stream_type;
 
 function load() {
@@ -87,25 +82,6 @@ function load() {
     }
     setTimeout(play, 1000);
 }
-
-
-function DayOrNight() {
-    var x = $("#hi_player").css("background-color")
-    if (x === "rgb(12, 16, 26)") {
-        $("#hi_player , .nav").css("background-color", "#ffffff")
-        $(".close , .title").css("color", "black")
-        $("#nav-icon span").css("background-color", "black")
-        $("#dayornight").attr("class", "fa-solid fa-moon")
-    }
-    if (x === "rgb(255, 255, 255)") {
-        $("#hi_player , .nav").css("background-color", "#0C101A")
-        $(".close , .title").css("color", "#ffffff")
-        $("#nav-icon span").css("background-color", "")
-        $("#dayornight").attr("class", "fa-solid fa-sun")
-    }
-}
-
-
 
 function play() {
     if (p2pml.hlsjs.Engine.isSupported()) {
@@ -168,43 +144,48 @@ $(document).on('click', '.awaited_films div', function() {
 /*---------- Settings ----------*/
 
 $("#settings").click(function() {
-    $("#player_settings").css("display", "block")
-    $(".sett_canvas").css("display", "block");
-    $(".hamburger").click()
+    $(this).css("transform", "rotate(360deg)")
+    setTimeout(function() {
+        $("#player_settings").css("display", "block")
+        $(".sett_canvas").css("display", "block");
+    }, 250);
 })
 
 $(".sett_canvas").click(function() {
     $("#player_settings").css("display", "none")
     $(".sett_canvas").css("display", "none")
+    setTimeout(function() {
+        $("#settings").css("transform", "rotate(0deg)")
+    }, 150);
 })
 
 $("#select").change(function() {
     var theme = $(this).val();
-    document.cookie = "player-theme="+theme+";";
+    $.cookie = ("player-theme",theme)
     $("#player").removeClass()
     $("#player").addClass("video-js vjs-theme-"+theme)
 })
 
 $("#player").on('play', function() {
-    const cookie = `; ${document.cookie}`;
-    const vb_parts = cookie.split(`; ${'volume-boost'}=`);
-    var volume_boost = vb_parts.pop().split(';').shift()
-    const preMv_parts = cookie.split(`; ${'last-movie'}=`);
-    const preTim_parts = cookie.split(`; ${'last-time'}=`);
-    var last_movie = preMv_parts.pop().split(';').shift()
-    var last_time = preTim_parts.pop().split(';').shift()
+    var volume_boost = $.cookie("volume-boost")
+    var last_movie = $.cookie("last-movie")
+    var last_time = $.cookie("last-time")
     secs = Math.round(last_time);
     var hours = Math.floor(secs / (60 * 60));
-    var divisor_for_minutes = secs % (60 * 60);
-    var minutes = Math.floor(divisor_for_minutes / 60);
-    var divisor_for_seconds = divisor_for_minutes % 60;
-    var seconds = Math.ceil(divisor_for_seconds);
+    var dfm = secs % (60 * 60);
+    var minutes = Math.floor(dfm / 60);
+    var divisor_for_seconds = dfm % 60;
+    var seconds = Math.ceil(dfm);
     var format_time = hours+":"+minutes+":"+seconds
     var areResume = $("#1").prop("checked")
     if (areResume == true) {
-        if (last_movie === currPlay) {
-            $(".resume_play").css("display", "flex")
-            $(".resume_play").find("p").html("You left at <b>"+format_time+"</b> do you want to continue?")
+        if (show == 1) {
+            if (last_movie === currPlay) {
+                $(".resume_play").css("display", "flex")
+                $(".resume_play").find("p").html("You left at <b>"+format_time+"</b> do you want to continue?")
+                show = 0
+            }
+
         }
     }
     if (volume_boost === "true") {
@@ -212,8 +193,8 @@ $("#player").on('play', function() {
     }
     var vid = $(this)
     setInterval(function() {
-        document.cookie = "last-movie="+currPlay+";";
-        document.cookie = "last-time="+vid[0].currentTime+";";
+        $.cookie("last-movie", currPlay)
+        $.cookie("last-time", vid[0].currentTime)
     }, 100);
     cI_6z(1);
 })
@@ -223,9 +204,9 @@ $(".rsm_close").click(function() {
 })
 
 
-$("#6").click(function() {
+$("#3").click(function() {
     var isChecked = $(this).prop('checked')
-    document.cookie = "volume-boost=" + isChecked+";";
+    $.cookie("volume-boost", isChecked)
     if (isChecked == true) {
         $(".volume_booster").css("display", "flex")
     }
@@ -236,41 +217,25 @@ $("#6").click(function() {
 })
 
 $("#rsm_play").click(function() {
-    const cookie = `; ${document.cookie}`;
-    const preTim_parts = cookie.split(`; ${'last-movie'}=`);
-    var last_time = preTim_parts.pop().split(';').shift()
+    var last_time = $.cookie("last-time")
     $("#player")[0].currentTime = last_time
     $(".resume_play").css("display", "none")
 })
 
 $(document).ready(function() {
-    const cookie = `; ${document.cookie}`;
-    const pT_parts = cookie.split(`; ${'player-theme'}=`);
-    var playerTheme = pT_parts.pop().split(';').shift()
+    var playerTheme = $.cookie("player-theme")
     $("#player").removeClass()
     $("#player").addClass("video-js vjs-theme-"+playerTheme)
-    $("#select").val(playerTheme)
-    const vb_parts = cookie.split(`; ${'volume-boost'}=`);
-    var volume_boost = vb_parts.pop().split(';').shift()
-    if (volume_boost === "true") {
-        $("#6").attr("checked", "")
+    if (playerTheme != undefined) {
+        $("#select").val(playerTheme)
     }
-
+    var volume_boost = $.cookie("volume-boost")
+    if (volume_boost === "true") {
+        $("#3").attr("checked", "")
+    }
 })
 
 var prompt = 0
-$(".volume").change(function() {
-    var volume = $(this).val()
-    if (prompt == 0) {
-        if (volume > "60%") {
-            alert("Please beware about high volume especially upper than 60% this can damage hearing/speakers. ALL USE IS AT YOUR OWN RISK.")
-            prompt = 1;
-        }
-    }
-    $(".currVol").html("Volume : "+volume+"%")
-    cG_6z(volume)
-})
-
 $(".volume_booster").find("button").click(function() {
     $(".volume_booster").css("display", "none")
     cG_6z(1)
@@ -288,9 +253,25 @@ function cG_6z(volume) {
     g_6z.gain.value = volume;
 };
 
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2)
-        return parts.pop().split(';').shift();
+
+$(".volume").change(function() {
+    var volume = $(this).val()
+    if (prompt == 0) {
+        if (volume > "60%") {
+            alert("Please beware about high volume especially upper than 60% this can damage hearing/speakers. ALL USE IS AT YOUR OWN RISK.")
+            prompt = 1;
+        }
+    }
+    $(".currVol").html("Volume : "+volume+"%")
+    cG_6z(volume)
+})
+
+
+
+function hide_seek(){
+    var seek_buttons = $(".vjs-seek-button")
+    for(var i = 0;i < seek_buttons.length;i++){
+        $(seek_buttons[i]).css("display","none")
+    }
+    play()
 }
