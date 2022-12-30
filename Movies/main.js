@@ -162,7 +162,7 @@ $("#select").change(function() {
     $("#player").removeClass(x)
     $("#player").removeClass(".skip-back")
     $("#player").addClass("video-js vjs-theme-"+theme)
-    load()
+    alert("To save the changes page may need to reload. This process is automated!")
     window.location.reload()
 })
 
