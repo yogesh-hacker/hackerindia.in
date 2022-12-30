@@ -1,11 +1,11 @@
 $("#theme_mode").change(function(){
     var mode = $(this).val()
-    $.cookie("theme-mode",mode)
+    Cookies.set("theme-mode",mode)
     selectThemeMode()
 })
 
 function selectThemeMode(){
-    var theme_mode = $.cookie("theme-mode")
+    var theme_mode = Cookies.get("theme-mode")
     if(theme_mode === "dark"){
         $("#hi_player").css("background-color","#0C101A")
         $(".nav").css({"background-color":"#0C101A","border-bottom-color":"#192133"})

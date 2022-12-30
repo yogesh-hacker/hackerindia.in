@@ -37,7 +37,6 @@
     <script src='https://cdn.jsdelivr.net/npm/videojs-contrib-hls.js@latest'></script>
     <script src='https://www.unpkg.com/videojs-landscape-fullscreen@11.1111.0/dist/videojs-landscape-fullscreen.min.js' type='text/javascript' charset='utf-8'></script>
     <script src='https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.min.js' type='text/javascript' charset='utf-8'></script>
-
 </head>
 <body>
     <nav id="navbar">
@@ -90,6 +89,7 @@
             controls>
         </video>
         <a class="mx_player" href=""><i class="fa-sharp fa-solid fa-play"></i> MX Player</a>
+        <button type="submit" onclick="hide_seek()">Hide</button>
     </section>
 
     <div class="resume_play">
@@ -200,11 +200,12 @@
             </p>
         </div>
     </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="main.js" type="text/javascript" charset="utf-8"></script>
     <script src="theme-mode.js" type="text/javascript" charset="utf-8"></script>
     <script src="data.json" type="text/javascript" charset="utf-8"></script>
     <script src="upcoming.json" type="text/javascript" charset="utf-8"></script>
 </body>
+</html>

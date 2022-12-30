@@ -9,7 +9,6 @@ $(".canvas").click(function() {
     $(".canvas").css("display", "none")
 })
 
-
 var currPlay;
 $(document).on('click', '.watch_online', function() {
     $("#hi_movie").css("display", "none")
@@ -20,7 +19,6 @@ $(document).on('click', '.watch_online', function() {
     $(".title").html(currPlay)
     show = 1;
     load()
-    hide_seek()
 })
 
 $(".close").click(function() {
@@ -94,7 +92,6 @@ function play() {
                 },
             },
         });
-
         player.load()
         p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
         player.poster(movie_thumbnail);
@@ -103,7 +100,6 @@ function play() {
             type: stream_type,
             allowSeeksWithinUnsafeLiveWindow: true
         });
-        player.load()
         player.landscapeFullscreen();
         player.seekButtons({
             forward: 10,
@@ -161,15 +157,19 @@ $(".sett_canvas").click(function() {
 
 $("#select").change(function() {
     var theme = $(this).val();
-    $.cookie = ("player-theme",theme)
-    $("#player").removeClass()
+    Cookies.set("player-theme", theme)
+    var x = $("#player").attr("class")
+    $("#player").removeClass(x)
+    $("#player").removeClass(".skip-back")
     $("#player").addClass("video-js vjs-theme-"+theme)
+    load()
+    window.location.reload()
 })
 
 $("#player").on('play', function() {
-    var volume_boost = $.cookie("volume-boost")
-    var last_movie = $.cookie("last-movie")
-    var last_time = $.cookie("last-time")
+    var volume_boost = Cookies.get("volume-boost")
+    var last_movie = Cookies.get("last-movie")
+    var last_time = Cookies.get("last-time")
     secs = Math.round(last_time);
     var hours = Math.floor(secs / (60 * 60));
     var dfm = secs % (60 * 60);
@@ -193,8 +193,8 @@ $("#player").on('play', function() {
     }
     var vid = $(this)
     setInterval(function() {
-        $.cookie("last-movie", currPlay)
-        $.cookie("last-time", vid[0].currentTime)
+        Cookies.set("last-movie", currPlay)
+        Cookies.set("last-time", vid[0].currentTime)
     }, 100);
     cI_6z(1);
 })
@@ -206,7 +206,7 @@ $(".rsm_close").click(function() {
 
 $("#3").click(function() {
     var isChecked = $(this).prop('checked')
-    $.cookie("volume-boost", isChecked)
+    Cookies.set("volume-boost", isChecked)
     if (isChecked == true) {
         $(".volume_booster").css("display", "flex")
     }
@@ -217,19 +217,19 @@ $("#3").click(function() {
 })
 
 $("#rsm_play").click(function() {
-    var last_time = $.cookie("last-time")
+    var last_time = Cookies.get("last-time")
     $("#player")[0].currentTime = last_time
     $(".resume_play").css("display", "none")
 })
 
 $(document).ready(function() {
-    var playerTheme = $.cookie("player-theme")
-    $("#player").removeClass()
-    $("#player").addClass("video-js vjs-theme-"+playerTheme)
+    var playerTheme = Cookies.get("player-theme")
     if (playerTheme != undefined) {
         $("#select").val(playerTheme)
+        $("#player").removeClass()
+        $("#player").addClass("video-js vjs-theme-"+playerTheme)
     }
-    var volume_boost = $.cookie("volume-boost")
+    var volume_boost = Cookies.get("volume-boost")
     if (volume_boost === "true") {
         $("#3").attr("checked", "")
     }
@@ -265,13 +265,3 @@ $(".volume").change(function() {
     $(".currVol").html("Volume : "+volume+"%")
     cG_6z(volume)
 })
-
-
-
-function hide_seek(){
-    var seek_buttons = $(".vjs-seek-button")
-    for(var i = 0;i < seek_buttons.length;i++){
-        $(seek_buttons[i]).css("display","none")
-    }
-    play()
-}
