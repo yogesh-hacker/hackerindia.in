@@ -637,12 +637,14 @@ hr {
 }
 
 .resume_play p{
-    margin: 5px 0px;
+    margin: 10px 0px;
+    font-family: 'Andika'
 }
 
 #rsm_play{
     color: white;
     background-color: #FFA400;
+    font-family: 'Andika'
 }
 
 .resume_play button:hover{
