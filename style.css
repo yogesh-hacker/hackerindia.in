@@ -80,7 +80,7 @@ h3{
     height: 100%;
     width:100%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 /* Navigation Bar: Logo and Image */
@@ -136,7 +136,7 @@ h3{
     content: "";
     position: absolute;
     background: url('https://yogesh-hacker.github.io/hackerindia.in/bg.png') no-repeat center center/cover;
-    height: auto;
+    height: 642px;
     top:0px;
     left:0px;
     width: 100%;
