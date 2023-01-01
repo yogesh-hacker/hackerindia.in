@@ -1,23 +1,23 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Tiger Zinda Hai",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsd4cXTBkpkadYw_lQc9wrP2WLJZlfwzMWw&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDLRrr14zzoe8fiEIly3ObEzDI1yKboDIGsg&usqp=CAU",
-        "movie_src" : "https://t-ca-1.dokicloud.one/_v9/dfa24ca90c116cb057abff232da318e7f92a61b22adb925c57dae73b8761590857e1269e9bfd65682a8a12fc93e9bff7995d0e56704a0b534a8a80dbdee59585f9a99fe6fb6aa2e2b9207c78569e98e430efa0031493fc82e5993570db409a6c0f46d968370829ffd174dcca08ce2ceb6c8308e0f8b1ae136bfb210d772701fa/720/index.m3u8",
-        "download_link" : "https://cdn.ggcc8.com//movies/disk3/disk3_2/TIGER.ZINDA.HAI.2017.mp4",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
+        "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
         "serial_no" : "2",
-        "movie_name" : "The Fast & The Furious: Tokyo Drift",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhse6sk-M2dOBy3_yO9Sp2px47zFq7WYl_Q&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGbGcaeZn9RwAsBjQ8VBQbiJ8_8xRnG4CLgg&usqp=CAU",
-        "movie_src" : "https://my.bakshiold.workers.dev/0:/2005-2010/The%20Fast%20and%20the%20Furious%20Tokyo%20Drift%20(2006)%20720p%20Dual%20Audio%20(Hin-Eng)%20.mkv",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
         "download_link" : "",
-        "stream_type" : "video/mp4",
-        "is_playing" : "true"
+        "stream_type" : "application/x-mpegURL",
+        "is_playing" : "false"
     },
     {
 
