@@ -136,7 +136,7 @@ h3{
     content: "";
     position: absolute;
     background: url('https://yogesh-hacker.github.io/hackerindia.in/bg.png') no-repeat center center/cover;
-    height: 642px;
+    height: auto;
     top:0px;
     left:0px;
     width: 100%;
