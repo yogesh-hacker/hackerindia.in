@@ -135,7 +135,7 @@ h3{
 #home::before{ 
     content: "";
     position: absolute;
-    background: url('https://yogesh-hacker.github.io/hackerindia.in/bg.png') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
     height: 642px;
     top:0px;
     left:0px;
