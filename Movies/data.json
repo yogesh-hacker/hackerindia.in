@@ -1,12 +1,12 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "",
-        "movie_poster" : "",
-        "movie_thumbnail" : "",
-        "movie_src" : "",
+        "movie_name" : "K.G.F Chapter 2",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2AsBSi2B25XfCoDS6XmuMd2NNCMv-SFyXA&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRaLCEfHknMKGsN9w6HImJmB2vqflFJXr4LA&usqp=CAU",
+        "movie_src" : "https://mp4mvz.in/kgf-Org/%5BMp4moviez.WF%5D%20K.g.f%20Chapter%202%20%28hindi%29%20%282022%29%20720p%20Hq%20Amzn%20Web-dl%20X265%20%5Bhindi%20Org%20Dd%2B%205.1%5D.mkv",
         "download_link" : "",
-        "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "stream_type" : "video/mp4",
+        "is_playing" : "true"
     },
     {
 
