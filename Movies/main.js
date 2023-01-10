@@ -42,18 +42,19 @@ $(document).ready(function() {
     var checkpoint = 0;
     for (var i = 0; i < data.length; i++) {
         if (data[i].is_playing === "true") {
+            checkpoint = 1;
             if (data[i].download_link === "") {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
-                checkpoint = 1;
-            } else {
+            } if (data[i].download_link != "") {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
-                checkpoint = 1;
+                
             }
             if (checkpoint == 0) {
-                $("#hi_movie").html(`<h4>Currently Playing</h4>
-                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
-            }
+            $("#hi_movie").html(`<h4>Currently Playing</h4>
+                <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
         }
+        }
+        
     }
 })
 
@@ -162,7 +163,7 @@ $("#select").change(function() {
     $("#player").removeClass(x)
     $("#player").removeClass(".skip-back")
     $("#player").addClass("video-js vjs-theme-"+theme)
-    alert("To save the changes page may need to reload. This process is automated!")
+    load()
     window.location.reload()
 })
 
@@ -264,4 +265,16 @@ $(".volume").change(function() {
     }
     $(".currVol").html("Volume : "+volume+"%")
     cG_6z(volume)
+})
+
+$(document).on('click','.qna_content',function() {
+    $(this).find(".quest_closed").find("i").toggleClass("quest_open")
+    $(this).find(".qna_answer").toggleClass("ans_open")
+})
+
+$(document).ready(function() {
+    const qna_data = JSON.parse(JSON.stringify(qna))
+    for (var i = 0; i < qna_data.length; i++) {
+        $("#hi_qna").append(`<div class="qna_content"><p class="qna_question">`+qna_data[i].question+`<span class="quest_closed"><i class="fa-solid fa-plus"></i></span></p><p class="qna_answer">`+qna_data[i].answer+`</p></div><hr>`)
+    }
 })
