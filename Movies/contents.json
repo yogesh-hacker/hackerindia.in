@@ -1,0 +1,67 @@
+upcoming_movies=[
+    {
+        "serial_no" : "1",
+        "movie_name" : "Pushpa : The Rule",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFCBVvDE1HQKWLlQJlawrwf0JIYRpALH61w&usqp=CAU",
+        "release_year" :"2023"
+    },
+    {
+        "serial_no" : "2",
+        "movie_name" : "Adipurush",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0E8oiDtiVymqEPjSb-O9ZpDU4LWFpVH2J4Q&usqp=CAU",
+        "release_year" :"2023"
+    },
+    {
+        "serial_no" : "3",
+        "movie_name" : "Salaar",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgMYh8CJ939P5SmA3mSTt7DfKj_V_kZb0y5A&usqp=CAU",
+        "release_year" :"2023"
+    },
+    {
+        "serial_no" : "4",
+        "movie_name" : "Pathaan",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELJDsSqLlwGfD-dH85EHQC_a3s6gH9T63Dw&usqp=CAU",
+        "release_year" :"2023"
+    },
+    {
+        "serial_no" : "5",
+        "movie_name" : "Tiger 3",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjf8LWGs5dq3LIRtrnabKFynf1D8DartsQMQ&usqp=CAU",
+        "release_year" :"2023"
+    },
+]
+
+qna=[
+    {
+        "question" : "Can I watch all movies for free?",
+        "answer" : "Yes you can, you can watch all movies for free without any hidden charges or cost."
+    },
+    {
+        "question" : "Are there any way to get unlimited movies?",
+        "answer" : "No, you can get specific amount movies maximum 5 as we don't have any database server."
+    },
+    {
+        "question" : "How can I get my favourite movie to watch?",
+        "answer" : "If you don't find your desired movie then you can <a href='/hackerindia.in#contactus'>send us<a> your movie details. We will upload it soon."
+    },
+    {
+        "question" : "When my requested movie will be uploaded?",
+        "answer" : "As soon as we get your request we will upload it within 24 hours. Totally within 7 days your movie will be uploaded and you will be notified."
+    },
+    {
+        "question" : "Why my movie is not playing?(Website)",
+        "answer" : "These problem could be the format of that movie. As we dont support varied formats. For your kind informarion we only supports m3u8(mostly),mp4,mkv,webm,3gp etc. You should try MX Player. Same applied for downloading."
+    },
+    {
+        "question" : "Why my movie is not playing?(External)",
+        "answer" : "The link should be expired or file should be deleted by owner. In this case Trending movies link will be reuploaded within 1 hours from expiration. Same applied for downloading."
+    },
+    {
+        "question" : "What is the cause of redirected to other website? Such as youtube4kdownloader",
+        "answer" : "As because m3u8 format should need to convert to mp4 before downloading process."
+    },
+    {
+        "question" : "Settings not saved!",
+        "answer" : "This should be problem because of cookie you can try by clearing cookies. If your not solved by doing this so you can report us."
+    }
+]
