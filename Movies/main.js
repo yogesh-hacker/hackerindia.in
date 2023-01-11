@@ -53,7 +53,7 @@ $(document).ready(function() {
         setTimeout(function() {
             if (checkpoint == 0) {
                 $("#hi_movie").html(`<h4>Currently Playing</h4>
-                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#">Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
             }
         },
             100);
