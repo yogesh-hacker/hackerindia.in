@@ -1,12 +1,12 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "",
-        "movie_poster" : "",
-        "movie_thumbnail" : "",
+        "movie_name" : "Black Adam (PreDVD) oNRequest",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgw20FY_9YyREjL8qIbAsaRVKnaLWyZWYRQ&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TbapB0KqiHZQJjG6q2DKEr_PuMI8mcqmRw&usqp=CAU",
         "movie_src" : "",
         "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "is_playing" : "true"
     },
     {
 
