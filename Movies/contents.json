@@ -62,6 +62,6 @@ qna=[
     },
     {
         "question" : "Settings not saved!",
-        "answer" : "This should be problem because of cookie you can try by clearing cookies. If your problem still not solved by doing this so you can <a href='hackerindia.in#contact'>report us</a>."
+        "answer" : "This should be problem because of cookie you can try by clearing cookies. If your problem still not solved by doing this so you can <a href='/hackerindia.in#contact'>report us</a>."
     }
 ]
