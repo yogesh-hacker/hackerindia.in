@@ -42,7 +42,7 @@ qna=[
     },
     {
         "question" : "How can I get my favourite movie to watch?",
-        "answer" : "If you don't find your desired movie then you can <a href='/hackerindia.in#contactus'>send us<a> your movie details. We will upload it soon."
+        "answer" : "If you don't find your desired movie then you can <a href='/hackerindia.in#contact'>send us<a> your movie details. We will upload it soon."
     },
     {
         "question" : "When my requested movie will be uploaded?",
@@ -62,6 +62,6 @@ qna=[
     },
     {
         "question" : "Settings not saved!",
-        "answer" : "This should be problem because of cookie you can try by clearing cookies. If your not solved by doing this so you can report us."
+        "answer" : "This should be problem because of cookie you can try by clearing cookies. If your problem still not solved by doing this so you can <a href='hackerindia.in#contact'>report us</a>."
     }
 ]

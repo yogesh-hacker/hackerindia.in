@@ -433,15 +433,15 @@ footer {
 
 .link_social li,
 .link_social a {
+    display: block;
     margin: 2px;
     background-color: white;
     border-radius: 3px;
 }
 
 .link_social a {
+    padding: 4px;
     display: block;
-    padding: 0px;
-    padding: 2px;
     font-size: 15px;
     background-color: white;
 }

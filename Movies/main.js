@@ -47,14 +47,17 @@ $(document).ready(function() {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
             } if (data[i].download_link != "") {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
-                
+
             }
+        }
+        setTimeout(function() {
             if (checkpoint == 0) {
-            $("#hi_movie").html(`<h4>Currently Playing</h4>
-                <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
-        }
-        }
-        
+                $("#hi_movie").html(`<h4>Currently Playing</h4>
+                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+            }
+        },
+            100);
+
     }
 })
 
@@ -267,7 +270,7 @@ $(".volume").change(function() {
     cG_6z(volume)
 })
 
-$(document).on('click','.qna_content',function() {
+$(document).on('click', '.qna_content', function() {
     $(this).find(".quest_closed").find("i").toggleClass("quest_open")
     $(this).find(".qna_answer").toggleClass("ans_open")
 })
