@@ -11,21 +11,48 @@ $(".canvas").click(function() {
 
 var currPlay;
 $(document).on('click', '.watch_online', function() {
-    $("#hi_movie").css("display", "none")
-    $("footer").css("display", "none")
-    $(".awaited_films").css("display", "none")
-    $("#hi_player").css("display", "flex")
-    currPlay = $(this).attr("movie-name")
-    $(".title").html(currPlay)
+    $("._hide").css("display", "block")
+    $(".loading_bar").css("display", "block")
+    setTimeout(function() {
+        $(".loading_bar").css("width", "50%")
+    }, 100);
+    setTimeout(function() {
+        $(".loading_bar").css("width", "80%")
+    }, 1500);
+    setTimeout(function() {
+        $(".loading_bar").css("width", "100%")
+    }, 3000);
+    setTimeout(function() {
+        $(".loading_bar").css("display", "none")
+        $(".loading_bar").css("width", "0%")
+        $("._hide").css("display", "none")
+        $("#hi_player").css("display", "flex")
+        currPlay = $(this).attr("movie-name")
+        $(".title").html(currPlay)
+        load()
+    }, 4500);
     show = 1;
-    load()
-})
+});
+
 
 $(".close").click(function() {
-    $("#hi_movie").css("display", "flex")
-    $("footer").css("display", "flex")
-    $(".awaited_films").css("display", "flex")
-    $("#hi_player").css("display", "none")
+        $("._hide").css("display", "block")
+    $(".loading_bar").css("display", "block")
+    setTimeout(function() {
+        $(".loading_bar").css("width", "50%")
+    }, 100);
+    setTimeout(function() {
+        $(".loading_bar").css("width", "80%")
+    }, 1500);
+    setTimeout(function() {
+        $(".loading_bar").css("width", "100%")
+    }, 3000);
+    setTimeout(function() {
+        $(".loading_bar").css("display", "none")
+        $(".loading_bar").css("width", "0%")
+        $("._hide").css("display", "none")
+        $("#hi_player").css("display", "none")
+    }, 4500);
     $(".volume_booster").css("display", "none")
     movie_src = ""
     play()
@@ -44,16 +71,16 @@ $(document).ready(function() {
         if (data[i].is_playing === "true") {
             checkpoint = 1;
             if (data[i].download_link === "") {
-                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" target="_blank" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
             } if (data[i].download_link != "") {
-                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" target="_blank" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
 
             }
         }
         setTimeout(function() {
             if (checkpoint == 0) {
                 $("#hi_movie").html(`<h4>Currently Playing</h4>
-                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#">Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
             }
         },
             100);
@@ -281,3 +308,28 @@ $(document).ready(function() {
         $("#hi_qna").append(`<div class="qna_content"><p class="qna_question">`+qna_data[i].question+`<span class="quest_closed"><i class="fa-solid fa-plus"></i></span></p><p class="qna_answer">`+qna_data[i].answer+`</p></div><hr>`)
     }
 })
+
+function _loader() {
+    $("._hide").css("display",
+        "block")
+    $(".loading_bar").css("display",
+        "block")
+    setTimeout(function() {
+        $(".loading_bar").css("width", "50%")
+    },
+        100);
+    setTimeout(function() {
+        $(".loading_bar").css("width", "80%")
+    },
+        1500);
+    setTimeout(function() {
+        $(".loading_bar").css("width", "100%")
+    },
+        3000);
+    setTimeout(function() {
+        $(".loading_bar").css("display", "none")
+        $(".loading_bar").css("width", "0%")
+        $("._hide").css("display", "none")
+    },
+        4500);
+}
