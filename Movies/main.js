@@ -27,11 +27,11 @@ $(document).on('click', '.watch_online', function() {
         $(".loading_bar").css("width", "0%")
         $("._hide").css("display", "none")
         $("#hi_player").css("display", "flex")
-        currPlay = $(this).attr("movie-name")
-        $(".title").html(currPlay)
         load()
     }, 4500);
     show = 1;
+    currPlay = $(this).attr("movie-name")
+    $(".title").html(currPlay)
 });
 
 
@@ -96,6 +96,7 @@ function load() {
     for (var i = 0; i < data.length; i++) {
         if (data[i].is_playing === "true") {
             checkpoint = 1;
+            alert(currPlay)
             if (data[i].movie_name === currPlay) {
                 movie_src = data[i].movie_src
                 movie_thumbnail = data[i].movie_thumbnail;
