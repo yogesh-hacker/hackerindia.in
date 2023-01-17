@@ -1,9 +1,9 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Black Adam (PreDVD)",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgw20FY_9YyREjL8qIbAsaRVKnaLWyZWYRQ&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TbapB0KqiHZQJjG6q2DKEr_PuMI8mcqmRw&usqp=CAU",
-        "movie_src" : "https://yogesh-hacker.github.io/hackerindia.in/Error/under-construction.html",
+        "movie_name" : "Liger",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbY6HMyFxvoEcAmyWn7x_QX0lpgWI55F8_w&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYRMcRNmoFFKNBB5n4j8Pbn1vmxzZlDAePg&usqp=CAU",
+        "movie_src" : "https://archive.org/download/tu-hurt-might/Liger%20%282022%29%20Hindi%20Dubbed.mp4",
         "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
