@@ -36,7 +36,7 @@ $(document).on('click', '.watch_online', function() {
 
 
 $(".close").click(function() {
-        $("._hide").css("display", "block")
+    $("._hide").css("display", "block")
     $(".loading_bar").css("display", "block")
     setTimeout(function() {
         $(".loading_bar").css("width", "50%")
@@ -198,7 +198,6 @@ $("#select").change(function() {
 })
 
 $("#player").on('play', function() {
-    var volume_boost = Cookies.get("volume-boost")
     var last_movie = Cookies.get("last-movie")
     var last_time = Cookies.get("last-time")
     secs = Math.round(last_time);
@@ -219,32 +218,15 @@ $("#player").on('play', function() {
 
         }
     }
-    if (volume_boost === "true") {
-        $(".volume_booster").css("display", "flex")
-    }
     var vid = $(this)
     setInterval(function() {
         Cookies.set("last-movie", currPlay)
         Cookies.set("last-time", vid[0].currentTime)
     }, 100);
-    cI_6z(1);
 })
 
 $(".rsm_close").click(function() {
     $(".resume_play").css("display", "none")
-})
-
-
-$("#3").click(function() {
-    var isChecked = $(this).prop('checked')
-    Cookies.set("volume-boost", isChecked)
-    if (isChecked == true) {
-        $(".volume_booster").css("display", "flex")
-    }
-    if (isChecked == false) {
-        $(".volume_booster").css("display", "none")
-        cG_6z(1)
-    }
 })
 
 $("#rsm_play").click(function() {
@@ -260,41 +242,6 @@ $(document).ready(function() {
         $("#player").removeClass()
         $("#player").addClass("video-js vjs-theme-"+playerTheme)
     }
-    var volume_boost = Cookies.get("volume-boost")
-    if (volume_boost === "true") {
-        $("#3").attr("checked", "")
-    }
-})
-
-var prompt = 0
-$(".volume_booster").find("button").click(function() {
-    $(".volume_booster").css("display", "none")
-    cG_6z(1)
-})
-
-var g_6z;
-
-function cI_6z() {
-    ctx_6z = new AudioContext(); var el_6z = document.querySelector("video") ? document.querySelector("video"): document.querySelector("audio")? document.querySelector("audio"): alert('Media DOM not exist. Aborting.'); if (el_6z) {
-        g_6z = ctx_6z.createGain(); g_6z.gain.value = 1; var src_6z = ctx_6z.createMediaElementSource(el_6z); src_6z.connect(g_6z).connect(ctx_6z.destination);
-    }
-};
-
-function cG_6z(volume) {
-    g_6z.gain.value = volume;
-};
-
-
-$(".volume").change(function() {
-    var volume = $(this).val()
-    if (prompt == 0) {
-        if (volume > "60%") {
-            alert("Please beware about high volume especially upper than 60% this can damage hearing/speakers. ALL USE IS AT YOUR OWN RISK.")
-            prompt = 1;
-        }
-    }
-    $(".currVol").html("Volume : "+volume+"%")
-    cG_6z(volume)
 })
 
 $(document).on('click', '.qna_content', function() {
@@ -333,3 +280,7 @@ function _loader() {
     },
         4500);
 }
+
+
+
+/*---------- Volume Booster ----------*/
