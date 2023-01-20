@@ -1,12 +1,12 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Liger",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbY6HMyFxvoEcAmyWn7x_QX0lpgWI55F8_w&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbYRMcRNmoFFKNBB5n4j8Pbn1vmxzZlDAePg&usqp=CAU",
-        "movie_src" : "https://archive.org/download/tu-hurt-might/Liger%20%282022%29%20Hindi%20Dubbed.mp4",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
         "download_link" : "",
         "stream_type" : "video/mp4",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
