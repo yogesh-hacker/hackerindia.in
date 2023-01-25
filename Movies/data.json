@@ -1,9 +1,9 @@
 data=[{
         "serial_no" : "1",
         "movie_name" : "Deadpool 2",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJO_5pUS6f33HezfThHSIqfwwc7wcLpaafw&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_D3hEAwCiRdvUESxKRZN7eBeLyGAwZiftw&usqp=CAU",
-        "movie_src" : "https://steep-fog-52dd.karofah6749752.workers.dev/1395878556/ede395af10fd0dbc1a16cd5004db9c51649e89e932770a77b2dd37eca5ad86b9fd15b1b691c469d6282184e85c97877038cd56994ccf34d151cfe19a5aace8255e135b9bd7415518373287de1cba6dc84e877e529e4cb9137cbd22f21fbd42d6dc3d4b1440c6e52961bf1a4fec355c53b566681449f164fc15fceb1be1bcb3fa::765611243d715ecf6afcdec1925e4edd/Deadpool.2.2018.720p.Dual.Audio.Hin-Eng.Vegamovies.NL.mkv",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
+        "movie_src" : "upcoming.mp4",
         "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
