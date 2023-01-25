@@ -1,6 +1,6 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Deadpool 2",
+        "movie_name" : "Pathaan (Coming Soon)",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
         "movie_src" : "upcoming.mp4",
