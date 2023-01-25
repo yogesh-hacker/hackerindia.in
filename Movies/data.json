@@ -11,13 +11,13 @@ data=[{
     {
 
         "serial_no" : "2",
-        "movie_name" : "",
-        "movie_poster" : "",
-        "movie_thumbnail" : "",
-        "movie_src" : "",
+        "movie_name" : "Pathaan (DVDScr)",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
+        "movie_src" : "https://861658428.tapecontent.net/radosgw/LM9dwpzPp1URVoW/-OdTbuPcuXK6sKol_vejZTrJIj7PlXEEFJZB0hP-gAZPqdvIc0NWOWq25zJRy4slqj76YH2u-BCBqL93GHX2xGG5bwERv2jfAlEM4iqyas58VQi6aP2J9UB7FMqMqAJl4AQ-1Vc_M0zeMAyaZ317JJzb3UXBpgJ0YsUsaVdUbF_adDYnAkbMCScsw1SpKB9wvRW6cATQbr2B_AzmncyhjMoR0a6irXq-4LChR_4y34qF_QloIt6NfInuLqFSwVlJtr9KYH8LZyqAfvlqlk7xO6VzDhO9nAh5G9fkbqVoJlx1zQKSfnPB03Eq8Hw/Pathaan+%282023%29+Hindi+720p.mp4?stream=1",
         "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "is_playing" : "true"
     },
     {
 
