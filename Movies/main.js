@@ -71,7 +71,7 @@ $(document).ready(function() {
         if (data[i].is_playing === "true") {
             checkpoint = 1;
             if (data[i].download_link === "") {
-                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download="`+data[i].movie_name+`.2023.HINDI.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.HackerIndia.in">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download="`+data[i].movie_name+`.HINDI.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.HackerIndia.in">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
             } if (data[i].download_link != "") {
                 $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download>Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
 
