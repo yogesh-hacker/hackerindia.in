@@ -19,12 +19,6 @@ upcoming_movies=[
     },
     {
         "serial_no" : "4",
-        "movie_name" : "Pathaan",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELJDsSqLlwGfD-dH85EHQC_a3s6gH9T63Dw&usqp=CAU",
-        "release_year" :"2023"
-    },
-    {
-        "serial_no" : "5",
         "movie_name" : "Tiger 3",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjf8LWGs5dq3LIRtrnabKFynf1D8DartsQMQ&usqp=CAU",
         "release_year" :"2023"
