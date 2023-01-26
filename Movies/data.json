@@ -1,17 +1,17 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Pathaan (CamRip)",
+        "movie_name" : "Pathaan (CamRip HD)",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
-        "movie_src" : "https://resuda.ydc1wes.me/hls2/01/00004/d5yjtu2lgpcw_l/index-v1-a1.m3u8?t=RvIqzMFTDKqm6dzG7C9oDnZ1lyvgMk3h889jMd9NFTY&s=1674699771&e=14400&f=21152&i=0.0&sp=0",
+        "movie_src" : "https://ia904702.us.archive.org/13/items/pathaan.-2023.1080p.-camrip.-hindi.-world-4ufree.-digital/Pathaan.2023.1080p.CAMRip.HINDI.World4ufree.Digital.mkv",
         "download_link" : "",
-        "stream_type" : "application/x-mpegURL",
+        "stream_type" : "video/mp4",
         "is_playing" : "true"
     },
     {
 
         "serial_no" : "2",
-        "movie_name" : "Pathaan (Fast Server)",
+        "movie_name" : "Pathaan (CamRip SD)",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
         "movie_src" : "https://ia904706.us.archive.org/35/items/mx-networks-pathaan-2023-full-movie.-hindi-1080p/%40MX_Networks%20-%20Pathaan%202023%20Full%20Movie.%20Hindi%20%281080p%29.Mkv",
