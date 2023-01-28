@@ -12,3 +12,5 @@ RewriteCond %{https://yogesh-hacker.github.io} !^$
 RewriteCond %{https://yogesh-hacker.github.io} !^www\. [NC]
 RewriteCond %{https://yogesh-hacker.github.io ^on(s)|
 RewriteRule ^ http%1://www.%{https://yogesh-hacker.github.io}%{https://yogesh-hacker.github.io/hackerindia.in} [R=301,L]
+RewriteCond %{SERVER_PORT} 443 
+RewriteRule ^(.*)$ https://yogesh-hacker.github.io/hackerindia.in/$1 [R,L]
