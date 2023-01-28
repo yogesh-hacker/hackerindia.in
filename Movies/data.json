@@ -11,13 +11,13 @@ data=[{
     {
 
         "serial_no" : "2",
-        "movie_name" : "Pathaan (Server 2)",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
-        "movie_src" : "http://103.237.37.181/server1/Movies/Bollywood/2023/Pathaan%20%282023%29/Pathaan.mkv",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
         "download_link" : "",
-        "stream_type" : "video/webm",
-        "is_playing" : "true"
+        "stream_type" : "application/x-mpegURL",
+        "is_playing" : "false"
     },
     {
 
