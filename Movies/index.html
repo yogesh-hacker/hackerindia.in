@@ -39,6 +39,10 @@
     <script src='https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.min.js' type='text/javascript' charset='utf-8'></script>
 </head>
 <body>
+    <div class="alert">
+        <p>As because Chrome's new update (86+), requests that made from HTTP to HTTPS are failed on account of mix-content policy. Because of that videos are not playing (in the website) and downloads not working. So currently please use external video player and download by long pressing and open the link on a new tab. We are working on it we will fix it as soon as possible!</p>
+        <button onclick="$('.alert').css('display','none')">Close</button>
+    </div>
     <nav id="navbar">
         <a class="nav_menu" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
         <ul class="nav_items">
