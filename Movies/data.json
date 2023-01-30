@@ -5,7 +5,7 @@ data=[{
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
         "movie_src" : "https://leave.ydc1wes.me/hls2/01/00004/om111k509y24_,l,h,.urlset/master.m3u8?t=IxUF6wKc19j39Pp0ka1EVPngGQbfsXQ_sKiSxHYRIP4&s=1675056825&e=14400&f=21260&i=0.0&sp=0",
         "download_link" : "http://103.121.39.254/media/disk3/Hindi%20Movies/2023/Pathaan%202023%20PreDvd%201080p%20Hindi%20%20x264%20ESub%20%5bDDN%5d/Pathaan%202023%20PreDvd%201080p%20Hindi%20%20x264%20ESub%20%5bDDN%5d.mkv",
-        "stream_type" : "video/mp4",
+        "stream_type" : "application/x-mpegURL",
         "is_playing" : "true"
     },
     {
