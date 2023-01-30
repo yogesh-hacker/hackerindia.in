@@ -101,6 +101,7 @@ function load() {
                 movie_thumbnail = data[i].movie_thumbnail;
                 stream_type = data[i].stream_type
                 $(".mx_player").attr("href", "intent:"+data[i].movie_src+"#Intent;package=com.mxtech.videoplayer.ad;S.title="+data[i].movie_name+";end")
+                $(".vlc_player").attr("href", "intent:"+data[i].movie_src+"#Intent;package=org.videolan.vlc;S.title="+data[i].movie_name+";end")
             }
         }
         if (checkpoint == 0) {
