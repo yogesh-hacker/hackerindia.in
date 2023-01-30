@@ -266,10 +266,12 @@ body {
 .mx_player {
     display: block;
     margin: 10px auto;
-    padding: 10px 15px;
+    padding: 10px 0px;
     background-color: #0076FF;
     color: white;
     outline: none;
+    width: 150px;
+    text-align: center;
     text-decoration: none;
     border: none;
     border-radius: 3px;
