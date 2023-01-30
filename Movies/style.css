@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body {
@@ -280,6 +281,15 @@ body {
 .mx_player:hover {
     background-color: #006AE4;
     box-shadow: 0px 0px 0px 3px #8AC9FF;
+}
+
+.vlc_player{
+    background-color: #FF6700;
+}
+
+.vlc_player:hover{
+    background-color: #E85E00;
+    box-shadow: 0px 0px 0px 3px #FFA96E;
 }
 
 /*----------- Settings -----------*/
