@@ -14,7 +14,7 @@ data=[{
         "movie_name" : "",
         "movie_poster" : "",
         "movie_thumbnail" : "",
-        "movie_src" : "https://getnow.cloud/get/WEFpSkNXUWluR0ZmRk1zbmQ0U3dZYzFTbG1qajFhVWRTMFg0NHAxZzBJU3FxcWFTZWtFS0JpRmtZREx6M3pNcQ%3D%3D.mkv",
+        "movie_src" : "",
         "download_link" : "",
         "stream_type" : "application/x-mpegURL",
         "is_playing" : "false"
