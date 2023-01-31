@@ -22,13 +22,13 @@ data=[{
     {
 
         "serial_no" : "3",
-        "movie_name" : "",
-        "movie_poster" : "",
-        "movie_thumbnail" : "",
-        "movie_src" : "",
+        "movie_name" : "Shaakuntalam (Trailer)",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlEmQej6J0alYP7N4tGVKjwIPWTQTA_ejow&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBy6TdJ4ePogJfxsGnT8znazOEXJVYcHfPYw&usqp=CAU",
+        "movie_src" : "https://drive.google.com/uc?export=download&id=1KuH_1ahOfE5hBZx3u03XZmLPDpQSg1vL",
         "download_link" : "",
-        "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "stream_type" : "video/mp4",
+        "is_playing" : "true"
     },
     {
 
