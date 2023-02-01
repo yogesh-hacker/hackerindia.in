@@ -3,7 +3,7 @@ data=[{
         "movie_name" : "Pathaan (PreDVD HD)",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxXg0T4QKBSYGQiRNM4Oy0YUXGY7OI9jkQQ&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDSUxxoju2cUhiKI-jgBFIwQnlwh8Gb8o-w&usqp=CAU",
-        "movie_src" : "https://archive.org/download/pathaan.-2023.-v-3.1080p.-hq.-hdcam.-hindi.-dd.-2.0.x-264.-vegamovies.to/Pathaan.2023.V3.1080p.HQ.HDCAM.Hindi.DD.2.0.x264.Vegamovies.to.mkv",
+        "movie_src" : "https://ia801601.us.archive.org/21/items/pathaan-2023-hindi-cleaned-hq-print-1080p-x-264/Pathaan_2023_Hindi_Cleaned_HQ_Print_1080p_x264.mp4",
         "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
