@@ -64,23 +64,22 @@ $(document).ready(function() {
     data.push(mydata)
 })
 
-
 $(document).ready(function() {
     var checkpoint = 0;
     for (var i = 0; i < data.length; i++) {
         if (data[i].is_playing === "true") {
             checkpoint = 1;
             if (data[i].download_link === "") {
-                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].movie_src+`" download="`+data[i].movie_name+`">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" onclick="addDownload('`+data[i].movie_src+`','`+data[i].movie_name+`')" download="`+data[i].movie_name+`">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
             } if (data[i].download_link != "") {
-                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" href="`+data[i].download_link+`" download="`+data[i].movie_name+`">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
+                $("#hi_movie").append(`<div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="`+data[i].movie_poster+`" alt="" /></div><h4 class="mv_name">`+data[i].movie_name+`</h4><div><a class="download" type="submit" onclick="addDownload('`+data[i].download_link+`','`+data[i].movie_name+`')" download="`+data[i].movie_name+`">Download</a><button class="watch_online" movie-name="`+data[i].movie_name+`" type="submit">Watch Online</button></div></div>`)
 
             }
         }
         setTimeout(function() {
             if (checkpoint == 0) {
                 $("#hi_movie").html(`<h4>Currently Playing</h4>
-                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#" download>Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
+                    <br /><div class="movie"><div class="mv_poster_container"><img class="mv_poster" src="unavailable_poster.jpg" alt="" /></div><h4 class="mv_name">Unavailable</h4><div><a class="download" type="submit" href="#">Download</a><button class="watch_online" movie-name="Unavailable" type="submit">Watch Online</button></div></div>`)
             }
         },
             100);
@@ -224,6 +223,7 @@ $("#player").on('play', function() {
         Cookies.set("last-movie", currPlay)
         Cookies.set("last-time", vid[0].currentTime)
     }, 100);
+    totalPlays()
 })
 
 $(".rsm_close").click(function() {
@@ -284,4 +284,39 @@ function _loader() {
 
 
 
-/*---------- Volume Booster ----------*/
+/*---------- Collect Data ----------*/
+
+var user_IP
+$(document).ready(function() {
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+        user_IP = data.ip;
+    })
+})
+
+
+var script_url = "https://script.google.com/macros/s/AKfycbxPOKcGwc0vHmG-EfkC3aj_k9VEjEEJF27R_98Pc5XG2dMjWWCoigdTkAM5flzGIyT2dw/exec";
+function totalPlays() {
+    var url = script_url + "?movie_title="+currPlay+"&total_plays=1&total_downloads=0&user="+user_IP+":viewed&action=update";
+    var request = jQuery.ajax({
+        crossDomain: true,
+        url: url,
+        method: "GET",
+        dataType: "jsonp"
+    });
+}
+
+function totalDownloads(download,movie) {
+    var url = script_url + "?movie_title="+movie+"&total_plays=0&total_downloads=1&user="+user_IP+":saved&action=update";
+    var request = jQuery.ajax({
+        crossDomain: true,
+        url: url,
+        method: "GET",
+        dataType: "jsonp"
+    });
+    window.open(download)
+}
+
+
+function addDownload(url,movie){
+    totalDownloads(url,movie)
+}
