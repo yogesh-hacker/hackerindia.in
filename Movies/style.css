@@ -746,7 +746,8 @@ hr {
     transition: all 1.5s ease-in;
 }
 
-._hide {
+._hide,
+.member_form_canvas{
     display: none;
     position: fixed;
     top: 0;
@@ -754,32 +755,75 @@ hr {
     background-color: rgba(255,255,255,0.9);
     width: 100%;
     height: 100%;
+    touch-action: none;
     z-index: 99999;
 }
 
-/*----------- Alerts -----------*/
-
-.alert{
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border: 1px solid #a2a2a2;
-    top: 5px;
-    left: 50%;
-    width: 95%;
-    height: auto;
-    border-radius: 5px;
-    transform: translateX(-50%);
-    z-index: 999999;
+.member_form_canvas{
+    background-color: rgba(0,0,0,0.8);
 }
 
-.alert p{
-    margin: 5px;
-    text-align: justify;
-    font-family: 'Open Sans';
-    color: #FFB100;
+
+/*----------- Member Form -----------*/
+
+.member_form{
+    width: 95%;
+    background-color: white;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.member_form h2{
+    color: black;
+    text-align: center;
+}
+
+.member_form p{
     font-size: 15px;
+    text-align: justify;
+    color: #666;
+    font-family: 'Open Sans';
+    margin: 12px 0px;
+}
+
+.member_form input{
+    height: 47px;
+    width: 100%;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    padding: 0px 12px;
+    font-size: 16px;
+    font-family: 'Andika';
+    transition-duration: 0.3s;
+    margin: 15px 0px;
+}
+
+.member_form input:hover,
+.member_form input:focus{
+    border: 2px solid #000;
+}
+
+.member_form button{
+    position: relative;
+    display: flex;
+    margin: 25px 0px 5px auto;
+    color: #007FFF;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+}
+
+.member_form button:hover{
+    background-color: #B3DDFF;
+    box-shadow: 0px 0px 0px 1px #007FFF;
 }

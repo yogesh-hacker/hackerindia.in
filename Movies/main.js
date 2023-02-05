@@ -62,6 +62,7 @@ var data = []
 $(document).ready(function() {
     const mydata = JSON.parse(JSON.stringify(data))
     data.push(mydata)
+    loadUser()
 })
 
 $(document).ready(function() {
@@ -319,4 +320,22 @@ function totalDownloads(download,movie) {
 
 function addDownload(url,movie){
     totalDownloads(url,movie)
+}
+
+function loadUser(){
+    var user = Cookies.get("username");
+    if(user == undefined){
+        $(".member_form").css("display","flex");
+        $(".member_form_canvas").css("display","flex")
+    }
+}
+
+function logUser(){
+    var username = $("#username").val()
+    if(username != ""){
+        if(username.length>4){
+            Cookies.set("username", username)
+            $(".member_form , .member_form_canvas").css("display","none")
+        }
+    }
 }
