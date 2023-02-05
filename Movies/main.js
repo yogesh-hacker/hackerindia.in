@@ -307,7 +307,7 @@ function logUser() {
     var username = $("#username").val().trim()
     if (username != "") {
         if (username.length > 4) {
-            Cookies.set("username", username)
+            Cookies.set("username", username, { expires: 365 })
             $(".member_form , .member_form_canvas").css("display", "none")
         }
     }
