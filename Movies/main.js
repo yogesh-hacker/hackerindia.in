@@ -111,6 +111,7 @@ function load() {
         }
     }
     setTimeout(play, 1000);
+    totalPlays()
 }
 
 function play() {
@@ -224,7 +225,6 @@ $("#player").on('play', function() {
         Cookies.set("last-movie", currPlay)
         Cookies.set("last-time", vid[0].currentTime)
     }, 100);
-    totalPlays()
 })
 
 $(".rsm_close").click(function() {
@@ -294,10 +294,32 @@ $(document).ready(function() {
     })
 })
 
+var user;
+function loadUser() {
+    user = Cookies.get("username");
+    if (user == undefined) {
+        $(".member_form").css("display", "flex");
+        $(".member_form_canvas").css("display", "flex")
+    }
+}
+
+function logUser() {
+    var username = $("#username").val().trim()
+    if (username != "") {
+        if (username.length > 4) {
+            Cookies.set("username", username)
+            $(".member_form , .member_form_canvas").css("display", "none")
+        }
+    }
+}
+
 
 var script_url = "https://script.google.com/macros/s/AKfycbxPOKcGwc0vHmG-EfkC3aj_k9VEjEEJF27R_98Pc5XG2dMjWWCoigdTkAM5flzGIyT2dw/exec";
 function totalPlays() {
-    var url = script_url + "?movie_title="+currPlay+"&total_plays=1&total_downloads=0&user="+user_IP+":viewed&action=update";
+    var date = new Date();
+    var user_time = date.toLocaleString();
+    var data = `{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "viewed"}`
+    var url = script_url + "?movie_title="+currPlay+"&total_plays=1&total_downloads=0&user="+data+"&action=update";
     var request = jQuery.ajax({
         crossDomain: true,
         url: url,
@@ -306,8 +328,11 @@ function totalPlays() {
     });
 }
 
-function totalDownloads(download,movie) {
-    var url = script_url + "?movie_title="+movie+"&total_plays=0&total_downloads=1&user="+user_IP+":saved&action=update";
+function totalDownloads(download, movie) {
+    var date = new Date();
+    var user_time = date.toLocaleString();
+    var data = `{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "saved"}`
+    var url = script_url + "?movie_title="+movie+"&total_plays=0&total_downloads=1&user="+data+"&action=update";
     var request = jQuery.ajax({
         crossDomain: true,
         url: url,
@@ -318,24 +343,6 @@ function totalDownloads(download,movie) {
 }
 
 
-function addDownload(url,movie){
-    totalDownloads(url,movie)
-}
-
-function loadUser(){
-    var user = Cookies.get("username");
-    if(user == undefined){
-        $(".member_form").css("display","flex");
-        $(".member_form_canvas").css("display","flex")
-    }
-}
-
-function logUser(){
-    var username = $("#username").val()
-    if(username != ""){
-        if(username.length>4){
-            Cookies.set("username", username)
-            $(".member_form , .member_form_canvas").css("display","none")
-        }
-    }
+function addDownload(url, movie) {
+    totalDownloads(url, movie)
 }
