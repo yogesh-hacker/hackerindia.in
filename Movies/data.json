@@ -14,8 +14,8 @@ data=[{
         "movie_name" : "Paagal",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwe3pccz3NZpn8FouvgRDWQXVLSGBAFheQYg&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMkyLSz4ngTMjqU-Tmmb8MP1F2_AXvOd30g&usqp=CAU",
-        "movie_src" : "https://polonium.saicdn.com/video/tt11987082/hindi/35a271d8a347ab794fcccca81a44058d:2023020608/1080.mp4:hls:manifest.m3u8",
-        "download_link" : "",
+        "movie_src" : "https://polonium.saicdn.com/video/tt11987082/hindi/446ff581801ff8ac5726f9a8c2c1944b:2023020611/1080.mp4:hls:manifest.m3u8",
+        "download_link" : "https://matrix.saicdn.com/video/tt11987082/hindi/446ff581801ff8ac5726f9a8c2c1944b:2023020611/1080.mp4?dn=%5Bsaicord.com%5D_Paagal_%282021%29_%5BHindi_Dubbed%5D_1080p.mp4",
         "stream_type" : "application/x-mpegURL",
         "is_playing" : "true"
     },
