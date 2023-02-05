@@ -16,7 +16,7 @@ data=[{
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMkyLSz4ngTMjqU-Tmmb8MP1F2_AXvOd30g&usqp=CAU",
         "movie_src" : "https://matrix.saicdn.com/video/tt11987082/hindi/35a271d8a347ab794fcccca81a44058d:2023020608/1080.mp4:hls:seg-5-v1-a1.ts",
         "download_link" : "",
-        "stream_type" : "video/M2PT",
+        "stream_type" : "application/x-mpegURL",
         "is_playing" : "true"
     },
     {
