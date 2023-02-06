@@ -318,7 +318,7 @@ var script_url = "https://script.google.com/macros/s/AKfycbxPOKcGwc0vHmG-EfkC3aj
 function totalPlays() {
     var date = new Date();
     var user_time = date.toLocaleString();
-    var data = `{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "viewed"}`
+    var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "viewed"}]`
     var url = script_url + "?movie_title="+currPlay+"&total_plays=1&total_downloads=0&user="+data+"&action=update";
     var request = jQuery.ajax({
         crossDomain: true,
@@ -331,7 +331,7 @@ function totalPlays() {
 function totalDownloads(download, movie) {
     var date = new Date();
     var user_time = date.toLocaleString();
-    var data = `{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "saved"}`
+    var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "saved"}]`
     var url = script_url + "?movie_title="+movie+"&total_plays=0&total_downloads=1&user="+data+"&action=update";
     var request = jQuery.ajax({
         crossDomain: true,
