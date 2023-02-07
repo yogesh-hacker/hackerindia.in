@@ -332,7 +332,7 @@ function totalPlays() {
 function totalDownloads(download, movie) {
     var date = new Date();
     var user_time = date.toLocaleString()
-    var movie_title = currPlay.replaceAll(" ","_").replaceAll("(","").replaceAll(")","").toLowerCase();
+    var movie_title = movie.replaceAll(" ","_").replaceAll("(","").replaceAll(")","").toLowerCase();
     var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "saved","movie_title":"`+movie_title+`"}]`
     var url = script_url + "?movie_title="+movie+"&total_plays=0&total_downloads=1&user="+data+"&action=update";
     var request = jQuery.ajax({
