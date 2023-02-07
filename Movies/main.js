@@ -314,7 +314,7 @@ function logUser() {
 }
 
 
-var script_url = "https://script.google.com/macros/s/AKfycbxPOKcGwc0vHmG-EfkC3aj_k9VEjEEJF27R_98Pc5XG2dMjWWCoigdTkAM5flzGIyT2dw/exec";
+var script_url = "https://script.google.com/macros/s/AKfycbw9OwzXaGy5BvMW3Vcv-kk_780CQpJvtg_erj3lY6ZcvQbvsjqb70SU06-1Z0maHglUGA/exec";
 function totalPlays() {
     var date = new Date();
     var user_time = date.toLocaleString();
