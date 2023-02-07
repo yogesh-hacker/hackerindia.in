@@ -317,8 +317,9 @@ function logUser() {
 var script_url = "https://script.google.com/macros/s/AKfycbw9OwzXaGy5BvMW3Vcv-kk_780CQpJvtg_erj3lY6ZcvQbvsjqb70SU06-1Z0maHglUGA/exec";
 function totalPlays() {
     var date = new Date();
+    var movie_title = currPlay.replaceAll(" ","_").replaceAll("(","").replaceAll(")","").toLowerCase();
     var user_time = date.toLocaleString();
-    var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "viewed","movie_title":`+currPlay+`}]`
+    var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "viewed","movie_title":"`+movie_title+`"}]`
     var url = script_url + "?movie_title="+currPlay+"&total_plays=1&total_downloads=0&user="+data+"&action=update";
     var request = jQuery.ajax({
         crossDomain: true,
@@ -330,8 +331,9 @@ function totalPlays() {
 
 function totalDownloads(download, movie) {
     var date = new Date();
-    var user_time = date.toLocaleString();
-    var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "saved","movie_title":`+movie+`}]`
+    var user_time = date.toLocaleString()
+    var movie_title = currPlay.replaceAll(" ","_").replaceAll("(","").replaceAll(")","").toLowerCase();
+    var data = `[{"username": "`+user+`","user_ip": "`+user_IP+`","user_time": "`+user_time+`","action": "saved","movie_title":"`+movie_title+`"}]`
     var url = script_url + "?movie_title="+movie+"&total_plays=0&total_downloads=1&user="+data+"&action=update";
     var request = jQuery.ajax({
         crossDomain: true,
