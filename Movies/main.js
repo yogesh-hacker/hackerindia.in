@@ -301,6 +301,9 @@ function loadUser() {
         $(".member_form").css("display", "flex");
         $(".member_form_canvas").css("display", "flex")
     }
+    else{
+        $(".user_id").append("Username : "+user)
+    }
 }
 
 function logUser() {
@@ -308,6 +311,7 @@ function logUser() {
     if (username != "") {
         if (username.length > 4) {
             Cookies.set("username", username, { expires: 365 })
+            $(".user_id").append("Username : "+user)
             $(".member_form , .member_form_canvas").css("display", "none")
         }
     }
