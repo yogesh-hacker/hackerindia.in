@@ -1,23 +1,23 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Pathaan (HDCamRip)",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4FLImSBSdr9e-c1_sB8sK3gQTIkHujVctg&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmOa7Sn2UYsREYg9hvABdmTcmJrhg7PHoECw&usqp=CAU",
-        "movie_src" : "https://ia904701.us.archive.org/31/items/pathaan.-2023.-v-3.1080p.-hq.-hdcam.-hindi.-dd.-2.0.x-264.-vegamovies.to/Pathaan.2023.V3.1080p.HQ.HDCAM.Hindi.DD.2.0.x264.Vegamovies.to.mp4",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
         "download_link" : "",
-        "stream_type" : "video/mp4",
-        "is_playing" : "true"
+        "stream_type" : "application/x-mpegURL",
+        "is_playing" : "false"
     },
     {
 
         "serial_no" : "2",
-        "movie_name" : "Paagal",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwe3pccz3NZpn8FouvgRDWQXVLSGBAFheQYg&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMkyLSz4ngTMjqU-Tmmb8MP1F2_AXvOd30g&usqp=CAU",
-        "movie_src" : "https://matrix.saicdn.com/video/tt11987082/hindi/5e0015fec8bcb7dcd02f24ff7d2c85b9:2023020803/1080.mp4:hls:manifest.m3u8",
-        "download_link" : "https://matrix.saicdn.com/video/tt11987082/hindi/5e0015fec8bcb7dcd02f24ff7d2c85b9:2023020803/1080.mp4?dn=%5Bsaicord.com%5D_Paagal_%282021%29_%5BHindi_Dubbed%5D_1080p.mp4",
+        "movie_name" : "",
+        "movie_poster" : "",
+        "movie_thumbnail" : "",
+        "movie_src" : "",
+        "download_link" : "",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
