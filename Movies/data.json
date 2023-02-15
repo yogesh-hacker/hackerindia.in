@@ -3,10 +3,10 @@ data=[{
         "movie_name" : "Shaakuntalam (Coming Soon)",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlEmQej6J0alYP7N4tGVKjwIPWTQTA_ejow&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykljfAr2dFMCk6WiBIGZ7pLAEjb_cFdYhtg&usqp=CAU",
-        "movie_src" : "",
+        "movie_src" : "https://drive.google.com/uc?export=download&id=1_svq6Fsd5M_ihMOnF8pTg6CNpqST1nYJ",
         "download_link" : "#",
         "stream_type" : "video/mp4",
-        "is_playing" : "false"
+        "is_playing" : "true"
     },
     {
 
