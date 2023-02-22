@@ -1,7 +1,7 @@
 data=[{
         "serial_no" : "1",
         "movie_name" : "",
-        "movie_poster" : "",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHutncR9CBx4ZZ1T0OwQnVytfPq5IBNA0GDA&usqp=CAU",
         "movie_thumbnail" : "",
         "movie_src" : "",
         "download_link" : "",
