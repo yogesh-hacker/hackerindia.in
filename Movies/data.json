@@ -1,12 +1,12 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHutncR9CBx4ZZ1T0OwQnVytfPq5IBNA0GDA&usqp=CAU",
-        "movie_thumbnail" : "",
-        "movie_src" : "",
+        "movie_name" : "Pathaan (HDCamRip)",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ku6UB5X1qJc5aMUQra4Dm1lpAWFUEglNsA&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSumVFpgPRGehGGhjZRXAVkouuTW8YejJwynA&usqp=CAU",
+        "movie_src" : "https://ia801601.us.archive.org/21/items/pathaan-2023-hindi-cleaned-hq-print-1080p-x-264/Pathaan_2023_Hindi_Cleaned_HQ_Print_1080p_x264.Mkv",
         "download_link" : "",
-        "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "stream_type" : "video/mp4",
+        "is_playing" : "true"
     },
     {
 
