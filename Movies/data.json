@@ -1,10 +1,10 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Pathaan (HDCamRip)",
+        "movie_name" : "Pathaan",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ku6UB5X1qJc5aMUQra4Dm1lpAWFUEglNsA&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSumVFpgPRGehGGhjZRXAVkouuTW8YejJwynA&usqp=CAU",
-        "movie_src" : "https://ia801601.us.archive.org/21/items/pathaan-2023-hindi-cleaned-hq-print-1080p-x-264/Pathaan_2023_Hindi_Cleaned_HQ_Print_1080p_x264.Mkv",
-        "download_link" : "This is Download Link :- https://ia801601.us.archive.org/21/items/pathaan-2023-hindi-cleaned-hq-print-1080p-x-264/Pathaan_2023_Hindi_Cleaned_HQ_Print_1080p_x264.Mkv",
+        "movie_src" : "https://archive.org/download/pathaan.-2023.-hindi.-2160p.-hevc.-web-dl.-esub-dude-films.in/Pathaan.2023.Hindi.1080p.WEB-DL.ESub-DudeFilms.in.mkv",
+        "download_link" : "https://archive.org/download/pathaan.-2023.-hindi.-2160p.-hevc.-web-dl.-esub-dude-films.in/Pathaan.2023.Hindi.1080p.WEB-DL.ESub-DudeFilms.in.mkv",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
     },
@@ -17,7 +17,7 @@ data=[{
         "movie_src" : "https://bunnycdn.ydc1wes.me/hls2/01/00004/6thdqn4cycjm_l/master.m3u8?t=NQiNtIseGxuWfJ3Gxo_hq4F9GNKNWGtVwlD6nBoC9WU&s=1679404649&e=14400&f=22492&i=0.0&sp=0",
         "download_link" : "/hackerindia.in/Error?err_code=404",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
