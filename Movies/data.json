@@ -11,13 +11,13 @@ data=[{
     {
 
         "serial_no" : "2",
-        "movie_name" : "Vaathi",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38_fjrB6jgcMF1z_JNQHUbLa1zXlRHGbyKA&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGmPDqcSferm7KGEE_RBUkvqhozTs8QYXwPg&usqp=CAU",
-        "movie_src" : "https://bunnycdn.ydc1wes.me/hls2/01/00004/6thdqn4cycjm_l/master.m3u8?t=NQiNtIseGxuWfJ3Gxo_hq4F9GNKNWGtVwlD6nBoC9WU&s=1679404649&e=14400&f=22492&i=0.0&sp=0",
+        "movie_name" : "Shabaash Mithu",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwx_K6Z_joS_b7j1mZ32R9IsSsuUxEYn4EA&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSMmXSvYxMoDRfMlmucpAKEUBuvuiLikEIQQ&usqp=CAU",
+        "movie_src" : "https://leave.ydc1wes.me/hls2/01/00003/tkgdrmlirxx7_,l,h,.urlset/master.m3u8?t=HvW9Ck2l8ydWpQFUASEdfHLiptb4z2lN2I6BJR12ojE&s=1681050086&e=14400&f=18144&i=0.0&sp=0",
         "download_link" : "/hackerindia.in/Error?err_code=404",
         "stream_type" : "application/x-mpegURL",
-        "is_playing" : "false"
+        "is_playing" : "true"
     },
     {
 
