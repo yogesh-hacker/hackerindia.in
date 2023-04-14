@@ -2,7 +2,7 @@ upcoming_movies=[
     {
         "serial_no" : "1",
         "movie_name" : "Pushpa : The Rule",
-        "movie_poster" : "https://i.ibb.co/ZxzpQDZ/339705395-250273807465147-2795739265334037486-n.jpg",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCSMY4l43d9QV1XaBQ52-hpIPYYQC5_2XjQ&usqp=CAU",
         "release_year" :"17<br>December<br>2023"
     },
     {
@@ -28,13 +28,7 @@ upcoming_movies=[
         "movie_name" : "Kisi Ka Bhai Kisi Ki Jaan",
         "movie_poster" : "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIznKvDHn7v89iIWMfBo-CDQq-FK-FP4xvYLtlvp5EqIIt75fB",
         "release_year" :"21 April<br>2023"
-    },
-    {
-        "serial_no" : "6",
-        "movie_name" : "Shaakuntalam",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlEmQej6J0alYP7N4tGVKjwIPWTQTA_ejow&usqp=CAU",
-        "release_year" :"14 April<br>2023"
-    },
+    }
 ]
 
 qna=[
