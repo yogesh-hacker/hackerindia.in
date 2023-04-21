@@ -24,20 +24,14 @@ upcoming_movies=[
         "release_year" :"2023"
     },
     {
-        "serial_no" : "5",
-        "movie_name" : "Kisi Ka Bhai Kisi Ki Jaan",
-        "movie_poster" : "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIznKvDHn7v89iIWMfBo-CDQq-FK-FP4xvYLtlvp5EqIIt75fB",
-        "release_year" :"21 April<br>2023"
-    },
-    {
 
-        "serial_no" : "6",
+        "serial_no" : "5",
         "movie_name" : "KGF Chapter 3",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRC_LeU8rYRxgXz7Rgbvh6jvQTJVKC2G4iVA&usqp=CAU",
         "release_year" :"July<br>2024"
     },
     {
-        "serial_no" : "7",
+        "serial_no" : "6",
         "movie_name" : "NTR 31",
         "movie_poster" : "https://www.cinejosh.com/newsimg/newsmainimg/ntr-31-birthday-special-creates-a-mass-blast_b_2005220116.jpg",
         "release_year" :"December<br>2023"
