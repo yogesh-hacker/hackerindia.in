@@ -16,7 +16,7 @@ data=[{
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4TRAEHwx5IkjxfD0E0wvcob_M1-zzwjoU4Q&usqp=CAU",
         "movie_src" : "https://archive.org/download/kisi-ka-bhai-kisi-ki-jaan-by-yasir-owns/Kisi%20ka%20Bhai%20Kisi%20ki%20Jaan%20by%20Yasir%20Owns.mkv",
         "download_link" : "https://archive.org/download/kisi-ka-bhai-kisi-ki-jaan-by-yasir-owns/Kisi%20ka%20Bhai%20Kisi%20ki%20Jaan%20by%20Yasir%20Owns.mkv",
-        "stream_type" : "application/x-mpegURL",
+        "stream_type" : "video/mp4",
         "is_playing" : "true"
     },
     {
