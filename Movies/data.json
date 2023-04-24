@@ -1,10 +1,10 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Shaakuntalam (Coming Soon)",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlEmQej6J0alYP7N4tGVKjwIPWTQTA_ejow&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAirPinXilSeckTGSBU8xJYyZnOlAwh76ltg&usqp=CAU",
-        "movie_src" : "https://drive.google.com/uc?export=download&id=1_svq6Fsd5M_ihMOnF8pTg6CNpqST1nYJ",
-        "download_link" : "../Error/?err_code=404",
+        "movie_name" : "Chengiz",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFuAnQy74ukNgPSG_6aGZSrQa0-YKCMRjRg&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8X_x8JFqQO0fqLDqedXy4USlvvTHYqcMkJA&usqp=CAU",
+        "movie_src" : "https://www.filmyzilla.com.pe/movie/13644/Chengiz-(2023)-hindi-movie.html",
+        "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
     },
