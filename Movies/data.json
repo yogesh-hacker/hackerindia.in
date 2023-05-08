@@ -1,9 +1,9 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "Chengiz",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXFuAnQy74ukNgPSG_6aGZSrQa0-YKCMRjRg&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8X_x8JFqQO0fqLDqedXy4USlvvTHYqcMkJA&usqp=CAU",
-        "movie_src" : "https://sharer.my.id/d/32862/-FilmyHunk-Co--Chengiz-2023-Hindi-720p-HQ-S-Print-x264-AAC---mkv",
+        "movie_name" : "The Kerala Story",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzd4FcPBaBo0Qaj98dRW5vWzKL0W-ETampw&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp8joirCaDCmpefJZ3jMYosrazM6u5uXAJIQ&usqp=CAU",
+        "movie_src" : "https://oqqmxzdegmdsbisargxu.akamai-video-content.com/tysxfafdoo7oj6cdabxcrr2hf3cji5pb5uzr7kra3dzthzhspqx5ourhlbza/The_Kerala_Story_(2023)_Hindi_DVDScr_x264_AAC_700MB.mkv.mp4",
         "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
@@ -17,7 +17,7 @@ data=[{
         "movie_src" : "https://archive.org/download/kisi-ka-bhai-kisi-ki-jaan-by-yasir-owns/Kisi%20ka%20Bhai%20Kisi%20ki%20Jaan%20by%20Yasir%20Owns.mkv",
         "download_link" : "https://archive.org/download/kisi-ka-bhai-kisi-ki-jaan-by-yasir-owns/Kisi%20ka%20Bhai%20Kisi%20ki%20Jaan%20by%20Yasir%20Owns.mkv",
         "stream_type" : "video/mp4",
-        "is_playing" : "true"
+        "is_playing" : "false"
     },
     {
 
