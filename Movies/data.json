@@ -1,9 +1,9 @@
 data=[{
         "serial_no" : "1",
-        "movie_name" : "The Kerala Story",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzd4FcPBaBo0Qaj98dRW5vWzKL0W-ETampw&usqp=CAU",
-        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp8joirCaDCmpefJZ3jMYosrazM6u5uXAJIQ&usqp=CAU",
-        "movie_src" : "https://bunnycdn.ydc1wes.me/hls2/01/00004/gkiw8dmv5u4t_l/master.m3u8?t=pszFSh91P-dbul-QIr4AbrQjaL8-UOp1eZ3XewufLe8&s=1683775527&e=14400&f=23759&i=0.0&sp=0",
+        "movie_name" : "Extraction 2",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcu5XVOOAf0LjY1QThHw5ACxyMTZWJ5A9grA&usqp=CAU",
+        "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQilNhGijbMGcqUTz3GXoUbfvNhxWX094S9A&usqp=CAU",
+        "movie_src" : "https://archive.org/download/extraction.-2.-2023.-hindi-english.-480p.-web-dl.-esub.-bolly-flix/Extraction.2.%282023%29.%7BHindi-English%7D.480p.WEB-DL.ESub.%5BBollyFlix%5D.mp4",
         "download_link" : "",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
