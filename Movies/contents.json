@@ -3,25 +3,25 @@ upcoming_movies=[
         "serial_no" : "1",
         "movie_name" : "Pushpa : The Rule",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCSMY4l43d9QV1XaBQ52-hpIPYYQC5_2XjQ&usqp=CAU",
-        "release_year" :"17<br>December<br>2023"
+        "release_year" :"15<br>August<br>2024"
     },
     {
         "serial_no" : "2",
-        "movie_name" : "Kanguva",
-        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSba5fZyA9MuYLO3nU5qbyddFOIwRY4lgdhbA&usqp=CAU",
-        "release_year" : "2024"
+        "movie_name" : "Dunki",
+        "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyAqMjaBp0pGGCeSWTwvbvpEV-9HB83cLw9g&usqp=CAU",
+        "release_year" : "22<br>December<br>2024"
     },
     {
         "serial_no" : "3",
         "movie_name" : "Salaar",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLmbAqgJCydpf0H0aPgQzhc5oq6XTE9iWaA&usqp=CAU",
-        "release_year" :"28<br>September<br>2023"
+        "release_year" :"November<br>2023"
     },
     {
         "serial_no" : "4",
         "movie_name" : "Tiger 3",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjf8LWGs5dq3LIRtrnabKFynf1D8DartsQMQ&usqp=CAU",
-        "release_year" :"2023"
+        "release_year" :"10<br>November<br>2023"
     },
     {
 
