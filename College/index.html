@@ -220,6 +220,16 @@
         $(".btn").click(function() {
             $('.collapse').collapse('hide');
         });
+
+        $(document).ready(function() {
+            var currentDate = new Date();
+            if (currentDate.getDay() !== 0) {
+                var button = $('[data-target="#' + currentDate.toLocaleString('en-us', { weekday: 'long' }).toLowerCase() + '"]');
+                if (button.length) {
+                    button.click();
+                }
+            }
+        });
     </script>
 </body>
 </html>
