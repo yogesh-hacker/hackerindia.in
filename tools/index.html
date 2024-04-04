@@ -1,1 +1,41 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta name="description" content="Format your writings e.g. Story, Texts & Paragraphs to use it for HTML pages.">
+    <title>Format Texts, Paragraphs for HTML Pages</title>
+    <link rel='stylesheet' href='style.css'>
+    <!--None-->
+    <link rel='stylesheet' href='https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css' type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Arima:wght@100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <div class="text-editor-container">
+        <p for="paragraph">
+            Enter Texts or Paragraphs:
+        </p>
+        <textarea id="paragraph" class="text-editor" placeholder="Enter your paragraph..."></textarea>
+    </div>
+    <div class="text-editor-functions-container">
+        <p class="function-title" for="underlinedWords">
+            Underlined Words (comma-separated):
+        </p>
+        <input type="text" id="underlinedWords" placeholder="Enter words to be underlined...">
+    </div>
+
+    <div class="button-actions-container">
+        <button class="button-format" onclick="formatParagraph()">Format</button>
+        <button class="button-copy" onclick="copyToClipboard()">Copy Result</button>
+    </div>
+    <div id="formatted-text-result"></div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+    <script type='text/javascript' src='main.js'></script>
+</body>
+</html>
