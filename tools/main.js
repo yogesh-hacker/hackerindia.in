@@ -20,11 +20,12 @@ function formatParagraph() {
 
 function copyToClipboard() {
     var resultDiv = $("#formatted-text-result");
-    const tempTextArea = document.createElement('textarea');
-    tempTextArea.value = resultDiv.innerHTML;
-    document.body.appendChild(tempTextArea);
+    var tempTextArea = $('<textarea>');
+    tempTextArea.val(resultDiv.html());
+    $('body').append(tempTextArea);
     tempTextArea.select();
     document.execCommand('copy');
-    document.body.removeChild(tempTextArea);
+    tempTextArea.remove();
     alert('Result copied to clipboard!');
 }
+
