@@ -3,7 +3,7 @@ data=[{
         "movie_name" : "Interstellar (Tamil)",
         "movie_poster" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhNOhNdlAuUuopIoeixPFB9dXsdYH2bShiSg&usqp=CAU",
         "movie_thumbnail" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4F4Kdw9B7LREmD4vhO3qO29sEkz3bHq-bTQ&usqp=CAU",
-        "movie_src" : "https://d10.uptofiles.com/files/Tamil%20Dubbed%20Movies/Interstellar%20(2014)/Interstellar%20(640x360)/Interstellar%202014%20HD.mp4",
+        "movie_src" : "https://bunnycdn.ydc1wes.me/hls2/01/00006/8hs633ckfgyt_l/master.m3u8?t=ACaBFqGi2th3AiR_lFR95OoD3y-5C2LYZvtzwpSD8vc&s=1716086515&e=14400&f=31957&i=0.0&sp=0",
         "download_link" : "https://d10.uptofiles.com/files/Tamil%20Dubbed%20Movies/Interstellar%20(2014)/Interstellar%20(640x360)/Interstellar%202014%20HD.mp4",
         "stream_type" : "video/mp4",
         "is_playing" : "true"
