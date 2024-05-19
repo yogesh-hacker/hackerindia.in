@@ -125,20 +125,29 @@ function play() {
                 },
             },
         });
-        player.load()
-        p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
-        player.poster(movie_thumbnail);
-        player.src({
-            src: movie_src,
-            type: stream_type,
-            allowSeeksWithinUnsafeLiveWindow: true
-        });
-        player.landscapeFullscreen();
-        player.seekButtons({
-            forward: 10,
-            back: 10
-        });
+
+        // Add Referer header
+        var refererHeader = {'Referer': 'https://minoplres.xyz'};
+        
         player.ready(function () {
+            // Add Referer header before every request
+            player.on('beforeRequest', function (options) {
+                options.headers = Object.assign({}, options.headers, refererHeader);
+            });
+
+            player.load();
+            p2pml.hlsjs.initVideoJsContribHlsJsPlayer(player);
+            player.poster(movie_thumbnail);
+            player.src({
+                src: movie_src,
+                type: stream_type,
+                allowSeeksWithinUnsafeLiveWindow: true
+            });
+            player.landscapeFullscreen();
+            player.seekButtons({
+                forward: 10,
+                back: 10
+            });
             player.volume(1); // 1%
         });
     } else {
@@ -146,6 +155,7 @@ function play() {
     }
 }
 
+        
 
 $(document).ready(function() {
     const upcoming = JSON.parse(JSON.stringify(upcoming_movies))
