@@ -72,14 +72,14 @@ body {
     box-shadow: 0px 0px 0px 4px #AFDBFF;
 }
 
-.button-actions-container{
+.button-actions-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.button-actions-container button{
+.button-actions-container button {
     height: 40px;
     width: 120px;
     margin: 5px 0px;
@@ -93,7 +93,7 @@ body {
     font-size: 16px;
 }
 
-.button-actions-container button:hover{
+.button-actions-container button:hover {
     outline: 2px solid #0081FF;
     background-color: white;
     border: 2px solid #dcdcdc;
@@ -101,11 +101,45 @@ body {
     color: black;
 }
 
-.button-copy{
+.button-copy {
     display: none;
 }
 
-#formatted-text-result{
-    font-family: "Merriweather";
+#formatted-text-result {
+    font-family: "Arima";
     margin: 20px 0px;
+}
+
+#formatMenu {
+    position: absolute;
+    background: #333; /* Android-style dark theme */
+    border-radius: 8px;
+    padding: 5px;
+    display: none; /* Initially hidden */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    gap: 5px; /* Space between buttons */
+    z-index: 10000; /* Ensure it appears above everything */
+}
+
+#formatMenu button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#formatMenu button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Separator between buttons */
+.separator {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
 }
