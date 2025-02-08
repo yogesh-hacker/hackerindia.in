@@ -9,7 +9,7 @@ function formatParagraph() {
     // Convert new lines to <br/>
     const formattedParagraph = paragraphInput.value.replace(/\n/g, '<br/>');
 
-    document.getElementById('formatted-text-result').innerHTML = cleanText(formattedParagraph);
+    document.getElementById('formatted-text-result').innerHTML = formattedParagraph;
     $(".button-copy").css("display", "block");
 }
 
@@ -25,7 +25,9 @@ function cleanText(text) {
         "…": "...",
         "*": "",
         "< | u>": "</u>",
-        "< | i>": "</i>"
+        "< | i>": "</i>",
+        "< | b>": "</b>",
+        "< | mark>":"</mark>"
     };
 
     for (let oldText in replacements) {
