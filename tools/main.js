@@ -9,7 +9,7 @@ function formatParagraph() {
     // Convert new lines to <br/>
     const formattedParagraph = paragraphInput.value.replace(/\n/g, '<br/>');
 
-    document.getElementById('formatted-text-result').innerHTML = formattedParagraph;
+    document.getElementById('formatted-text-result').innerHTML = cleanText(formattedParagraph);
     $(".button-copy").css("display", "block");
 }
 
